@@ -1,12 +1,14 @@
+import sys
+from pathlib import Path
+
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-ANALYSIS_DIR = BASE_DIR / "python" / "data" / "analysis"
-CROPS_DIR = BASE_DIR / "python" / "data" / "crops"
+sys.path.insert(0, str(Path(__file__).resolve().parent / "python"))
+
+from agroshift.repository import DataRepository  # noqa: E402
 
 st.set_page_config(
     page_title="AgroShift",
@@ -14,21 +16,18 @@ st.set_page_config(
     layout="wide",
 )
 
-
-@st.cache_data
-def load_csv(path: Path) -> pd.DataFrame:
-    return pd.read_csv(path)
+repo = DataRepository()
 
 
 @st.cache_data
 def load_all():
     return {
-        "ambiental_mensual": load_csv(ANALYSIS_DIR / "analisis_mensual_ambiental_2020.csv"),
-        "indicadores": load_csv(ANALYSIS_DIR / "indicadores_ambientales_2020.csv"),
-        "compatibilidad": load_csv(ANALYSIS_DIR / "compatibilidad_cultivos_ecocrop_2020.csv"),
-        "balance_resumen": load_csv(ANALYSIS_DIR / "balance_hidrico_resumen_2020.csv"),
-        "escenarios": load_csv(ANALYSIS_DIR / "escenarios_priorizados_2020_v9.csv"),
-        "etapas_resumen": load_csv(ANALYSIS_DIR / "resumen_etapas_rotacion_2020_v10.csv"),
+        "ambiental_mensual": repo.analysis("analisis_mensual_ambiental_2020.csv"),
+        "indicadores": repo.analysis("indicadores_ambientales_2020.csv"),
+        "compatibilidad": repo.analysis("compatibilidad_cultivos_ecocrop_2020.csv"),
+        "balance_resumen": repo.analysis("balance_hidrico_resumen_2020.csv"),
+        "escenarios": repo.analysis("escenarios_priorizados_2020_v9.csv"),
+        "etapas_resumen": repo.analysis("resumen_etapas_rotacion_2020_v10.csv"),
     }
 
 
