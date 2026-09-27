@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.9
+requests>=2.32
+beautifulsoup4>=4.12
+h5py>=3.11
+earthaccess>=0.11
