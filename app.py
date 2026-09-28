@@ -8,6 +8,7 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "python"))
 
+from agroshift.regions import REGIONS  # noqa: E402
 from agroshift.repository import DataRepository  # noqa: E402
 
 st.set_page_config(
@@ -16,13 +17,13 @@ st.set_page_config(
     layout="wide",
 )
 
-repo = DataRepository()
-
 
 @st.cache_data
-def load_all():
+def load_all(region_slug: str):
+    repo = DataRepository(region=region_slug)
     return {
         "ambiental_mensual": repo.analysis("analisis_mensual_ambiental_2020.csv"),
+        "ambiental_diario": repo.analysis("agroshift_environmental_2020.csv"),
         "indicadores": repo.analysis("indicadores_ambientales_2020.csv"),
         "compatibilidad": repo.analysis("compatibilidad_cultivos_ecocrop_2020.csv"),
         "balance_resumen": repo.analysis("balance_hidrico_resumen_2020.csv"),
@@ -31,14 +32,32 @@ def load_all():
     }
 
 
-data = load_all()
-
 st.title("🌱 AgroShift")
 st.caption(
     "Herramienta de apoyo a la decisión para rotación de cultivos, "
     "basada en datos de la NASA (POWER, SMAP) y FAO ECOCROP — "
-    "NASA Space Apps Challenge 2026 · Región: Santander, Colombia"
+    "NASA Space Apps Challenge 2026"
 )
+
+region_slugs = list(REGIONS.keys())
+region_slug = st.selectbox(
+    "📍 Región del agricultor",
+    region_slugs,
+    format_func=lambda s: REGIONS[s].nombre,
+)
+region = REGIONS[region_slug]
+st.caption(f"Clima: {region.clima} · {region.latitud:.3f}, {region.longitud:.3f} · {region.altitud_m:.0f} m s.n.m.")
+
+try:
+    data = load_all(region_slug)
+except FileNotFoundError:
+    st.warning(
+        f"Todavía no hay datos calculados para **{region.nombre}**. "
+        "El pipeline puede seguir corriendo en segundo plano — intenta de nuevo en unos minutos, "
+        "o corre `python run_pipeline.py --region "
+        f"{region_slug}` para generarlos."
+    )
+    st.stop()
 
 tab_resumen, tab_clima, tab_hidrico, tab_rotacion = st.tabs(
     ["📊 Resumen ambiental", "🌾 Compatibilidad de cultivos", "💧 Balance hídrico", "🔄 Rotaciones recomendadas"]
@@ -51,11 +70,16 @@ with tab_resumen:
     ind = data["indicadores"].set_index("indicador")["valor"]
     ind_num = pd.to_numeric(ind, errors="coerce")
 
+    diario = data["ambiental_diario"].copy()
+    diario["fecha"] = pd.to_datetime(diario["fecha"])
+    diario["anio"] = diario["fecha"].dt.year
+    n_anios = diario["anio"].nunique()
+
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Temperatura media anual", f"{ind_num.get('temperatura_media_anual', 0):.1f} °C")
+    c1.metric("Temperatura media", f"{ind_num.get('temperatura_media_anual', 0):.1f} °C")
     c2.metric("Temperatura máxima", f"{ind_num.get('temperatura_maxima_anual', 0):.1f} °C")
-    c3.metric("Precipitación anual", f"{data['ambiental_mensual']['precipitacion_total'].sum():.0f} mm")
-    c4.metric("Días lluviosos (año)", f"{int(data['ambiental_mensual']['dias_lluviosos'].sum())}")
+    c3.metric("Precipitación media anual", f"{diario.groupby('anio')['PRECTOTCORR'].sum().mean():.0f} mm")
+    c4.metric("Años de historial", f"{n_anios} ({diario['anio'].min()}–{diario['anio'].max()})")
 
     mensual = data["ambiental_mensual"]
 
@@ -63,12 +87,12 @@ with tab_resumen:
     with col1:
         fig = px.line(
             mensual, x="nombre_mes", y=["temperatura_media", "temperatura_maxima", "temperatura_minima"],
-            markers=True, title="Temperatura mensual (°C)",
+            markers=True, title=f"Temperatura mensual promedio {diario['anio'].min()}–{diario['anio'].max()} (°C)",
         )
         fig.update_layout(legend_title_text="", xaxis_title="", yaxis_title="°C")
         st.plotly_chart(fig, use_container_width=True)
     with col2:
-        fig = px.bar(mensual, x="nombre_mes", y="precipitacion_total", title="Precipitación mensual (mm)")
+        fig = px.bar(mensual, x="nombre_mes", y="precipitacion_total", title="Precipitación mensual promedio (mm)")
         fig.update_layout(xaxis_title="", yaxis_title="mm")
         st.plotly_chart(fig, use_container_width=True)
 
@@ -81,11 +105,12 @@ with tab_resumen:
         fig.update_layout(legend_title_text="", xaxis_title="", yaxis_title="")
         st.plotly_chart(fig, use_container_width=True)
     with col4:
+        precip_anual = diario.groupby("anio")["PRECTOTCORR"].sum().reset_index()
         fig = px.bar(
-            mensual, x="nombre_mes", y=["dias_lluviosos", "dias_secos"], barmode="stack",
-            title="Días lluviosos vs. secos por mes",
+            precip_anual, x="anio", y="PRECTOTCORR",
+            title="Precipitación total por año (mm) — variabilidad interanual",
         )
-        fig.update_layout(legend_title_text="", xaxis_title="", yaxis_title="días")
+        fig.update_layout(xaxis_title="", yaxis_title="mm", xaxis=dict(dtick=1))
         st.plotly_chart(fig, use_container_width=True)
 
     with st.expander("Ver tabla completa"):

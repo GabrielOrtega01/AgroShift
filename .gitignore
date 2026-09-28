@@ -38,3 +38,25 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Carpeta temporal de descarga SMAP (los .h5 se borran tras procesarlos)
+python/data/smap/
+
+# Config local de earthaccess/OPeNDAP (rutas a cookiejar/netrc de esta máquina)
+.dodsrc
+
+# Intermedios del pipeline de rotación (~270 MB/región): filas por etapa/fecha
+# candidata, no las lee app.py. Se regeneran con run_pipeline.py; solo se
+# commitea el resultado final (escenarios_priorizados, resumen_etapas...).
+python/data/analysis/*/analisis_etapas_rotacion_2020_v8.csv
+python/data/analysis/*/analisis_etapas_rotacion_2020_v10.csv
+python/data/analysis/*/escenarios_rotacion_2020_v6.csv
+python/data/analysis/*/escenarios_rotacion_2020_v6_etapas.csv
+python/data/analysis/*/comparacion_etapas_fecha_inicio_2020_v7.csv
+python/data/analysis/*/comparacion_rotaciones_fecha_inicio_2020_v7.csv
+python/data/analysis/*/resumen_rotaciones_2020_v8.csv
+python/data/analysis/*/escenarios_prioridad_agua_2020_v9.csv
+python/data/analysis/*/escenarios_prioridad_balance_2020_v9.csv
+python/data/analysis/*/escenarios_prioridad_humedad_2020_v9.csv
+python/data/analysis/*/escenarios_prioridad_temporal_2020_v9.csv
+python/data/analysis/*/smap_historico_2020_progreso.csv

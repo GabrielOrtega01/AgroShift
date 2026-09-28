@@ -1,6 +1,13 @@
+import os
+import sys
 import requests
 import pandas as pd
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from agroshift.regions import get_region
+
+REGION = get_region(os.environ.get("AGROSHIFT_REGION", "santander"))
 
 
 # ============================================================
@@ -8,13 +15,12 @@ from pathlib import Path
 # Primera extracción de datos climáticos
 # ============================================================
 
-# Ubicación de prueba: Santander, Colombia
-LATITUDE = 7.119
-LONGITUDE = -73.122
+LATITUDE = REGION.latitud
+LONGITUDE = REGION.longitud
 
 # Periodo de análisis
-START_DATE = "20200101"
-END_DATE = "20251231"
+START_DATE = os.environ.get("AGROSHIFT_FECHA_INICIO", "2020-01-01").replace("-", "")
+END_DATE = os.environ.get("AGROSHIFT_FECHA_FIN", "2025-12-31").replace("-", "")
 
 # Variables NASA POWER
 PARAMETERS = [
@@ -70,10 +76,10 @@ def convertir_dataframe(data):
 
 
 def guardar_datos(df):
-    output_dir = Path("data")
-    output_dir.mkdir(exist_ok=True)
+    output_dir = Path(__file__).resolve().parent / "data" / "power"
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    output_file = output_dir / "nasa_power_santander.csv"
+    output_file = output_dir / f"nasa_power_{REGION.slug}.csv"
 
     df.to_csv(output_file, index=False)
 

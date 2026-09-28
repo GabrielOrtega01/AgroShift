@@ -1,3 +1,5 @@
+import os
+import sys
 from pathlib import Path
 
 import earthaccess
@@ -5,21 +7,28 @@ import h5py
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from agroshift.regions import get_region
+from agroshift.retry import con_reintentos
+from agroshift.smap_sampling import HORA_OBJETIVO, un_granulo_por_dia
+
+REGION = get_region(os.environ.get("AGROSHIFT_REGION", "santander"))
+
 
 # ============================================================
 # CONFIGURACIÓN
 # ============================================================
 
-LATITUD_OBJETIVO = 7.119
-LONGITUD_OBJETIVO = -73.122
+LATITUD_OBJETIVO = REGION.latitud
+LONGITUD_OBJETIVO = REGION.longitud
 
-FECHA_INICIO = "2020-01-01"
-FECHA_FIN = "2020-12-31"
+FECHA_INICIO = os.environ.get("AGROSHIFT_FECHA_INICIO", "2020-01-01")
+FECHA_FIN = os.environ.get("AGROSHIFT_FECHA_FIN", "2025-12-31")
 
 BASE_DIR = Path(__file__).resolve().parent
 
 SMAP_DIR = BASE_DIR / "data" / "smap"
-ANALYSIS_DIR = BASE_DIR / "data" / "analysis"
+ANALYSIS_DIR = BASE_DIR / "data" / "analysis" / REGION.slug
 
 SMAP_DIR.mkdir(parents=True, exist_ok=True)
 ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
@@ -33,9 +42,9 @@ ARCHIVO_HISTORICO = ANALYSIS_DIR / "smap_historico_2020.csv"
 ARCHIVO_DIARIO = ANALYSIS_DIR / "smap_diario_2020.csv"
 
 
-# Celda SMAP identificada anteriormente
-FILA_SMAP = 711
-COLUMNA_SMAP = 1144
+# Celda SMAP (fila/columna en la grilla EASE-Grid 2.0), ya resuelta por región
+FILA_SMAP = REGION.fila_smap
+COLUMNA_SMAP = REGION.columna_smap
 
 
 # ============================================================
@@ -157,7 +166,8 @@ def guardar_progreso(df):
 # ============================================================
 
 print("=" * 70)
-print("SMAP HISTÓRICO 2020 - AGROSHIFT")
+print("SMAP HISTÓRICO - AGROSHIFT")
+print(f"Región: {REGION.nombre}")
 print("=" * 70)
 
 print(
@@ -237,7 +247,7 @@ print("=" * 70)
 
 print("\nBuscando datos...")
 
-resultados = earthaccess.search_data(
+resultados = con_reintentos(lambda: earthaccess.search_data(
     short_name="SPL4SMGP",
     temporal=(
         FECHA_INICIO,
@@ -249,10 +259,17 @@ resultados = earthaccess.search_data(
         LONGITUD_OBJETIVO,
         LATITUD_OBJETIVO
     )
-)
+))
 
 print(
     f"\nGranulos encontrados: "
+    f"{len(resultados)}"
+)
+
+resultados = un_granulo_por_dia(resultados)
+
+print(
+    f"Tras quedarnos con 1 por día ({HORA_OBJETIVO} UTC): "
     f"{len(resultados)}"
 )
 
@@ -264,254 +281,118 @@ if len(resultados) == 0:
 
 
 # ============================================================
-# PROCESAMIENTO
+# PROCESAMIENTO (por lotes, descarga en paralelo)
+#
+# earthaccess.download() acepta una lista y descarga con varios
+# hilos a la vez (8 por defecto) — mucho más rápido que pedir los
+# archivos uno por uno. Se procesa en lotes (no todo de una) para
+# poder ir guardando el progreso y ser resumible si se interrumpe.
 # ============================================================
 
 print("\n" + "=" * 70)
 print("PROCESAMIENTO")
 print("=" * 70)
 
-registros_nuevos = []
+TAMANO_LOTE = 40
 
 errores = 0
 omitidos = 0
 
+pendientes = []
 
-for numero, granulo in enumerate(
-    resultados,
-    start=1
-):
+for granulo in resultados:
+
+    data_links = granulo.data_links()
+
+    if not data_links:
+        errores += 1
+        continue
+
+    nombre_archivo = Path(data_links[0]).name
+
+    if nombre_archivo in archivos_procesados:
+        omitidos += 1
+        continue
+
+    pendientes.append((nombre_archivo, granulo))
+
+print(f"\nGranulos ya procesados (se omiten): {omitidos}")
+print(f"Granulos por descargar: {len(pendientes)}")
+
+fecha_inicio_ts = pd.Timestamp(FECHA_INICIO, tz="UTC")
+fecha_fin_ts = pd.Timestamp(FECHA_FIN, tz="UTC") + pd.Timedelta(days=1)
+
+for inicio_lote in range(0, len(pendientes), TAMANO_LOTE):
+
+    lote = pendientes[inicio_lote:inicio_lote + TAMANO_LOTE]
+    granulos_lote = [g for _, g in lote]
+
+    print(
+        f"\n--- Lote {inicio_lote // TAMANO_LOTE + 1} "
+        f"({inicio_lote + 1}-{inicio_lote + len(lote)} de {len(pendientes)}) ---"
+    )
 
     try:
+        archivos_descargados = con_reintentos(lambda: earthaccess.download(
+            granulos_lote,
+            local_path=SMAP_DIR,
+        ))
+    except Exception as error:
+        print(f"  ERROR descargando el lote tras varios intentos: {error}")
+        errores += len(lote)
+        continue
 
-        # ----------------------------------------------------
-        # OBTENER NOMBRE
-        # ----------------------------------------------------
+    registros_nuevos = []
 
-        data_links = granulo.data_links()
+    for nombre_archivo, ruta_descargada in zip(
+        [n for n, _ in lote], archivos_descargados
+    ):
 
-        if not data_links:
+        archivo_local = Path(ruta_descargada)
 
-            print(
-                f"\n[{numero}/{len(resultados)}] "
-                "Sin enlace de descarga."
-            )
-
-            errores += 1
-            continue
-
-        url = data_links[0]
-
-        nombre_archivo = Path(url).name
-
-        # ----------------------------------------------------
-        # COMPROBAR SI YA FUE PROCESADO
-        # ----------------------------------------------------
-
-        if nombre_archivo in archivos_procesados:
-
-            omitidos += 1
-
-            if numero % 100 == 0:
-
-                print(
-                    f"\n[{numero}/{len(resultados)}] "
-                    f"Ya procesado: {nombre_archivo}"
-                )
-
-            continue
-
-        print(
-            f"\n[{numero}/{len(resultados)}] "
-            f"{nombre_archivo}"
-        )
-
-        # ----------------------------------------------------
-        # DESCARGAR
-        # ----------------------------------------------------
-
-        archivo_local = SMAP_DIR / nombre_archivo
-
-        if archivo_local.exists():
-
-            print(
-                "  Archivo temporal encontrado."
-            )
-
-        else:
-
-            print(
-                "  Descargando archivo..."
-            )
-
-            archivos_descargados = (
-                earthaccess.download(
-                    granulo,
-                    local_path=SMAP_DIR
-                )
-            )
-
-            if not archivos_descargados:
-
-                print(
-                    "  No fue posible descargar."
-                )
-
+        try:
+            if not archivo_local.exists():
+                print(f"  {nombre_archivo}: no se pudo descargar.")
                 errores += 1
-
                 continue
 
-            archivo_local = Path(
-                archivos_descargados[0]
-            )
+            datos = extraer_datos_archivo(archivo_local)
 
-        # ----------------------------------------------------
-        # EXTRAER DATOS
-        # ----------------------------------------------------
+            if datos is None:
+                errores += 1
+                archivo_local.unlink()
+                continue
 
-        datos = extraer_datos_archivo(
-            archivo_local
-        )
+            if not (fecha_inicio_ts <= datos["fecha_hora"] < fecha_fin_ts):
+                archivo_local.unlink()
+                archivos_procesados.add(nombre_archivo)
+                continue
 
-        if datos is None:
+            datos["soil_temp_layer1_celsius"] = datos["soil_temp_layer1"] - 273.15
+            datos["latitud"] = LATITUD_OBJETIVO
+            datos["longitud"] = LONGITUD_OBJETIVO
 
+            registros_nuevos.append(datos)
+            archivos_procesados.add(nombre_archivo)
+
+        except Exception as error:
+            print(f"  ERROR procesando {nombre_archivo}: {error}")
             errores += 1
 
+        finally:
             if archivo_local.exists():
-
                 archivo_local.unlink()
 
-            continue
+    if registros_nuevos:
 
-        # ----------------------------------------------------
-        # FILTRAR FECHA
-        # ----------------------------------------------------
-
-        fecha_inicio = pd.Timestamp(
-            FECHA_INICIO,
-            tz="UTC"
+        df_progreso = pd.concat(
+            [df_progreso, pd.DataFrame(registros_nuevos)],
+            ignore_index=True,
         )
 
-        fecha_fin = (
-            pd.Timestamp(
-                FECHA_FIN,
-                tz="UTC"
-            )
-            + pd.Timedelta(days=1)
-        )
+        guardar_progreso(df_progreso)
 
-        if not (
-            fecha_inicio
-            <= datos["fecha_hora"]
-            < fecha_fin
-        ):
-
-            print(
-                "  Granulo fuera del periodo exacto."
-            )
-
-            if archivo_local.exists():
-
-                archivo_local.unlink()
-
-            archivos_procesados.add(
-                nombre_archivo
-            )
-
-            continue
-
-        # ----------------------------------------------------
-        # TEMPERATURA DEL SUELO
-        # ----------------------------------------------------
-
-        datos[
-            "soil_temp_layer1_celsius"
-        ] = (
-            datos["soil_temp_layer1"]
-            - 273.15
-        )
-
-        # ----------------------------------------------------
-        # COORDENADAS
-        # ----------------------------------------------------
-
-        datos["latitud"] = LATITUD_OBJETIVO
-        datos["longitud"] = LONGITUD_OBJETIVO
-
-        # ----------------------------------------------------
-        # AGREGAR REGISTRO
-        # ----------------------------------------------------
-
-        registros_nuevos.append(
-            datos
-        )
-
-        archivos_procesados.add(
-            nombre_archivo
-        )
-
-        print(
-            "  Datos extraídos correctamente."
-        )
-
-        print(
-            f"  Humedad superficial: "
-            f"{datos['sm_surface']:.4f}"
-        )
-
-        print(
-            f"  Humedad raíz: "
-            f"{datos['sm_rootzone']:.4f}"
-        )
-
-        # ----------------------------------------------------
-        # GUARDAR PROGRESO
-        # ----------------------------------------------------
-
-        df_nuevos = pd.DataFrame(
-            registros_nuevos
-        )
-
-        df_actualizado = pd.concat(
-            [
-                df_progreso,
-                df_nuevos
-            ],
-            ignore_index=True
-        )
-
-        guardar_progreso(
-            df_actualizado
-        )
-
-        # Actualizar dataframe en memoria
-        df_progreso = df_actualizado
-
-        registros_nuevos = []
-
-        print(
-            "  Progreso guardado."
-        )
-
-        # ----------------------------------------------------
-        # ELIMINAR HDF5
-        # ----------------------------------------------------
-
-        if archivo_local.exists():
-
-            archivo_local.unlink()
-
-            print(
-                "  Archivo .h5 eliminado."
-            )
-
-    except Exception as error:
-
-        print(
-            f"\n  ERROR: {error}"
-        )
-
-        errores += 1
+        print(f"  {len(registros_nuevos)} registros nuevos guardados.")
 
 
 # ============================================================

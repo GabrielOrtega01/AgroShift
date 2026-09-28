@@ -6,8 +6,8 @@ class EcocropDataSource(DataSource):
     """Catálogo y requerimientos agronómicos de cultivos (FAO ECOCROP)."""
 
     name = "FAO ECOCROP"
-    script = settings.python_dir / "05_descargar_catalogo_ecocrop.py"
+    script = settings.python_dir / "04_descargar_catalogo_ecocrop.py"
 
     def fetch(self) -> None:
         self._run_script()
-        self._run_script(settings.python_dir / "06_extraer_caracteristicas_ecocrop.py")
+        self._run_script(settings.python_dir / "05_extraer_caracteristicas_ecocrop.py")

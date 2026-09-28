@@ -14,10 +14,16 @@ from agroshift.config import settings
 
 
 class DataRepository:
-    """Acceso de solo lectura a los resultados del pipeline de análisis."""
+    """Acceso de solo lectura a los resultados del pipeline de análisis.
 
-    def __init__(self, analysis_dir=None, crops_dir=None):
-        self._analysis_dir = analysis_dir or settings.analysis_dir
+    `region` selecciona la subcarpeta de data/analysis/<region>/ (cada
+    región tiene su propio pipeline corrido por separado). data/crops/
+    es global: los requerimientos agronómicos de un cultivo no dependen
+    de la región.
+    """
+
+    def __init__(self, region: str = "santander", crops_dir=None):
+        self._analysis_dir = settings.analysis_dir / region
         self._crops_dir = crops_dir or settings.crops_dir
 
     def analysis(self, filename: str) -> pd.DataFrame:
