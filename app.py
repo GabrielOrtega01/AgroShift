@@ -15,6 +15,23 @@ RAIZ = Path(__file__).resolve().parent
 sys.path.insert(0, str(RAIZ / "python"))
 sys.path.insert(0, str(RAIZ))
 
+
+def _descartar_modulos_viejos() -> None:
+    """Streamlit Cloud recarga app.py tras un despliegue pero conserva en
+    memoria los módulos ya importados; sin esto, un cambio en `agroshift/` o
+    `ui/` puede dar ImportError hasta reiniciar la app. Si los archivos
+    cambiaron desde la última ejecución, se fuerza su reimportación."""
+    archivos = [*(RAIZ / "ui").rglob("*.py"), *(RAIZ / "python" / "agroshift").rglob("*.py")]
+    huella = max(a.stat().st_mtime_ns for a in archivos)
+    if getattr(sys, "_agroshift_huella", None) == huella:
+        return
+    for nombre in [m for m in sys.modules if m.split(".")[0] in ("agroshift", "ui")]:
+        del sys.modules[nombre]
+    sys._agroshift_huella = huella
+
+
+_descartar_modulos_viejos()
+
 from agroshift.regions import REGIONS, regiones_con_resultados  # noqa: E402
 from ui import theme  # noqa: E402
 from ui.components import hero, html  # noqa: E402
