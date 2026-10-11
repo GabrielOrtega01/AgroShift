@@ -134,7 +134,11 @@ temperatura_media = df["T2M"].mean()
 temperatura_maxima = df["T2M_MAX"].max()
 temperatura_minima = df["T2M_MIN"].min()
 
-precipitacion_total = df["PRECTOTCORR"].sum()
+# Con historial multi-año, los totales "anuales" son el promedio por año
+# (no la suma de todos los años), para ser comparables con rangos anuales.
+n_anios = max(df["fecha"].dt.year.nunique(), 1)
+
+precipitacion_total = df["PRECTOTCORR"].sum() / n_anios
 precipitacion_media = df["PRECTOTCORR"].mean()
 precipitacion_maxima = df["PRECTOTCORR"].max()
 
@@ -156,12 +160,12 @@ temperatura_suelo_media = (
     df["soil_temp_layer1_celsius"].mean()
 )
 
-dias_lluviosos = df["dia_lluvioso"].sum()
-dias_secos = df["dia_seco"].sum()
-
 porcentaje_dias_secos = (
-    dias_secos / len(df) * 100
+    df["dia_seco"].sum() / len(df) * 100
 )
+
+dias_lluviosos = df["dia_lluvioso"].sum() / n_anios
+dias_secos = df["dia_seco"].sum() / n_anios
 
 
 print(f"\nTemperatura media: {temperatura_media:.2f} °C")
@@ -175,7 +179,7 @@ print(
 )
 
 print(
-    f"\nPrecipitación acumulada: "
+    f"\nPrecipitación anual promedio: "
     f"{precipitacion_total:.2f} mm"
 )
 

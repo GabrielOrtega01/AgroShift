@@ -22,6 +22,11 @@ class Region:
     fila_smap: int
     columna_smap: int
 
+    @property
+    def nombre_corto(self) -> str:
+        """'Santander' para 'Santander (valle del Magdalena medio)'."""
+        return self.nombre.split(" (")[0]
+
 
 REGIONS: dict[str, Region] = {
     r.slug: r

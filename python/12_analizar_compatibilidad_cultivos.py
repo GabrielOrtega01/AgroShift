@@ -266,7 +266,10 @@ temperatura_minima_observada = ambiental["T2M_MIN"].min()
 
 temperatura_maxima_observada = ambiental["T2M_MAX"].max()
 
-precipitacion_anual = ambiental["PRECTOTCORR"].sum()
+# Los rangos de ECOCROP son anuales: con historial multi-año hay que
+# promediar los totales anuales, no sumar todos los años juntos.
+_anios_ambiental = pd.to_datetime(ambiental["fecha"]).dt.year.nunique()
+precipitacion_anual = ambiental["PRECTOTCORR"].sum() / max(_anios_ambiental, 1)
 
 precipitacion_media_diaria = ambiental["PRECTOTCORR"].mean()
 

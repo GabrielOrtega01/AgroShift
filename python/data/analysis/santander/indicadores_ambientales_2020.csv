@@ -2,7 +2,7 @@ indicador,valor,unidad
 temperatura_media_anual,20.63639598540146,°C
 temperatura_maxima_anual,34.47,°C
 temperatura_minima_anual,9.94,°C
-precipitacion_acumulada,7629.06,mm
+precipitacion_acumulada,1271.51,mm
 precipitacion_media_diaria,3.480410583941606,mm/día
 humedad_relativa_media,74.96787408759126,%
 radiacion_media,18.263882299270072,kWh/m²/día
@@ -10,8 +10,8 @@ viento_medio,1.5182618613138685,m/s
 humedad_superficial_media,0.1868300734284966,m³/m³
 humedad_raiz_media,0.1371362815801407,m³/m³
 temperatura_suelo_media,18.37124590073191,°C
-dias_lluviosos,1031,días
-dias_secos,1161,días
+dias_lluviosos,171.83333333333334,días
+dias_secos,193.5,días
 porcentaje_dias_secos,52.965328467153284,%
 mes_mayor_precipitacion,Marzo,mes
 precipitacion_mes_mayor,152.89833333333334,mm

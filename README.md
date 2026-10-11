@@ -31,7 +31,13 @@ Agregar una región nueva es cuestión de datos, no de código: solo hay que sum
 
 ```
 AgroShift/
-├── app.py                          # App web (Streamlit) — selector de región + MVP
+├── app.py                          # Punto de entrada Streamlit: encabezado, selector de región, pestañas
+├── ui/                             # Capa de presentación
+│   ├── theme.py                    #   paleta, CSS y plantilla de gráficos
+│   ├── components.py               #   tarjetas, KPI, insignias, avisos
+│   ├── data.py                     #   carga y caché de datos por región
+│   └── views/                      #   una vista por pestaña (inicio, clima, cultivos, agua, rotacion, metodologia)
+├── .streamlit/config.toml          # Tema (colores y tipografía) de la app
 ├── requirements.txt                # Dependencias de la app (Streamlit Cloud las usa)
 ├── python/
 │   ├── requirements.txt            # Dependencias del pipeline de análisis
@@ -74,6 +80,8 @@ La lógica científica de cada script (cálculos FAO-56, balance hídrico, clasi
 | `agroshift/config.py` | **Singleton / Config centralizado** | Un único `Settings` con rutas base, en vez de repetir `BASE_DIR = Path(__file__)...` en cada script |
 | `agroshift/regions.py` | **Registro / Value Object** | `Region` (coordenadas, altitud, celda de grilla SMAP) por cada punto soportado — agregar una región nueva es agregar una entrada aquí |
 | `agroshift/repository.py` | **Repository** | `DataRepository(region=...)` para leer los CSV de resultados de una región por nombre lógico (lo usa `app.py`), sin que el consumidor conozca la ruta física |
+| `agroshift/recommender.py` | **Servicio de dominio** | Convierte las prioridades del agricultor en un ranking de rotaciones: fiabilidad histórica, descarte de cultivos no aptos para el clima y mejor mes de inicio — sin dependencias de Streamlit, para poder probarlo aparte |
+| `agroshift/crops.py` | **Presentación de dominio** | Nombres comunes e íconos de los cultivos (ECOCROP los nombra por especie) |
 | `agroshift/sources/` | **Strategy** | `DataSource` (interfaz común `fetch()`) con `PowerDataSource`, `SmapDataSource`, `EcocropDataSource` — cada origen externo se puede invocar de forma intercambiable |
 | `agroshift/pipeline/` | **Pipeline / Chain of Responsibility** | `Pipeline` ejecuta una lista ordenada de `PipelineStep`, mide tiempos, se detiene en el primer error y reporta un resumen — reemplaza correr cada script a mano |
 
