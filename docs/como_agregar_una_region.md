@@ -34,7 +34,9 @@ python agregar_region.py \
   Sin esta opción solo la registra (en `python/data/regiones_adicionales.json`).
 
 El pipeline de una región modelada ejecuta: NASA POWER → suelo (SoilGrids,
-opcional) → análisis 06–17. No descarga SMAP ni vuelve a bajar ECOCROP si ya
+opcional) → lluvia IMERG y totales CHIRPS (opcionales; requieren Earthdata y
+~30 min la primera vez, porque cada archivo diario de IMERG es global) →
+análisis 06–19. No descarga SMAP ni vuelve a bajar ECOCROP si ya
 existe.
 
 Al terminar, la región aparece sola en el selector de la app (se listan las

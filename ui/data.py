@@ -57,5 +57,8 @@ def cargar_region(region_slug: str) -> dict:
         "escenarios": repo.analysis("escenarios_app.csv.gz"),
         "etapas": repo.analysis("resumen_etapas_rotacion_v10.csv"),
         "suelo": cargar_suelo(region_slug),
+        "fuente_lluvia": (
+            str(diario["fuente_lluvia"].iloc[0]) if "fuente_lluvia" in diario.columns else "NASA POWER"
+        ),
         "validacion_lluvia": _validacion_lluvia(region_slug),
     }

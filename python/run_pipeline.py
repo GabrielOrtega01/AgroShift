@@ -31,6 +31,8 @@ ADQUISICION = [
     PipelineStep("ecocrop-catalogo", "04_descargar_catalogo_ecocrop.py", "Descarga catálogo FAO ECOCROP"),
     PipelineStep("ecocrop-caracteristicas", "05_extraer_caracteristicas_ecocrop.py", "Extrae características por cultivo"),
     PipelineStep("suelo", "18_descargar_suelo_soilgrids.py", "Descarga suelo estimado (ISRIC SoilGrids)", opcional=True),
+    PipelineStep("imerg", "20_descargar_imerg.py", "Descarga lluvia diaria NASA GPM IMERG", opcional=True),
+    PipelineStep("lluvia-referencia", "validar_precipitacion.py", "Totales mensuales CHIRPS para ajustar IMERG", opcional=True),
 ]
 
 # La humedad del suelo se mide con SMAP, salvo en regiones "modelo".

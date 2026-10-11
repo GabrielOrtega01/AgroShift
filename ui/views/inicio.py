@@ -61,7 +61,8 @@ def render(data: dict, region: Region) -> None:
     with k1:
         kpi(t("kpi.temperatura"), f"{ind['temperatura_media_anual']:.1f}", "°C", t("kpi.temperatura_ayuda"))
     with k2:
-        kpi(t("kpi.lluvia"), f"{ind['precipitacion_acumulada']:.0f}", "mm", t("kpi.lluvia_ayuda"))
+        kpi(t("kpi.lluvia"), f"{ind['precipitacion_acumulada']:.0f}", "mm",
+            t("kpi.lluvia_ayuda", fuente=data["fuente_lluvia"].split(" (")[0]))
     with k3:
         kpi(t("kpi.dias_lluvia"), f"{ind['dias_lluviosos']:.0f}", t("kpi.al_anio"), t("kpi.dias_lluvia_ayuda"))
     with k4:

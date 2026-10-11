@@ -35,18 +35,21 @@ Agregar una región es cuestión de datos, no de código: ver [`docs/como_agrega
 
 | Fuente | Variable | Uso |
 |---|---|---|
-| [NASA POWER](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) | Temperatura, precipitación, humedad, viento, radiación (diario) | Clima base y cálculo de ETo/ETc |
+| [NASA POWER](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) | Temperatura, humedad, viento, radiación (diario) | Clima base y cálculo de ETo/ETc |
+| [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) | Lluvia diaria (satélite + pluviómetros, 0,1°) | **Fuente de la lluvia**, con la magnitud ajustada a CHIRPS |
 | [NASA SMAP L4](https://nsidc.org/data/spl4smgp/versions/8) | Humedad del suelo superficial y de zona radicular | Estado hídrico del suelo |
 | [FAO ECOCROP](https://www.fao.org/geospatial/data-and-tools/data-portals/ecocrop/) | Requerimientos de temperatura, lluvia, pH, ciclo por cultivo | Compatibilidad climática de cultivos |
 | [ISRIC SoilGrids](https://soilgrids.org/) | Textura, pH y carbono orgánico del suelo (0–30 cm, 250 m) | Suelo de la región y alertas de pH |
-| [CHIRPS](https://www.chc.ucsb.edu/data/chirps) | Lluvia mensual (satélite + pluviómetros) | Validación de la lluvia de NASA POWER |
+| [CHIRPS](https://www.chc.ucsb.edu/data/chirps) | Lluvia mensual (satélite + pluviómetros) | Referencia para ajustar la magnitud de IMERG y validar |
 
 ## Calidad de los datos y límites
 
-Se contrastó la lluvia de NASA POWER con CHIRPS (`python/validar_precipitacion.py`, resultados en `python/data/validation/`):
+La lluvia es la de **NASA GPM IMERG**, con la magnitud ajustada a los totales mensuales de CHIRPS. Se compararon las tres fuentes (`python/validar_precipitacion.py`, resultados en `python/data/validation/`):
 
-- Los totales anuales de POWER difieren de CHIRPS de forma importante en varias regiones de montaña (p. ej. Boyacá y Quindío), y en Santander **2021 sale ~70 % más seco** que en CHIRPS. Las rotaciones se comparan entre sí con los mismos datos, pero los **milímetros absolutos son aproximados**. La app muestra esta comparación en la pestaña *Cómo funciona*.
-- La humedad modelada (usada en 4 regiones) se contrastó con SMAP en las 4 regiones que lo tienen (`python/validar_humedad_modelo.py`): la climatología mensual correlaciona r = 0,41–0,92 y el orden diario (Spearman) 0,29–0,64; es la más débil en Boyacá. Es una estimación, no una medición.
+- **NASA POWER se descartó para la lluvia:** correlación mensual con CHIRPS r = 0,44–0,81 (media 0,66), 2021 sale ~70 % más seco en Santander y Boyacá queda 2× más húmeda.
+- **IMERG sin ajustar** sigue mejor la variación entre meses y años (r = 0,62–0,92, media 0,77), pero **sobrestima los totales** en varias zonas de montaña (Santander +81 %, Valle +74 %, Nariño +109 %, Cundinamarca +124 %). Por eso se conserva su distribución diaria y se escala cada mes a CHIRPS, que coincide mejor con las climatologías conocidas.
+- Los **milímetros absolutos siguen siendo aproximados** (no se validó contra estaciones del IDEAM) y 92 de 2.192 días no tienen archivo IMERG: ahí se usa NASA POWER. La app muestra la comparación en la pestaña *Cómo funciona*.
+- La humedad modelada (usada en 4 regiones) se contrastó con SMAP en las 4 regiones que lo tienen (`python/validar_humedad_modelo.py`): la climatología mensual correlaciona r = 0,69–0,96 y el orden diario (Spearman) 0,65–0,82. Es una estimación, no una medición.
 - El suelo es una estimación global (SoilGrids): confirma pH y fertilidad con un análisis de laboratorio.
 - Cada región es un **punto de referencia**, no la finca exacta. No se consideran precios, costos ni plagas.
 - **Temperatura ajustada a la altitud:** NASA POWER entrega la temperatura de una celda de ~50 km a su elevación media (p. ej. 2.112 m para un punto del valle del Cauca que está a 1.000 m); se ajusta al punto con el gradiente estándar de 6,5 °C/km (`agroshift/downscaling.py`). Con el ajuste, las temperaturas medias de las 8 regiones coinciden con las conocidas (±1 °C).
@@ -71,7 +74,8 @@ AgroShift/
 └── python/
     ├── run_pipeline.py             # Orquestador: --region, --fecha-inicio, --fecha-fin
     ├── agregar_region.py           # Registra una región nueva (humedad modelada)
-    ├── validar_precipitacion.py    # POWER vs CHIRPS
+    ├── validar_precipitacion.py    # IMERG y POWER vs CHIRPS; totales mensuales para ajustar IMERG
+    ├── 20_descargar_imerg.py       # lluvia diaria NASA GPM IMERG (opcional, requiere Earthdata)
     ├── agroshift/                  # Paquete de soporte (arquitectura, ver abajo)
     ├── 01_descargar_nasa_power.py  # ── Adquisición de datos ──
     ├── 02_descargar_nasa_smap.py
@@ -94,7 +98,8 @@ AgroShift/
     └── data/
         ├── power/                   # Crudo NASA POWER, por región
         ├── soil/                    # Suelo estimado por región (SoilGrids)
-        ├── validation/              # POWER vs CHIRPS
+        ├── imerg/                   # Lluvia diaria IMERG por región
+        ├── validation/              # IMERG y POWER vs CHIRPS
         ├── analysis/<region>/       # CSVs y gráficas generadas, por región
         └── crops/                   # Catálogo de cultivos y compatibilidad ECOCROP (global)
 ```
@@ -113,6 +118,7 @@ La lógica científica de cada script (cálculos FAO-56, balance hídrico, clasi
 | `recommender.py` | **Servicio de dominio** | Prioridades del agricultor → ranking de rotaciones (fiabilidad histórica, descarte de cultivos no aptos, mejor mes de inicio), sin dependencias de Streamlit |
 | `hydrology.py` | **Servicio de dominio** | ETo FAO-56 reutilizable y humedad del suelo modelada (balance de balde) |
 | `soil.py` / `water.py` / `crops.py` | **Dominio** | Lectura agronómica del suelo, balance de agua por cultivo, nombres comunes |
+| `imerg.py` | **Dominio** | Lluvia diaria: IMERG ajustada a totales mensuales, con respaldo en POWER |
 | `sources/` | **Strategy** | `DataSource.fetch()` con POWER, SMAP, ECOCROP y SoilGrids |
 | `pipeline/` | **Pipeline / Chain of Responsibility** | `Pipeline` ejecuta pasos ordenados, mide tiempos, se detiene en el primer error (salvo pasos *opcionales*) |
 | `retry.py` | **Retry con backoff** | Reintenta errores de red transitorios |

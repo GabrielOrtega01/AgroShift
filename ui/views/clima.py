@@ -19,7 +19,7 @@ def render(data: dict, region: Region) -> None:
     a0, a1 = diario["anio"].min(), diario["anio"].max()
 
     st.subheader(t("clima.titulo"))
-    st.caption(t("clima.intro", a0=a0, a1=a1))
+    st.caption(t("clima.intro", a0=a0, a1=a1, fuente=data["fuente_lluvia"].split(" (")[0]))
     if region.humedad_modelada:
         aviso(t("aviso.humedad_modelada"))
 

@@ -20,18 +20,18 @@ def _calidad_lluvia(data: dict, region: Region) -> None:
         st.caption(t("met.calidad_sin_datos"))
         return
 
-    peor = tabla.loc[tabla["diferencia_pct"].abs().idxmax()]
-    medio = tabla["diferencia_pct"].abs().mean()
+    peor = tabla.loc[tabla["diferencia_imerg_pct"].abs().idxmax()]
+    medio = tabla["diferencia_imerg_pct"].abs().mean()
     if medio >= UMBRAL_DIFERENCIA_PCT:
         aviso(t("met.calidad_alerta", region=region_corto(region), medio=medio,
-                anio=int(peor["anio"]), dif=peor["diferencia_pct"]))
+                anio=int(peor["anio"]), dif=peor["diferencia_imerg_pct"]))
     else:
         aviso(t("met.calidad_ok", medio=medio), tipo="info")
 
     st.dataframe(
-        tabla[["anio", "power_mm", "chirps_mm", "diferencia_pct"]].rename(columns={
-            "anio": t("col.anio"), "power_mm": t("col.power_mm"),
-            "chirps_mm": t("col.chirps_mm"), "diferencia_pct": t("col.diferencia_pct"),
+        tabla[["anio", "imerg_mm", "power_mm", "chirps_mm", "diferencia_imerg_pct"]].rename(columns={
+            "anio": t("col.anio"), "imerg_mm": t("col.imerg_mm"), "power_mm": t("col.power_mm"),
+            "chirps_mm": t("col.chirps_mm"), "diferencia_imerg_pct": t("col.diferencia_imerg_pct"),
         }),
         hide_index=True, width="stretch",
     )
@@ -70,6 +70,7 @@ def render(data: dict, region: Region) -> None:
     st.dataframe(
         [
             {t("col.fuente"): "NASA POWER", t("col.aporta"): t("met.fuente_power"), t("col.resolucion"): t("met.res_power")},
+            {t("col.fuente"): "NASA GPM IMERG", t("col.aporta"): t("met.fuente_imerg"), t("col.resolucion"): t("met.res_imerg")},
             {t("col.fuente"): "NASA SMAP L4", t("col.aporta"): t("met.fuente_smap"), t("col.resolucion"): t("met.res_smap")},
             {t("col.fuente"): "FAO ECOCROP", t("col.aporta"): t("met.fuente_ecocrop"), t("col.resolucion"): t("met.res_ecocrop")},
             {t("col.fuente"): "ISRIC SoilGrids", t("col.aporta"): t("met.fuente_suelo"), t("col.resolucion"): t("met.res_suelo")},

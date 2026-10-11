@@ -1,9 +1,10 @@
-"""Contrasta la lluvia de NASA POWER con CHIRPS, una fuente independiente.
+"""Contrasta la lluvia de NASA GPM IMERG y NASA POWER con CHIRPS.
 
-NASA POWER devuelve para 2021 totales muy bajos en las 4 regiones. Este
-script baja los mosaicos mensuales de CHIRPS v2 (satélite + pluviómetros,
-0.05°, público y sin credenciales), toma el píxel de cada región y compara
-totales mensuales y anuales con los de POWER.
+NASA POWER devuelve para 2021 totales muy bajos en las 4 primeras regiones.
+Este script baja los mosaicos mensuales de CHIRPS v2 (satélite +
+pluviómetros, 0.05°, público y sin credenciales), toma el píxel de cada
+región y compara totales mensuales y anuales con NASA POWER y con NASA GPM
+IMERG (la lluvia que usa el pipeline, con POWER en los días sin dato).
 
 La comparación diaria no es informativa (la lluvia tropical es muy local),
 por eso se compara a escala mensual.
@@ -18,6 +19,7 @@ Uso:
 
 import gzip
 import io
+import sys
 import urllib.request
 from pathlib import Path
 
@@ -25,6 +27,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
+from agroshift.imerg import cargar_lluvia_imerg
 from agroshift.regions import REGIONS
 from agroshift.retry import con_reintentos
 
@@ -55,13 +58,38 @@ def valores_mes(anio: int, mes: int) -> dict[str, float]:
     return valores
 
 
+def _ya_completo() -> bool:
+    ruta = SALIDA / "precipitacion_mensual.csv"
+    if not ruta.exists():
+        return False
+    tabla = pd.read_csv(ruta)
+    return set(REGIONS) <= set(tabla["region"]) and tabla["imerg_mm"].notna().any()
+
+
 def main() -> None:
+    if _ya_completo() and "--forzar" not in sys.argv:
+        print("precipitacion_mensual.csv ya incluye todas las regiones (use --forzar para rehacerlo).")
+        return
     power = {}
     for region in REGIONS.values():
         serie = pd.read_csv(
             BASE / "data" / "power" / f"nasa_power_{region.slug}.csv", parse_dates=["DATE"]
         ).set_index("DATE")["PRECTOTCORR"]
         power[region.slug] = serie.groupby([serie.index.year, serie.index.month]).sum()
+
+    imerg = {}
+    for region in REGIONS.values():
+        diaria = cargar_lluvia_imerg(region.slug)
+        if diaria is None:
+            continue
+        bruta = pd.read_csv(
+            BASE / "data" / "power" / f"nasa_power_{region.slug}.csv", parse_dates=["DATE"]
+        ).set_index("DATE")["PRECTOTCORR"]
+        iserie = pd.Series(
+            diaria["IMERG_PRECIP"].to_numpy(), index=pd.to_datetime(diaria["fecha"])
+        ).reindex(bruta.index)
+        iserie = iserie.fillna(bruta)  # igual que el pipeline: POWER donde falta IMERG
+        imerg[region.slug] = iserie.groupby([iserie.index.year, iserie.index.month]).sum()
 
     anios = sorted({a for serie in power.values() for a, _ in serie.index})
     filas = []
@@ -73,6 +101,7 @@ def main() -> None:
                     {
                         "region": slug, "anio": anio, "mes": mes,
                         "power_mm": round(power[slug].get((anio, mes), np.nan), 1),
+                        "imerg_mm": round(imerg[slug].get((anio, mes), np.nan), 1) if slug in imerg else np.nan,
                         "chirps_mm": round(chirps[slug], 1),
                     }
                 )
@@ -80,9 +109,12 @@ def main() -> None:
 
     mensual = pd.DataFrame(filas)
     anual = (
-        mensual.groupby(["region", "anio"])[["power_mm", "chirps_mm"]].sum().reset_index()
+        mensual.groupby(["region", "anio"])[["power_mm", "imerg_mm", "chirps_mm"]]
+        .sum(min_count=1)
+        .reset_index()
     )
-    anual["diferencia_pct"] = ((anual["power_mm"] / anual["chirps_mm"] - 1) * 100).round(1)
+    anual["diferencia_power_pct"] = ((anual["power_mm"] / anual["chirps_mm"] - 1) * 100).round(1)
+    anual["diferencia_imerg_pct"] = ((anual["imerg_mm"] / anual["chirps_mm"] - 1) * 100).round(1)
 
     SALIDA.mkdir(parents=True, exist_ok=True)
     mensual.to_csv(SALIDA / "precipitacion_mensual.csv", index=False)
@@ -90,9 +122,9 @@ def main() -> None:
 
     print("\nTotales anuales (mm):")
     print(anual.to_string(index=False))
-    print("\nCorrelación mensual POWER vs CHIRPS:")
+    print("\nCorrelación mensual contra CHIRPS (POWER | IMERG):")
     for slug, g in mensual.groupby("region"):
-        print(f"  {slug:10s} r = {g['power_mm'].corr(g['chirps_mm']):.2f}")
+        print(f"  {slug:13s} {g['power_mm'].corr(g['chirps_mm']):.2f} | {g['imerg_mm'].corr(g['chirps_mm']):.2f}")
     print(f"\nGuardado en {SALIDA}")
 
 

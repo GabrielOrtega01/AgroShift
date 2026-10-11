@@ -17,7 +17,7 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "Decide qué sembrar y en qué orden, usando el clima y la humedad del suelo medidos por satélites de la NASA.",
         "Decide what to plant and in what order, using climate and soil moisture measured by NASA satellites.",
     ),
-    "hero.chip_nasa": ("🛰️ NASA POWER + SMAP", "🛰️ NASA POWER + SMAP"),
+    "hero.chip_nasa": ("🛰️ NASA POWER + GPM + SMAP", "🛰️ NASA POWER + GPM + SMAP"),
     "hero.chip_fao": ("🌾 FAO ECOCROP", "🌾 FAO ECOCROP"),
     "hero.chip_historial": ("📅 Historial 2020–2025", "📅 Record 2020–2025"),
     "sel.region": ("📍 ¿Dónde está tu finca?", "📍 Where is your farm?"),
@@ -55,8 +55,8 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "1. Choose your region.\n2. Review climate, crops and water.\n3. In **My rotation**, tell us your priorities.",
     ),
     "side.datos": (
-        "Datos: NASA POWER · NASA SMAP · FAO ECOCROP · ISRIC SoilGrids",
-        "Data: NASA POWER · NASA SMAP · FAO ECOCROP · ISRIC SoilGrids",
+        "Datos: NASA POWER · NASA GPM IMERG · NASA SMAP · FAO ECOCROP · ISRIC SoilGrids",
+        "Data: NASA POWER · NASA GPM IMERG · NASA SMAP · FAO ECOCROP · ISRIC SoilGrids",
     ),
     "side.reto": ("NASA Space Apps Challenge 2026", "NASA Space Apps Challenge 2026"),
     # ------------------------------------------------------------ niveles y estados
@@ -128,7 +128,7 @@ TEXTOS: dict[str, tuple[str, str]] = {
     "kpi.temperatura": ("🌡️ Temperatura media", "🌡️ Mean temperature"),
     "kpi.temperatura_ayuda": ("Promedio de todo el historial", "Average over the whole record"),
     "kpi.lluvia": ("🌧️ Lluvia al año", "🌧️ Rainfall per year"),
-    "kpi.lluvia_ayuda": ("Promedio anual (NASA POWER)", "Annual average (NASA POWER)"),
+    "kpi.lluvia_ayuda": ("Promedio anual ({fuente})", "Annual average ({fuente})"),
     "kpi.dias_lluvia": ("☔ Días de lluvia", "☔ Rainy days"),
     "kpi.dias_lluvia_ayuda": ("Días con 1 mm o más", "Days with 1 mm or more"),
     "kpi.al_anio": ("al año", "per year"),
@@ -138,10 +138,10 @@ TEXTOS: dict[str, tuple[str, str]] = {
     # ------------------------------------------------------------ clima
     "clima.titulo": ("El clima de tu región mes a mes", "Your region's climate, month by month"),
     "clima.intro": (
-        "Promedios de {a0} a {a1} (NASA POWER para el clima y NASA SMAP para la humedad del suelo). "
-        "Úsalos para saber cuándo esperar lluvias y cuándo vigilar el riego.",
-        "Averages for {a0}–{a1} (NASA POWER for climate and NASA SMAP for soil moisture). "
-        "Use them to know when to expect rain and when to watch irrigation.",
+        "Promedios de {a0} a {a1} (NASA POWER para el clima, {fuente} para la lluvia y NASA SMAP para "
+        "la humedad del suelo). Úsalos para saber cuándo esperar lluvias y cuándo vigilar el riego.",
+        "Averages for {a0}–{a1} (NASA POWER for climate, {fuente} for rainfall and NASA SMAP for soil "
+        "moisture). Use them to know when to expect rain and when to watch irrigation.",
     ),
     "clima.maxima": ("Máxima", "Maximum"),
     "clima.minima": ("Mínima", "Minimum"),
@@ -418,6 +418,8 @@ TEXTOS: dict[str, tuple[str, str]] = {
     "col.aporta": ("Qué aporta", "What it provides"),
     "col.resolucion": ("Resolución", "Resolution"),
     "col.power_mm": ("NASA POWER (mm)", "NASA POWER (mm)"),
+    "col.imerg_mm": ("IMERG sin ajustar (mm)", "Unadjusted IMERG (mm)"),
+    "col.diferencia_imerg_pct": ("IMERG vs CHIRPS (%)", "IMERG vs CHIRPS (%)"),
     "col.chirps_mm": ("CHIRPS (mm)", "CHIRPS (mm)"),
     "col.diferencia_pct": ("Diferencia (%)", "Difference (%)"),
     # ------------------------------------------------------------ cómo funciona
@@ -428,10 +430,12 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "AgroShift **does not guess**: it combines satellite measurements with the known needs of each "
         "crop. These are the steps.",
     ),
-    "met.p1_titulo": ("Medimos el clima", "We measure the climate"),
+    "met.p1_titulo": ("Medimos el clima y la lluvia", "We measure climate and rainfall"),
     "met.p1_texto": (
-        "Temperatura (ajustada a la altitud), lluvia, viento y radiación diaria desde 2020 (NASA POWER).",
-        "Daily temperature (adjusted to elevation), rainfall, wind and radiation since 2020 (NASA POWER).",
+        "Temperatura (ajustada a la altitud), viento y radiación diaria (NASA POWER) y lluvia diaria "
+        "(NASA GPM IMERG) desde 2020.",
+        "Daily temperature (adjusted to elevation), wind and radiation (NASA POWER) and daily rainfall "
+        "(NASA GPM IMERG) since 2020.",
     ),
     "met.p2_titulo": ("Medimos el suelo", "We measure the soil"),
     "met.p2_texto": (
@@ -504,31 +508,42 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "Estimated soil texture, pH and organic carbon (0–30 cm)",
     ),
     "met.res_suelo": ("250 m", "250 m"),
+    "met.fuente_imerg": (
+        "Lluvia diaria satelital calibrada con pluviómetros (fuente de la lluvia de AgroShift)",
+        "Daily satellite rainfall calibrated with rain gauges (AgroShift's rainfall source)",
+    ),
+    "met.res_imerg": ("~10 km, diaria", "~10 km, daily"),
     "met.fuente_chirps": (
-        "Lluvia satelital calibrada con pluviómetros, usada para validar NASA POWER",
-        "Satellite rainfall calibrated with rain gauges, used to validate NASA POWER",
+        "Totales mensuales de lluvia (satélite + pluviómetros): referencia para ajustar la magnitud de IMERG",
+        "Monthly rainfall totals (satellite + rain gauges): reference to adjust IMERG's magnitude",
     ),
     "met.res_chirps": ("5 km, mensual", "5 km, monthly"),
     "met.calidad_titulo": ("Calidad de los datos de lluvia", "Rainfall data quality"),
     "met.calidad_texto": (
-        "Para comprobar la lluvia de NASA POWER la comparamos con CHIRPS, otra fuente satelital calibrada "
-        "con pluviómetros. Las fuentes de lluvia pueden diferir mucho en zonas de montaña, así que conviene "
-        "leer las cifras absolutas con cautela.",
-        "To check NASA POWER rainfall we compare it with CHIRPS, another satellite source calibrated with "
-        "rain gauges. Rainfall products can differ a lot in mountainous areas, so absolute figures should "
-        "be read with caution.",
+        "La lluvia que usa AgroShift es la de **NASA GPM IMERG**, que sigue bien los años secos y húmedos, "
+        "con su magnitud ajustada a los totales mensuales de **CHIRPS** (satélite + pluviómetros) porque "
+        "IMERG sin ajustar sobrestima la lluvia en varias zonas de montaña. NASA POWER se descartó para la "
+        "lluvia: no reproducía bien la variación entre años. La tabla compara las tres fuentes.",
+        "The rainfall AgroShift uses is **NASA GPM IMERG**, which follows dry and wet years well, with its "
+        "magnitude adjusted to the monthly totals of **CHIRPS** (satellite + rain gauges) because "
+        "unadjusted IMERG overestimates rainfall in several mountain areas. NASA POWER was dropped for "
+        "rainfall: it did not reproduce year-to-year variation well. The table compares the three sources.",
     ),
     "met.calidad_alerta": (
-        "<b>Atención:</b> en {region}, los totales anuales de NASA POWER difieren en promedio "
-        "<b>{medio:.0f} %</b> de CHIRPS (el año más distinto fue {anio}: {dif:+.0f} %). Las rotaciones se "
-        "comparan entre sí con los mismos datos, pero los milímetros absolutos son aproximados.",
-        "<b>Heads up:</b> in {region}, NASA POWER annual totals differ on average <b>{medio:.0f} %</b> from "
-        "CHIRPS (the most different year was {anio}: {dif:+.0f} %). Rotations are compared with each other "
-        "using the same data, but absolute millimetres are approximate.",
+        "<b>Atención:</b> en {region}, los totales anuales de IMERG sin ajustar difieren en promedio "
+        "<b>{medio:.0f} %</b> de CHIRPS (el año más distinto fue {anio}: {dif:+.0f} %). Por eso se ajusta "
+        "su magnitud; aun así, los milímetros absolutos son aproximados y las rotaciones se comparan entre "
+        "sí con los mismos datos.",
+        "<b>Heads up:</b> in {region}, unadjusted IMERG annual totals differ on average <b>{medio:.0f} %</b> "
+        "from CHIRPS (the most different year was {anio}: {dif:+.0f} %). That is why its magnitude is "
+        "adjusted; absolute millimetres are still approximate and rotations are compared with each other "
+        "on the same data.",
     ),
     "met.calidad_ok": (
-        "Los totales anuales de NASA POWER difieren en promedio solo <b>{medio:.0f} %</b> de CHIRPS: buena concordancia.",
-        "NASA POWER annual totals differ on average by only <b>{medio:.0f} %</b> from CHIRPS: good agreement.",
+        "Los totales anuales de IMERG sin ajustar difieren en promedio solo <b>{medio:.0f} %</b> de "
+        "CHIRPS: buena concordancia.",
+        "Unadjusted IMERG annual totals differ on average by only <b>{medio:.0f} %</b> from CHIRPS: good "
+        "agreement.",
     ),
     "met.calidad_sin_datos": (
         "Aún no hay comparación disponible para esta región.",

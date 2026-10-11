@@ -65,3 +65,6 @@ python/data/analysis/*/smap_historico_progreso.csv
 # La app usa escenarios_app.csv.gz (paso 19), una versión liviana del archivo grande.
 python/data/analysis/*/escenarios_priorizados_v9.csv
 python/data/analysis/*/*.png
+
+# Lluvia IMERG: progreso de la descarga
+python/data/imerg/_progreso.csv

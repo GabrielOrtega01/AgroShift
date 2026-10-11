@@ -9,6 +9,11 @@ from agroshift.downscaling import (
     cargar_elevacion_celda,
     corregir_por_altitud,
 )
+from agroshift.imerg import (
+    cargar_lluvia_imerg,
+    cargar_totales_chirps,
+    combinar_lluvia,
+)
 from agroshift.regions import get_region
 
 REGION = get_region(os.environ.get("AGROSHIFT_REGION", "santander"))
@@ -88,6 +93,21 @@ smap["fecha"] = pd.to_datetime(
 ).dt.date
 
 
+# La lluvia sale de NASA GPM IMERG (paso 20) con la magnitud ajustada a los
+# totales mensuales de CHIRPS; NASA POWER la completa en los días sin dato.
+# AGROSHIFT_FUENTE_LLUVIA: "imerg_ajustada" (por defecto), "imerg" o "power".
+fuente_lluvia = os.environ.get("AGROSHIFT_FUENTE_LLUVIA", "imerg_ajustada").lower()
+lluvia_imerg = None if fuente_lluvia == "power" else cargar_lluvia_imerg(REGION.slug)
+totales_chirps = cargar_totales_chirps(REGION.slug) if fuente_lluvia == "imerg_ajustada" else None
+power = combinar_lluvia(power, lluvia_imerg, totales_chirps)
+print(f"Fuente de lluvia: {power['fuente_lluvia'].iloc[0]}")
+if lluvia_imerg is not None:
+    cubiertos = power["fecha"].isin(set(lluvia_imerg["fecha"])).sum()
+    print(f"Días con IMERG: {cubiertos} de {len(power)} (el resto, NASA POWER)")
+if lluvia_imerg is not None and totales_chirps is None and fuente_lluvia == "imerg_ajustada":
+    print("ADVERTENCIA: sin totales CHIRPS para esta región; IMERG sin ajustar.")
+
+
 # ============================================================
 # 3. FILTRAR AL RANGO SOLICITADO
 # ============================================================
@@ -159,7 +179,9 @@ columnas_power = [
     "PRECTOTCORR",
     "RH2M",
     "WS10M",
-    "ALLSKY_SFC_SW_DWN"
+    "ALLSKY_SFC_SW_DWN",
+    "PRECTOTCORR_POWER",
+    "fuente_lluvia"
 ]
 
 columnas_power = [

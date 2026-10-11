@@ -35,18 +35,21 @@ Adding a region is a data task, not a code task: see [`docs/como_agregar_una_reg
 
 | Source | Variables | Used for |
 |---|---|---|
-| [NASA POWER](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) | Daily temperature, rainfall, humidity, wind, radiation | Base climate and ETo/ETc |
+| [NASA POWER](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) | Daily temperature, humidity, wind, radiation | Base climate and ETo/ETc |
+| [NASA GPM IMERG](https://gpm.nasa.gov/data/imerg) | Daily rainfall (satellite + rain gauges, 0.1°) | **Rainfall source**, magnitude adjusted to CHIRPS |
 | [NASA SMAP L4](https://nsidc.org/data/spl4smgp/versions/8) | Surface and root-zone soil moisture | Soil water status |
 | [FAO ECOCROP](https://www.fao.org/geospatial/data-and-tools/data-portals/ecocrop/) | Per-crop temperature, rainfall, pH and cycle requirements | Crop climate suitability |
 | [ISRIC SoilGrids](https://soilgrids.org/) | Soil texture, pH, organic carbon (0–30 cm, 250 m) | Regional soil and pH warnings |
-| [CHIRPS](https://www.chc.ucsb.edu/data/chirps) | Monthly rainfall (satellite + rain gauges) | Validating NASA POWER rainfall |
+| [CHIRPS](https://www.chc.ucsb.edu/data/chirps) | Monthly rainfall (satellite + rain gauges) | Reference to adjust IMERG's magnitude and to validate |
 
 ## Data quality and limits
 
-NASA POWER rainfall was cross-checked against CHIRPS (`python/validar_precipitacion.py`, results in `python/data/validation/`):
+Rainfall is **NASA GPM IMERG**, with its magnitude adjusted to CHIRPS monthly totals. The three sources were compared (`python/validar_precipitacion.py`, results in `python/data/validation/`):
 
-- POWER annual totals differ substantially from CHIRPS in several mountain regions (e.g. Boyacá and Quindío), and in Santander **2021 is ~70 % drier** than in CHIRPS. Rotations are compared with each other on the same data, but **absolute millimetres are approximate**. The app shows this comparison in the *How it works* tab.
-- Modelled soil moisture (used in 4 regions) was checked against SMAP in the 4 regions that have it (`python/validar_humedad_modelo.py`): the monthly climatology correlates at r = 0.41–0.92 and the daily rank order (Spearman) at 0.29–0.64; it is weakest in Boyacá. It is an estimate, not a measurement.
+- **NASA POWER was dropped for rainfall:** monthly correlation with CHIRPS r = 0.44–0.81 (mean 0.66), 2021 is ~70 % drier in Santander and Boyacá comes out 2× wetter.
+- **Unadjusted IMERG** follows month-to-month and year-to-year variation better (r = 0.62–0.92, mean 0.77) but **overestimates totals** in several mountain areas (Santander +81 %, Valle +74 %, Nariño +109 %, Cundinamarca +124 %). So its daily distribution is kept and each month is scaled to CHIRPS, which matches known climatologies better.
+- **Absolute millimetres remain approximate** (not validated against IDEAM stations) and 92 of 2,192 days have no IMERG file: NASA POWER fills them. The app shows the comparison in the *How it works* tab.
+- Modelled soil moisture (used in 4 regions) was checked against SMAP in the 4 regions that have it (`python/validar_humedad_modelo.py`): the monthly climatology correlates at r = 0.69–0.96 and the daily rank order (Spearman) at 0.65–0.82. It is an estimate, not a measurement.
 - Soil is a global estimate (SoilGrids): confirm pH and fertility with a lab test.
 - Each region is a **reference point**, not an exact farm. Prices, costs and pests are not considered.
 - **Temperature adjusted to elevation:** NASA POWER returns the temperature of a ~50 km cell at its mean elevation (e.g. 2,112 m for a Cauca-valley point that sits at 1,000 m); it is adjusted to the point with the standard 6.5 °C/km lapse rate (`agroshift/downscaling.py`). After the adjustment, the mean temperatures of all 8 regions match known values (±1 °C).
