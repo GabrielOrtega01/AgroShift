@@ -4,28 +4,31 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from agroshift.crops import etiqueta
-from agroshift.regions import REGIONS, Region
+from agroshift.regions import REGIONS, Region, regiones_con_resultados
 from ui import theme
-from ui.components import kpi, lectura, semaforo, tarjeta
+from ui.components import aviso, kpi, lectura, semaforo, tarjeta
+from ui.i18n import cultivo, mes, region_corto, t
 
 
 def _mapa(region: Region):
+    propia, otras = t("inicio.mapa_tu_region"), t("inicio.mapa_otras")
     filas = pd.DataFrame(
         [
             {
-                "Región": r.nombre,
+                "Región": region_corto(r),
                 "lat": r.latitud,
                 "lon": r.longitud,
-                "Selección": "Tu región" if r.slug == region.slug else "Otras regiones",
+                "Selección": propia if r.slug == region.slug else otras,
             }
-            for r in REGIONS.values()
+            for slug, r in REGIONS.items()
+            if slug in regiones_con_resultados()
         ]
     )
     fig = px.scatter_map(
         filas, lat="lat", lon="lon", hover_name="Región", color="Selección",
-        color_discrete_map={"Tu región": theme.VERDE, "Otras regiones": theme.TIERRA},
-        zoom=4.4, center={"lat": 6.2, "lon": -74.6}, map_style="open-street-map",
+        color_discrete_map={propia: theme.VERDE, otras: theme.TIERRA},
+        zoom=5.0, map_style="open-street-map",
+        center={"lat": float(filas["lat"].mean()), "lon": float(filas["lon"].mean())},
     )
     fig.update_traces(marker=dict(size=16), hovertemplate="%{hovertext}<extra></extra>")
     theme.estilizar(fig, altura=330)
@@ -36,83 +39,74 @@ def _mapa(region: Region):
 def render(data: dict, region: Region) -> None:
     ind = data["indicadores"]
     diario = data["diario"]
-    compat = data["compatibilidad"].sort_values("compatibilidad_climatica", ascending=False)
+    compat = data["compatibilidad"].sort_values("compatibilidad", ascending=False)
 
-    st.subheader("¿Qué es AgroShift?")
-    st.markdown(
-        "Una herramienta que te ayuda a decidir **qué sembrar y en qué orden**. "
-        "Cruza el clima y la humedad del suelo que miden los satélites de la NASA "
-        "con lo que necesita cada cultivo, y te propone **rotaciones** que "
-        "aprovechan mejor el agua de tu región."
-    )
+    st.subheader(t("inicio.que_es"))
+    st.markdown(t("inicio.que_es_texto"))
     c1, c2, c3 = st.columns(3)
     with c1:
-        tarjeta("Elige tu región", "Usa el selector «¿Dónde está tu finca?» de arriba. Cada región tiene su propio clima e historial.", numero=1)
+        tarjeta(t("inicio.paso1_titulo"), t("inicio.paso1_texto"), numero=1)
     with c2:
-        tarjeta("Conoce tu clima y tus cultivos", "Revisa lluvias, temperaturas y qué cultivos se adaptan mejor.", numero=2)
+        tarjeta(t("inicio.paso2_titulo"), t("inicio.paso2_texto"), numero=2)
     with c3:
-        tarjeta("Recibe tu rotación", "Dinos qué es importante para ti y te mostramos las mejores opciones y cuándo iniciarlas.", numero=3)
+        tarjeta(t("inicio.paso3_titulo"), t("inicio.paso3_texto"), numero=3)
 
     st.write("")
-    st.subheader("Tu región de un vistazo")
-    st.caption(region.nombre)
+    st.subheader(t("inicio.vistazo"))
+    if region.humedad_modelada:
+        aviso(t("aviso.humedad_modelada"))
 
     n_anios = diario["anio"].nunique()
     k1, k2, k3, k4 = st.columns(4)
     with k1:
-        kpi("🌡️ Temperatura media", f"{ind['temperatura_media_anual']:.1f}", "°C", "Promedio de todo el historial")
+        kpi(t("kpi.temperatura"), f"{ind['temperatura_media_anual']:.1f}", "°C", t("kpi.temperatura_ayuda"))
     with k2:
-        kpi("🌧️ Lluvia al año", f"{ind['precipitacion_acumulada']:.0f}", "mm", "Promedio anual (NASA POWER)")
+        kpi(t("kpi.lluvia"), f"{ind['precipitacion_acumulada']:.0f}", "mm", t("kpi.lluvia_ayuda"))
     with k3:
-        kpi("☔ Días de lluvia", f"{ind['dias_lluviosos']:.0f}", "al año", "Días con 1 mm o más")
+        kpi(t("kpi.dias_lluvia"), f"{ind['dias_lluviosos']:.0f}", t("kpi.al_anio"), t("kpi.dias_lluvia_ayuda"))
     with k4:
-        kpi("🗓️ Historial", f"{n_anios}", "años", f"{diario['anio'].min()} a {diario['anio'].max()}, datos diarios")
+        kpi(t("kpi.historial"), f"{n_anios}", t("kpi.anios"),
+            t("kpi.historial_ayuda", a0=diario["anio"].min(), a1=diario["anio"].max()))
 
     st.write("")
     izq, der = st.columns([1.05, 1])
     with izq:
-        st.markdown("#### Lectura rápida")
-        lectura(
-            "🌧️",
-            f"En promedio llueve <b>{ind['precipitacion_acumulada']:.0f} mm al año</b>. "
-            f"El mes más lluvioso es <b>{ind['mes_mayor_precipitacion']}</b> "
-            f"({ind['precipitacion_mes_mayor']:.0f} mm) y el más seco "
-            f"<b>{ind['mes_menor_precipitacion']}</b> ({ind['precipitacion_mes_menor']:.0f} mm).",
-        )
-        lectura(
-            "🌡️",
-            f"Las temperaturas van de <b>{ind['temperatura_minima_anual']:.0f} °C</b> a "
-            f"<b>{ind['temperatura_maxima_anual']:.0f} °C</b>. El mes más cálido es "
-            f"<b>{ind['mes_mas_calido']}</b> y el más fresco <b>{ind['mes_mas_frio']}</b>.",
-        )
-        lectura(
-            "🌱",
-            f"La humedad del suelo es más alta en <b>{ind['mes_mayor_humedad_suelo']}</b> "
-            f"y más baja en <b>{ind['mes_menor_humedad_suelo']}</b>: "
-            "ahí conviene vigilar el riego.",
-        )
+        st.markdown(f"#### {t('inicio.lectura')}")
+        lectura("🌧️", t(
+            "inicio.lectura_lluvia", total=ind["precipitacion_acumulada"],
+            mes_max=mes(ind["mes_mayor_precipitacion"]), v_max=ind["precipitacion_mes_mayor"],
+            mes_min=mes(ind["mes_menor_precipitacion"]), v_min=ind["precipitacion_mes_menor"],
+        ))
+        lectura("🌡️", t(
+            "inicio.lectura_temperatura", tmin=ind["temperatura_minima_anual"],
+            tmax=ind["temperatura_maxima_anual"], caliente=mes(ind["mes_mas_calido"]),
+            frio=mes(ind["mes_mas_frio"]),
+        ))
+        lectura("🌱", t(
+            "inicio.lectura_suelo", alta=mes(ind["mes_mayor_humedad_suelo"]),
+            baja=mes(ind["mes_menor_humedad_suelo"]),
+        ))
         mejor = compat.iloc[0]
-        lectura(
-            "🌾",
-            f"El cultivo mejor adaptado a este clima es <b>{etiqueta(mejor['nombre'])}</b> "
-            f"({mejor['compatibilidad_climatica']:.0f} % de compatibilidad).",
-        )
+        lectura("🌾", t(
+            "inicio.lectura_cultivo", cultivo=cultivo(mejor["nombre"]),
+            pct=mejor["compatibilidad"],
+        ))
     with der:
         st.plotly_chart(_mapa(region), width="stretch", config={"displayModeBar": False})
 
     st.write("")
-    st.markdown("#### Los 3 cultivos que mejor se adaptan")
+    st.markdown(f"#### {t('inicio.top3')}")
     columnas = st.columns(3)
     for col, (_, fila) in zip(columnas, compat.head(3).iterrows()):
-        nivel, color = semaforo(fila["compatibilidad_climatica"])
+        nivel, color = semaforo(fila["compatibilidad"])
         with col:
             st.markdown(
                 f"""<div class="as-card">
 <div class="as-muted">{nivel}</div>
-<div class="as-big" style="color:{color}">{fila['compatibilidad_climatica']:.0f}%</div>
-<h4>{etiqueta(fila['nombre'])}</h4>
-<p>Ciclo de {fila['ciclo_min_dias']:.0f}–{fila['ciclo_max_dias']:.0f} días</p>
+<div class="as-big" style="color:{color}">{fila['compatibilidad']:.0f}%</div>
+<h4>{cultivo(fila['nombre'])}</h4>
+<p>{t('inicio.ciclo', min=fila['ciclo_min_dias'], max=fila['ciclo_max_dias'])}</p>
 </div>""",
                 unsafe_allow_html=True,
             )
-    st.info("Siguiente paso: abre la pestaña **🔄 Mi rotación** y dinos qué es importante para ti.")
+    st.info(t("inicio.siguiente"))

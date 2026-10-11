@@ -4,6 +4,8 @@ from html import escape
 
 import streamlit as st
 
+from ui.i18n import t
+
 
 def html(contenido: str) -> None:
     """Renderiza HTML. Se quita la sangría de cada línea: Markdown trata
@@ -73,12 +75,13 @@ def lectura(icono: str, texto: str) -> None:
     )
 
 
+NIVELES = [(80, "nivel.excelente", "#2E7D32"), (60, "nivel.buena", "#7CB342"),
+           (40, "nivel.regular", "#F9A825"), (0, "nivel.baja", "#E53935")]
+
+
 def semaforo(porcentaje: float) -> tuple[str, str]:
     """(etiqueta, color) para un puntaje de 0 a 100."""
-    if porcentaje >= 80:
-        return "Excelente", "#2E7D32"
-    if porcentaje >= 60:
-        return "Buena", "#7CB342"
-    if porcentaje >= 40:
-        return "Regular", "#F9A825"
-    return "Baja", "#E53935"
+    for minimo, clave, color in NIVELES:
+        if porcentaje >= minimo:
+            return t(clave), color
+    return t("nivel.baja"), "#E53935"

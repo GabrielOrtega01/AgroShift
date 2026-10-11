@@ -1,94 +1,93 @@
-"""Pestaña Cómo funciona: metodología, fuentes y límites, en lenguaje claro."""
+"""Pestaña Cómo funciona: metodología, fuentes, calidad de datos y límites."""
 
 import streamlit as st
 
+from agroshift.crops import CULTIVOS
 from agroshift.recommender import PRIORIDADES
+from agroshift.regions import REGIONS, Region, regiones_con_resultados
 from ui.components import aviso, tarjeta
+from ui.i18n import region_corto, t
 
 REPOSITORIO = "https://github.com/GabrielOrtega01/AgroShift"
+UMBRAL_DIFERENCIA_PCT = 30
 
 
-def render() -> None:
-    st.subheader("¿Cómo llega AgroShift a sus recomendaciones?")
-    st.markdown(
-        "AgroShift **no adivina**: combina datos medidos por satélite con las necesidades "
-        "conocidas de cada cultivo. Estos son los pasos."
+def _calidad_lluvia(data: dict, region: Region) -> None:
+    tabla = data["validacion_lluvia"]
+    st.markdown(f"### {t('met.calidad_titulo')}")
+    st.markdown(t("met.calidad_texto"))
+    if tabla is None:
+        st.caption(t("met.calidad_sin_datos"))
+        return
+
+    peor = tabla.loc[tabla["diferencia_pct"].abs().idxmax()]
+    medio = tabla["diferencia_pct"].abs().mean()
+    if medio >= UMBRAL_DIFERENCIA_PCT:
+        aviso(t("met.calidad_alerta", region=region_corto(region), medio=medio,
+                anio=int(peor["anio"]), dif=peor["diferencia_pct"]))
+    else:
+        aviso(t("met.calidad_ok", medio=medio), tipo="info")
+
+    st.dataframe(
+        tabla[["anio", "power_mm", "chirps_mm", "diferencia_pct"]].rename(columns={
+            "anio": t("col.anio"), "power_mm": t("col.power_mm"),
+            "chirps_mm": t("col.chirps_mm"), "diferencia_pct": t("col.diferencia_pct"),
+        }),
+        hide_index=True, width="stretch",
     )
+
+
+def render(data: dict, region: Region) -> None:
+    st.subheader(t("met.titulo"))
+    st.markdown(t("met.intro"))
 
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        tarjeta("Medimos el clima", "Temperatura, lluvia, viento y radiación diaria desde 2020 (NASA POWER).", numero=1)
+        tarjeta(t("met.p1_titulo"), t("met.p1_texto"), numero=1)
     with c2:
-        tarjeta("Medimos el suelo", "Humedad de la superficie y de la zona de raíces (NASA SMAP).", numero=2)
+        tarjeta(t("met.p2_titulo"), t("met.p2_texto"), numero=2)
     with c3:
-        tarjeta("Calculamos el agua", "Estimamos cuánta agua pierde y pide cada cultivo etapa por etapa (método FAO‑56).", numero=3)
+        tarjeta(t("met.p3_titulo"), t("met.p3_texto"), numero=3)
     with c4:
-        tarjeta("Probamos rotaciones", "Simulamos cada rotación en muchas fechas de inicio del historial y las comparamos.", numero=4)
+        tarjeta(t("met.p4_titulo"), t("met.p4_texto"), numero=4)
 
     st.write("")
-    st.markdown("### Los 4 criterios de evaluación")
-    st.caption("Una rotación suma un punto por cada criterio que cumple. El máximo es 4.")
+    st.markdown(f"### {t('met.criterios_titulo')}")
+    st.caption(t("met.criterios_nota"))
     columnas = st.columns(2)
     for i, p in enumerate(PRIORIDADES.values()):
         with columnas[i % 2]:
-            tarjeta(p.nombre, p.explicacion, icono=p.icono)
+            tarjeta(t(f"prioridad.{p.clave}.nombre"), t(f"prioridad.{p.clave}.explicacion"), icono=p.icono)
             st.write("")
 
-    st.markdown("### ¿Qué significa «fiabilidad»?")
-    st.markdown(
-        "Nadie puede predecir exactamente el clima del próximo año. Por eso AgroShift prueba cada "
-        "rotación en **todas las fechas de inicio del historial (2020–2025)** y te dice en qué "
-        "porcentaje de ellas se cumplió lo que pediste. Un **90 %** significa que la rotación "
-        "funcionó casi siempre; un **30 %**, que depende mucho del año."
-    )
+    st.markdown(f"### {t('met.fiabilidad_titulo')}")
+    st.markdown(t("met.fiabilidad_texto"))
 
-    st.markdown("### ¿Y si un cultivo no se da bien en mi clima?")
-    st.markdown(
-        "El cálculo de agua por sí solo no sabe si hace demasiado frío o calor para un cultivo. "
-        "Por eso AgroShift cruza cada rotación con la **adaptación al clima** de la pestaña "
-        "Cultivos y, por defecto, descarta las que incluyen cultivos con menos de **50 %**, "
-        "tanto en adaptación general como en temperatura (la lluvia que falta se puede suplir "
-        "con riego; el frío o el calor excesivo, no). Puedes cambiar ese mínimo en **Mi rotación**."
-    )
+    st.markdown(f"### {t('met.clima_titulo')}")
+    st.markdown(t("met.clima_texto"))
 
-    st.markdown("### De dónde salen los datos")
+    st.markdown(f"### {t('met.fuentes_titulo')}")
     st.dataframe(
         [
-            {"Fuente": "NASA POWER", "Qué aporta": "Clima diario: temperatura, lluvia, humedad relativa, viento, radiación",
-             "Resolución": "~50 km, diaria"},
-            {"Fuente": "NASA SMAP L4", "Qué aporta": "Humedad del suelo (superficie y zona de raíces)",
-             "Resolución": "9 km, una muestra al día"},
-            {"Fuente": "FAO ECOCROP", "Qué aporta": "Temperatura, lluvia, pH y ciclo que necesita cada cultivo",
-             "Resolución": "Por especie"},
+            {t("col.fuente"): "NASA POWER", t("col.aporta"): t("met.fuente_power"), t("col.resolucion"): t("met.res_power")},
+            {t("col.fuente"): "NASA SMAP L4", t("col.aporta"): t("met.fuente_smap"), t("col.resolucion"): t("met.res_smap")},
+            {t("col.fuente"): "FAO ECOCROP", t("col.aporta"): t("met.fuente_ecocrop"), t("col.resolucion"): t("met.res_ecocrop")},
+            {t("col.fuente"): "ISRIC SoilGrids", t("col.aporta"): t("met.fuente_suelo"), t("col.resolucion"): t("met.res_suelo")},
+            {t("col.fuente"): "CHIRPS", t("col.aporta"): t("met.fuente_chirps"), t("col.resolucion"): t("met.res_chirps")},
         ],
         hide_index=True, width="stretch",
     )
 
-    st.markdown("### Glosario")
-    with st.expander("Ver términos técnicos"):
-        st.markdown(
-            "- **ETo (evapotranspiración de referencia):** agua que pierde un cultivo de referencia por evaporación y transpiración.\n"
-            "- **ETc:** agua que realmente necesita *tu* cultivo en cada etapa (ETo × coeficiente del cultivo).\n"
-            "- **Balance hídrico:** lluvia menos ETc. Positivo = sobra agua; negativo = falta.\n"
-            "- **Percentil de humedad:** compara la humedad del suelo con su propio historial. P25 significa que "
-            "el suelo está más húmedo que el 25 % de los días registrados.\n"
-            "- **m³/m³:** volumen de agua por volumen de suelo (0,30 = 30 % del suelo es agua)."
-        )
+    _calidad_lluvia(data, region)
 
-    st.markdown("### Límites que debes conocer")
-    aviso(
-        "<ul style='margin:0;padding-left:1.2rem'>"
-        "<li>Los datos representan un <b>punto de referencia por región</b>, no tu finca exacta; "
-        "el microclima y la pendiente pueden variar.</li>"
-        "<li>La humedad del suelo viene de un satélite con celdas de <b>9 km</b>.</li>"
-        "<li><b>No usa análisis de suelo local</b> (textura, pH, fertilidad). Confírmalos aparte.</li>"
-        "<li>Hoy cubre <b>4 regiones</b> y <b>8 cultivos</b>.</li>"
-        "<li>Es una <b>herramienta de apoyo</b>: no reemplaza la asesoría de un técnico agropecuario.</li>"
-        "</ul>"
-    )
+    st.markdown(f"### {t('met.glosario_titulo')}")
+    with st.expander(t("met.glosario_ver")):
+        st.markdown(t("met.glosario_texto"))
+
+    st.markdown(f"### {t('met.limites_titulo')}")
+    n_regiones = len(regiones_con_resultados())
+    n_modelo = sum(1 for s in regiones_con_resultados() if REGIONS[s].humedad_modelada)
+    aviso(t("met.limites", regiones=n_regiones, modelo=n_modelo, cultivos=len(CULTIVOS)))
 
     st.write("")
-    st.caption(
-        f"Proyecto desarrollado para el NASA Space Apps Challenge 2026 — «Field Shift: Adapting "
-        f"Farms with NASA Data». Código abierto: [{REPOSITORIO}]({REPOSITORIO})"
-    )
+    st.caption(t("met.pie", repo=REPOSITORIO))
