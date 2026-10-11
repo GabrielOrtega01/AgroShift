@@ -12,6 +12,7 @@ from dataclasses import dataclass
 import pandas as pd
 
 from agroshift.crops import cultivos_de_rotacion
+from agroshift.soil import estado_ph as estado_ph_rangos
 
 
 @dataclass(frozen=True)
@@ -137,12 +138,18 @@ def _promedio(valores: list[float]) -> float:
 def cultivos_no_aptos(compatibilidad: pd.DataFrame, minimo: float) -> set[str]:
     """Cultivos que el clima de la región no admite.
 
-    Se exige `minimo` tanto en la compatibilidad global como en el puntaje
-    de temperatura por separado: la lluvia que falta puede suplirse con
-    riego, pero la temperatura no, y la fórmula de ECOCROP deja que una
-    lluvia ideal compense un cultivo que no tolera el frío o el calor.
+    Se exige `minimo` tanto en la compatibilidad (la final, que ya no puede
+    superar a la temperatura) como en el puntaje de temperatura media por
+    separado: la lluvia que falta puede suplirse con riego, pero la
+    temperatura no, y la fórmula de ECOCROP deja que una lluvia ideal
+    compense un cultivo que no tolera el frío o el calor.
     """
-    no_apto = (compatibilidad["compatibilidad_climatica"] < minimo) | (
+    columna = (
+        "compatibilidad_final"
+        if "compatibilidad_final" in compatibilidad.columns
+        else "compatibilidad_climatica"
+    )
+    no_apto = (compatibilidad[columna] < minimo) | (
         compatibilidad["puntaje_temperatura_media"] < minimo
     )
     return set(compatibilidad.loc[no_apto, "nombre"])
@@ -172,4 +179,18 @@ def fiabilidad_por_mes(
     )
     por_mes = df.groupby("_mes")["_cumple"].mean().mul(100)
     por_mes = por_mes.reindex(range(1, 13))
-    return pd.DataFrame({"mes": MESES, "fiabilidad": por_mes.to_numpy()})
+    return pd.DataFrame(
+        {"mes_num": range(1, 13), "mes": MESES, "fiabilidad": por_mes.to_numpy()}
+    )
+
+
+def estado_ph_cultivo(ph: float, cultivo: "pd.Series | dict") -> str:
+    """'optimo' / 'tolerable' / 'fuera' del pH del suelo para un cultivo.
+
+    `cultivo` es una fila de compatibilidad_cultivos_ecocrop.csv.
+    """
+    return estado_ph_rangos(
+        ph,
+        (cultivo["ph_optimo_min"], cultivo["ph_optimo_max"]),
+        (cultivo["ph_absoluto_min"], cultivo["ph_absoluto_max"]),
+    )

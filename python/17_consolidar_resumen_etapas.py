@@ -27,15 +27,15 @@ BASE_DIR = Path(__file__).resolve().parent
 ANALYSIS_DIR = BASE_DIR / "data" / "analysis" / REGION_SLUG
 
 ARCHIVO_ENTRADA = (
-    ANALYSIS_DIR / "analisis_etapas_rotacion_2020_v8.csv"
+    ANALYSIS_DIR / "analisis_etapas_rotacion_v8.csv"
 )
 
 ARCHIVO_SALIDA_ETAPAS = (
-    ANALYSIS_DIR / "analisis_etapas_rotacion_2020_v10.csv"
+    ANALYSIS_DIR / "analisis_etapas_rotacion_v10.csv"
 )
 
 ARCHIVO_SALIDA_RESUMEN = (
-    ANALYSIS_DIR / "resumen_etapas_rotacion_2020_v10.csv"
+    ANALYSIS_DIR / "resumen_etapas_rotacion_v10.csv"
 )
 
 

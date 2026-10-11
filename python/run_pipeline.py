@@ -20,6 +20,7 @@ Uso:
 import argparse
 import os
 
+from agroshift.config import settings
 from agroshift.pipeline import Pipeline, PipelineStep
 from agroshift.regions import REGIONS
 
@@ -29,11 +30,18 @@ ADQUISICION = [
     PipelineStep("smap-recuperar", "03_recuperar_smap_faltantes.py", "Recupera días SMAP incompletos"),
     PipelineStep("ecocrop-catalogo", "04_descargar_catalogo_ecocrop.py", "Descarga catálogo FAO ECOCROP"),
     PipelineStep("ecocrop-caracteristicas", "05_extraer_caracteristicas_ecocrop.py", "Extrae características por cultivo"),
+    PipelineStep("suelo", "18_descargar_suelo_soilgrids.py", "Descarga suelo estimado (ISRIC SoilGrids)", opcional=True),
 ]
+
+# La humedad del suelo se mide con SMAP, salvo en regiones "modelo".
+PASOS_SMAP = {"smap", "smap-recuperar"}
+# ECOCROP es global (no depende de la región): se omite si ya está descargado.
+PASOS_ECOCROP = {"ecocrop-catalogo", "ecocrop-caracteristicas"}
+ARCHIVO_ECOCROP = settings.crops_dir / "agroshift_cultivos_caracteristicas.csv"
 
 ANALISIS = [
     PipelineStep("integrar-ambiental", "06_integrar_datos_ambientales.py", "Integra NASA POWER + SMAP"),
-    PipelineStep("clima", "07_analizar_clima_2020.py", "Resumen e indicadores climáticos"),
+    PipelineStep("clima", "07_analizar_clima.py", "Resumen e indicadores climáticos"),
     PipelineStep("eto", "08_calcular_evapotranspiracion_referencia.py", "Evapotranspiración de referencia (FAO-56)"),
     PipelineStep("etc", "09_calcular_evapotranspiracion_cultivo.py", "Evapotranspiración por cultivo"),
     PipelineStep("balance-hidrico", "10_calcular_balance_hidrico.py", "Balance precipitación vs. demanda"),
@@ -44,6 +52,7 @@ ANALISIS = [
     PipelineStep("resumir-etapas", "15_resumir_etapas_rotacion.py", "Resume etapas por rotación"),
     PipelineStep("priorizar", "16_priorizar_escenarios.py", "Prioriza escenarios por criterio"),
     PipelineStep("consolidar", "17_consolidar_resumen_etapas.py", "Consolida el resumen final por etapas"),
+    PipelineStep("exportar", "19_exportar_para_app.py", "Exporta los escenarios en formato liviano para la app"),
 ]
 
 
@@ -70,17 +79,36 @@ def main() -> None:
         action="store_true",
         help="omite la descarga de datos crudos (NASA/FAO) y solo corre el análisis",
     )
+    nombres = [s.name for s in ADQUISICION + ANALISIS]
+    parser.add_argument("--desde", choices=nombres, help="primer paso a ejecutar (por nombre)")
+    parser.add_argument("--hasta", choices=nombres, help="último paso a ejecutar (por nombre)")
+    parser.add_argument(
+        "--actualizar-ecocrop",
+        action="store_true",
+        help="vuelve a descargar el catálogo FAO ECOCROP aunque ya exista",
+    )
     args = parser.parse_args()
 
     os.environ["AGROSHIFT_REGION"] = args.region
     os.environ["AGROSHIFT_FECHA_INICIO"] = args.fecha_inicio
     os.environ["AGROSHIFT_FECHA_FIN"] = args.fecha_fin
 
-    steps = ANALISIS if args.analysis_only else ADQUISICION + ANALISIS
+    adquisicion = ADQUISICION
+    if REGIONS[args.region].humedad_modelada:
+        adquisicion = [s for s in adquisicion if s.name not in PASOS_SMAP]
+    if ARCHIVO_ECOCROP.exists() and not args.actualizar_ecocrop:
+        adquisicion = [s for s in adquisicion if s.name not in PASOS_ECOCROP]
+
+    steps = ANALISIS if args.analysis_only else adquisicion + ANALISIS
+    if args.desde or args.hasta:
+        orden = [s.name for s in steps]
+        i = orden.index(args.desde) if args.desde in orden else 0
+        j = orden.index(args.hasta) + 1 if args.hasta in orden else len(steps)
+        steps = steps[i:j]
     pipeline = Pipeline(steps)
     results = pipeline.run_all()
 
-    if not all(r.ok for r in results):
+    if not all(r.ok or r.step.opcional for r in results):
         raise SystemExit(1)
 
 

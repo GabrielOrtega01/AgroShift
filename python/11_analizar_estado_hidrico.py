@@ -41,7 +41,7 @@ ARCHIVO_BALANCE = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "balance_hidrico_cultivos_2020.csv"
+    "balance_hidrico_cultivos.csv"
 )
 
 ARCHIVO_SALIDA = os.path.join(
@@ -49,7 +49,7 @@ ARCHIVO_SALIDA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "estado_hidrico_cultivos_2020.csv"
+    "estado_hidrico_cultivos.csv"
 )
 
 ARCHIVO_RESUMEN = os.path.join(
@@ -57,7 +57,7 @@ ARCHIVO_RESUMEN = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "estado_hidrico_resumen_2020.csv"
+    "estado_hidrico_resumen.csv"
 )
 
 ARCHIVO_GRAFICA = os.path.join(
@@ -65,7 +65,7 @@ ARCHIVO_GRAFICA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "estado_hidrico_2020.png"
+    "estado_hidrico.png"
 )
 
 

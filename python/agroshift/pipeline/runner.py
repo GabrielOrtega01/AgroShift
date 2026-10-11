@@ -40,7 +40,9 @@ class Pipeline:
 
             if not ok:
                 print(f"\n[{step.name}] FALLÓ (código {result.returncode})")
-                if stop_on_error:
+                if step.opcional:
+                    print(f"[{step.name}] es opcional: el pipeline continúa.")
+                elif stop_on_error:
                     break
 
         self._print_summary()
@@ -49,5 +51,5 @@ class Pipeline:
     def _print_summary(self) -> None:
         print(f"\n{'=' * 70}\nRESUMEN\n{'=' * 70}")
         for r in self.results:
-            estado = "OK" if r.ok else "FALLÓ"
+            estado = "OK" if r.ok else ("OMITIDO" if r.step.opcional else "FALLÓ")
             print(f"  [{estado}] {r.step.name} ({r.seconds:.1f}s)")

@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import requests
@@ -6,6 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from agroshift.regions import get_region
+from agroshift.retry import con_reintentos
 
 REGION = get_region(os.environ.get("AGROSHIFT_REGION", "santander"))
 
@@ -75,6 +77,27 @@ def convertir_dataframe(data):
     return df
 
 
+def guardar_metadatos(data):
+    """Guarda la elevación media de la celda POWER (la usa el paso 06 para
+    ajustar la temperatura a la altitud del punto)."""
+    longitud, latitud, elevacion = data["geometry"]["coordinates"]
+    ruta = Path(__file__).resolve().parent / "data" / "power" / f"nasa_power_{REGION.slug}_meta.json"
+    ruta.write_text(
+        json.dumps(
+            {
+                "latitud": latitud,
+                "longitud": longitud,
+                "elevacion_celda_m": elevacion,
+                "altitud_punto_m": REGION.altitud_m,
+                "fuente": "NASA POWER (MERRA-2), elevación media de la celda",
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    return ruta
+
+
 def guardar_datos(df):
     output_dir = Path(__file__).resolve().parent / "data" / "power"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -89,11 +112,12 @@ def guardar_datos(df):
 def main():
 
     try:
-        data = obtener_datos_nasa()
+        data = con_reintentos(obtener_datos_nasa, intentos=4, espera_base=10)
 
         df = convertir_dataframe(data)
 
         output_file = guardar_datos(df)
+        guardar_metadatos(data)
 
         print("\n==========================================")
         print("      AGROSHIFT - NASA POWER")
@@ -121,11 +145,13 @@ def main():
 
         print("\nERROR al consultar NASA POWER:")
         print(error)
+        raise SystemExit(1)
 
     except Exception as error:
 
         print("\nERROR:")
         print(error)
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

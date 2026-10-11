@@ -22,14 +22,14 @@ DATA_DIR = BASE_DIR / "data"
 ANALYSIS_DIR = DATA_DIR / "analysis" / REGION_SLUG
 CROPS_DIR = DATA_DIR / "crops"
 
-ARCHIVO_AMBIENTAL = ANALYSIS_DIR / "agroshift_environmental_2020.csv"
-ARCHIVO_HIDRICO = ANALYSIS_DIR / "estado_hidrico_cultivos_2020.csv"
-ARCHIVO_ETO = ANALYSIS_DIR / "eto_2020.csv"
+ARCHIVO_AMBIENTAL = ANALYSIS_DIR / "agroshift_environmental.csv"
+ARCHIVO_HIDRICO = ANALYSIS_DIR / "estado_hidrico_cultivos.csv"
+ARCHIVO_ETO = ANALYSIS_DIR / "eto.csv"
 ARCHIVO_CULTIVOS = CROPS_DIR / "agroshift_cultivos_caracteristicas.csv"
 
-SALIDA_ESCENARIOS = ANALYSIS_DIR / "escenarios_rotacion_2020_v6.csv"
-SALIDA_ETAPAS = ANALYSIS_DIR / "escenarios_rotacion_2020_v6_etapas.csv"
-SALIDA_FECHAS = ANALYSIS_DIR / "comparacion_inicio_2020_v6.csv"
+SALIDA_ESCENARIOS = ANALYSIS_DIR / "escenarios_rotacion_v6.csv"
+SALIDA_ETAPAS = ANALYSIS_DIR / "escenarios_rotacion_v6_etapas.csv"
+SALIDA_FECHAS = ANALYSIS_DIR / "comparacion_inicio_v6.csv"
 
 
 # ============================================================
@@ -56,7 +56,7 @@ def crear_perfil_kc(df_hidrico):
     Construye un perfil Kc para cada cultivo y día del ciclo.
 
     Se utiliza la información ya calculada en
-    estado_hidrico_cultivos_2020.csv.
+    estado_hidrico_cultivos.csv.
     """
 
     perfiles = {}

@@ -27,7 +27,7 @@ RUTA_AMBIENTAL = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "agroshift_environmental_2020.csv"
+    "agroshift_environmental.csv"
 )
 
 RUTA_SALIDA = os.path.join(
@@ -35,7 +35,7 @@ RUTA_SALIDA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "compatibilidad_cultivos_ecocrop_2020.csv"
+    "compatibilidad_cultivos_ecocrop.csv"
 )
 
 
@@ -389,6 +389,17 @@ for _, cultivo in ecocrop.iterrows():
     else:
         compatibilidad_climatica = np.nan
 
+    # Factor limitante: la lluvia que falta se puede suplir con riego, pero
+    # el frío o el calor excesivo no. Los umbrales de ECOCROP son de
+    # temperatura media, por eso se mide el % de días cuya media diaria cae
+    # dentro del rango absoluto del cultivo. La compatibilidad final no puede
+    # ser mayor que lo que permiten la temperatura media ni esos días.
+    compatibilidad_final = np.nanmin([
+        compatibilidad_climatica,
+        puntaje_temperatura_media,
+        dias_temperatura_absoluta,
+    ])
+
     resultados.append({
 
         "ecocrop_id": cultivo["ecocrop_id"],
@@ -399,15 +410,15 @@ for _, cultivo in ecocrop.iterrows():
         # CONDICIONES NASA
         # ---------------------------------------------
 
-        "temperatura_media_2020_c": temperatura_media,
+        "temperatura_media_c": temperatura_media,
 
-        "temperatura_minima_2020_c": temperatura_minima_observada,
+        "temperatura_minima_c": temperatura_minima_observada,
 
-        "temperatura_maxima_2020_c": temperatura_maxima_observada,
+        "temperatura_maxima_c": temperatura_maxima_observada,
 
-        "precipitacion_anual_2020_mm": precipitacion_anual,
+        "precipitacion_anual_mm": precipitacion_anual,
 
-        "precipitacion_media_diaria_2020_mm":
+        "precipitacion_media_diaria_mm":
             precipitacion_media_diaria,
 
         "humedad_suelo_superficial_media":
@@ -460,11 +471,17 @@ for _, cultivo in ecocrop.iterrows():
         "dias_temperatura_absoluta_pct":
             round(dias_temperatura_absoluta, 2),
 
+
+
+
         "puntaje_precipitacion":
             round(puntaje_precipitacion, 2),
 
         "compatibilidad_climatica":
             round(compatibilidad_climatica, 2),
+
+        "compatibilidad_final":
+            round(compatibilidad_final, 2),
 
         # ---------------------------------------------
         # DATOS DEL CULTIVO

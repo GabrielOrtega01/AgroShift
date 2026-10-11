@@ -4,6 +4,11 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from agroshift.downscaling import (
+    GRADIENTE_C_POR_KM,
+    cargar_elevacion_celda,
+    corregir_por_altitud,
+)
 from agroshift.regions import get_region
 
 REGION = get_region(os.environ.get("AGROSHIFT_REGION", "santander"))
@@ -20,11 +25,11 @@ ANALYSIS_DIR = BASE_DIR / "data" / "analysis" / REGION.slug
 ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
 POWER_FILE = BASE_DIR / "data" / "power" / f"nasa_power_{REGION.slug}.csv"
-SMAP_FILE = ANALYSIS_DIR / "smap_diario_2020.csv"
+SMAP_FILE = ANALYSIS_DIR / "smap_diario.csv"
 
-OUTPUT_FILE = ANALYSIS_DIR / "agroshift_environmental_2020.csv"
+OUTPUT_FILE = ANALYSIS_DIR / "agroshift_environmental.csv"
 
-SUMMARY_FILE = ANALYSIS_DIR / "agroshift_environmental_2020_resumen.csv"
+SUMMARY_FILE = ANALYSIS_DIR / "agroshift_environmental_resumen.csv"
 
 LATITUD = REGION.latitud
 LONGITUD = REGION.longitud
@@ -43,8 +48,27 @@ power = pd.read_csv(POWER_FILE)
 
 print(f"Registros NASA POWER cargados: {len(power)}")
 
-print("\nCargando SMAP...")
-smap = pd.read_csv(SMAP_FILE)
+# NASA POWER entrega la temperatura de una celda de ~50 km a su elevación
+# media; se ajusta a la altitud del punto (ver agroshift/downscaling.py).
+elevacion_celda = cargar_elevacion_celda(REGION.slug)
+if elevacion_celda is None:
+    print("ADVERTENCIA: no hay elevación de celda POWER; la temperatura NO se ajusta a la altitud.")
+else:
+    delta = GRADIENTE_C_POR_KM * (elevacion_celda - REGION.altitud_m) / 1000
+    power = corregir_por_altitud(power, elevacion_celda, REGION.altitud_m)
+    print(
+        f"Temperatura ajustada a {REGION.altitud_m:.0f} m "
+        f"(celda POWER a {elevacion_celda:.0f} m): {delta:+.1f} °C"
+    )
+
+if REGION.humedad_modelada:
+    # Regiones sin descarga SMAP: la humedad se estima más abajo con un
+    # balance hídrico (ver agroshift/hydrology.py).
+    print("\nRegión con humedad del suelo modelada (sin SMAP).")
+    smap = pd.DataFrame({"fecha": power["DATE"]})
+else:
+    print("\nCargando SMAP...")
+    smap = pd.read_csv(SMAP_FILE)
 
 print(f"Registros SMAP cargados: {len(smap)}")
 
@@ -71,27 +95,52 @@ smap["fecha"] = pd.to_datetime(
 fecha_inicio = pd.Timestamp(FECHA_INICIO).date()
 fecha_fin = pd.Timestamp(FECHA_FIN).date()
 
-power_2020 = power[
+power_rango = power[
     (power["fecha"] >= fecha_inicio)
     & (power["fecha"] <= fecha_fin)
 ].copy()
 
-smap_2020 = smap[
+smap_rango = smap[
     (smap["fecha"] >= fecha_inicio)
     & (smap["fecha"] <= fecha_fin)
 ].copy()
 
+if REGION.humedad_modelada:
+    from agroshift.hydrology import (
+        capacidad_campo_marchitez,
+        eto_penman_monteith,
+        humedad_suelo_modelada,
+    )
+    from agroshift.soil import cargar_suelo
+
+    clima = power_rango.reset_index(drop=True)
+    eto = eto_penman_monteith(clima, REGION.latitud, REGION.altitud_m)
+
+    suelo = cargar_suelo(REGION.slug)
+    if suelo is not None:
+        campo, marchitez = capacidad_campo_marchitez(
+            suelo.arena_pct, suelo.arcilla_pct, suelo.materia_organica_pct
+        )
+        print(f"Parámetros de suelo (SoilGrids): CC={campo:.3f} PMP={marchitez:.3f}")
+    else:
+        campo, marchitez = 0.30, 0.14
+        print("Sin datos de suelo: se usan valores por defecto (CC=0.30, PMP=0.14)")
+
+    humedad = humedad_suelo_modelada(clima, eto, campo, marchitez)
+    smap_rango = pd.concat([clima[["fecha"]], humedad], axis=1)
+    smap_rango["observaciones_smap"] = 0
+
 print("\nDatos después del filtro:")
-print(f"NASA POWER: {len(power_2020)} registros")
-print(f"SMAP:       {len(smap_2020)} registros")
+print(f"NASA POWER: {len(power_rango)} registros")
+print(f"SMAP:       {len(smap_rango)} registros")
 
 
 # ============================================================
 # 4. COMPROBAR DUPLICADOS
 # ============================================================
 
-duplicados_power = power_2020["fecha"].duplicated().sum()
-duplicados_smap = smap_2020["fecha"].duplicated().sum()
+duplicados_power = power_rango["fecha"].duplicated().sum()
+duplicados_smap = smap_rango["fecha"].duplicated().sum()
 
 print("\nDuplicados:")
 print(f"NASA POWER: {duplicados_power}")
@@ -116,10 +165,10 @@ columnas_power = [
 columnas_power = [
     columna
     for columna in columnas_power
-    if columna in power_2020.columns
+    if columna in power_rango.columns
 ]
 
-power_2020 = power_2020[columnas_power].copy()
+power_rango = power_rango[columnas_power].copy()
 
 
 # ============================================================
@@ -129,8 +178,8 @@ power_2020 = power_2020[columnas_power].copy()
 print("\nIntegrando datasets...")
 
 integrado = pd.merge(
-    power_2020,
-    smap_2020,
+    power_rango,
+    smap_rango,
     on="fecha",
     how="outer",
     indicator=True

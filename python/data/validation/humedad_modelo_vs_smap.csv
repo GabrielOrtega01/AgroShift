@@ -1,0 +1,5 @@
+region,dias,spearman_diario_raiz,spearman_diario_superficie,correlacion_climatologia_mensual
+santander,2192,0.41,0.39,0.84
+quindio,2192,0.64,0.43,0.92
+cordoba,2192,0.61,0.48,0.9
+boyaca,2192,0.29,0.26,0.41

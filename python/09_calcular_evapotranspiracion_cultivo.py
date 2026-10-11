@@ -32,7 +32,7 @@ ARCHIVO_ETO = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "eto_2020.csv"
+    "eto.csv"
 )
 
 ARCHIVO_CULTIVOS = os.path.join(
@@ -47,7 +47,7 @@ ARCHIVO_SALIDA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "etc_cultivos_2020.csv"
+    "etc_cultivos.csv"
 )
 
 ARCHIVO_RESUMEN = os.path.join(
@@ -55,7 +55,7 @@ ARCHIVO_RESUMEN = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "etc_resumen_cultivos_2020.csv"
+    "etc_resumen_cultivos.csv"
 )
 
 ARCHIVO_GRAFICA = os.path.join(
@@ -63,7 +63,7 @@ ARCHIVO_GRAFICA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "etc_cultivos_2020.png"
+    "etc_cultivos.png"
 )
 
 

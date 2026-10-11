@@ -18,13 +18,13 @@ REGION_SLUG = get_region(os.environ.get("AGROSHIFT_REGION", "santander")).slug
 BASE_DIR = Path(__file__).resolve().parent
 ANALYSIS_DIR = BASE_DIR / "data" / "analysis" / REGION_SLUG
 
-INPUT_FILE = ANALYSIS_DIR / "resumen_rotaciones_2020_v8.csv"
+INPUT_FILE = ANALYSIS_DIR / "resumen_rotaciones_v8.csv"
 
-OUTPUT_FILE = ANALYSIS_DIR / "escenarios_priorizados_2020_v9.csv"
-OUTPUT_WATER = ANALYSIS_DIR / "escenarios_prioridad_agua_2020_v9.csv"
-OUTPUT_HUMIDITY = ANALYSIS_DIR / "escenarios_prioridad_humedad_2020_v9.csv"
-OUTPUT_BALANCE = ANALYSIS_DIR / "escenarios_prioridad_balance_2020_v9.csv"
-OUTPUT_TEMPORAL = ANALYSIS_DIR / "escenarios_prioridad_temporal_2020_v9.csv"
+OUTPUT_FILE = ANALYSIS_DIR / "escenarios_priorizados_v9.csv"
+OUTPUT_WATER = ANALYSIS_DIR / "escenarios_prioridad_agua_v9.csv"
+OUTPUT_HUMIDITY = ANALYSIS_DIR / "escenarios_prioridad_humedad_v9.csv"
+OUTPUT_BALANCE = ANALYSIS_DIR / "escenarios_prioridad_balance_v9.csv"
+OUTPUT_TEMPORAL = ANALYSIS_DIR / "escenarios_prioridad_temporal_v9.csv"
 
 
 # ============================================================

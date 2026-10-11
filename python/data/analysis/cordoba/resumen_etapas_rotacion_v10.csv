@@ -1,0 +1,1121 @@
+﻿rotacion,numero_etapa,cultivo,cantidad_registros,duracion_promedio_dias,precipitacion_promedio_mm,ETo_promedio_mm,ETc_promedio_mm,balance_promedio_mm,demanda_no_cubierta_promedio_mm,cobertura_promedio_pct,humedad_suelo_promedio,percentil_humedad_promedio,dias_P10_promedio,porcentaje_P10_promedio
+Coffea arabica → Lycopersicon esculentum,1,Coffea arabica,120,270.0,1014.5115,1111.0996,1063.4585,-48.947,618.2525,84.0072,0.2228,50.4638,24.5583,9.0957
+Coffea arabica → Lycopersicon esculentum,2,Lycopersicon esculentum,120,110.0,439.3598,450.8001,457.3155,-17.9558,262.1929,76.1731,0.2208,49.006,8.6583,7.8712
+Coffea arabica → Lycopersicon esculentum → Manihot esculenta,1,Coffea arabica,102,270.0,966.1769,1120.3041,1072.2117,-106.0348,643.211,81.1849,0.2244,51.6306,28.7941,10.6645
+Coffea arabica → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,102,110.0,405.6036,453.3258,459.9999,-54.3962,278.2845,72.3807,0.2221,49.8283,10.1863,9.2602
+Coffea arabica → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,102,272.0,1155.9341,1106.7728,1014.9825,140.9517,547.5192,92.6064,0.2215,49.4547,22.0392,8.1027
+Coffea arabica → Lycopersicon esculentum → Oryza sativa,1,Coffea arabica,111,270.0,994.2259,1115.2314,1067.3075,-73.0815,628.9068,82.7105,0.2246,51.7081,26.5495,9.8332
+Coffea arabica → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,111,110.0,419.0437,452.377,458.9858,-39.9422,271.9305,74.2412,0.2189,47.6571,9.3604,8.5094
+Coffea arabica → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,111,130.0,546.8216,531.107,609.1091,-62.2875,350.5793,77.6058,0.2211,49.1837,10.1441,7.8032
+Coffea arabica → Lycopersicon esculentum → Phaseolus vulgaris,1,Coffea arabica,109,270.0,991.2465,1116.2116,1068.2652,-77.0187,630.9603,82.3932,0.2248,51.8471,27.0367,10.0136
+Coffea arabica → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,109,110.0,413.0154,452.6444,459.2482,-46.2328,274.3333,73.7685,0.2193,47.9607,9.5321,8.6656
+Coffea arabica → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,109,160.0,674.6668,653.2851,613.6584,61.0084,336.8993,85.1478,0.2211,49.1453,12.5138,7.8211
+Coffea arabica → Lycopersicon esculentum → Saccharum officinarum,1,Coffea arabica,101,270.0,960.6204,1120.7128,1072.6228,-112.0024,645.3111,80.9986,0.2243,51.5915,28.8218,10.6747
+Coffea arabica → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,101,110.0,406.161,453.422,460.0429,-53.8819,278.0145,72.3384,0.2225,50.0848,10.2871,9.3519
+Coffea arabica → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1224.506,1171.5662,1218.3644,6.1417,681.1864,89.6765,0.2216,49.4874,23.5248,8.1683
+Coffea arabica → Lycopersicon esculentum → Solanum tuberosum,1,Coffea arabica,111,270.0,994.2259,1115.2314,1067.3075,-73.0815,628.9068,82.7105,0.2246,51.7081,26.5495,9.8332
+Coffea arabica → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,111,110.0,419.0437,452.377,458.9858,-39.9422,271.9305,74.2412,0.2189,47.6571,9.3604,8.5094
+Coffea arabica → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,111,125.0,523.0808,510.9005,506.5224,16.5585,281.7013,80.7565,0.221,49.1156,9.8018,7.8414
+Coffea arabica → Lycopersicon esculentum → Zea mays,1,Coffea arabica,106,270.0,985.3775,1117.6581,1069.6833,-84.3057,634.7533,81.8949,0.2248,51.8749,27.8019,10.297
+Coffea arabica → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,106,110.0,405.6828,453.1696,459.8472,-54.1643,277.4332,73.0261,0.2203,48.6425,9.8019,8.9108
+Coffea arabica → Lycopersicon esculentum → Zea mays,3,Zea mays,106,215.0,911.6653,876.0736,851.7782,59.8871,470.1191,87.9292,0.2214,49.3454,16.9717,7.8938
+Coffea arabica → Manihot esculenta,1,Coffea arabica,109,270.0,991.2465,1116.2116,1068.2652,-77.0187,630.9603,82.3932,0.2248,51.8471,27.0367,10.0136
+Coffea arabica → Manihot esculenta,2,Manihot esculenta,109,272.0,1096.2337,1113.9632,1022.7948,73.4389,572.8977,88.4227,0.2204,48.6769,22.1927,8.1591
+Coffea arabica → Manihot esculenta → Lycopersicon esculentum,1,Coffea arabica,102,270.0,966.1769,1120.3041,1072.2117,-106.0348,643.211,81.1849,0.2244,51.6306,28.7941,10.6645
+Coffea arabica → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,102,272.0,1064.8605,1116.2003,1025.0083,39.8522,589.0372,87.6282,0.2209,49.0249,23.7157,8.719
+Coffea arabica → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,102,110.0,496.6773,443.8984,450.0607,46.6166,236.8313,85.3361,0.2236,50.8913,8.5098,7.7362
+Coffea arabica → Manihot esculenta → Oryza sativa,1,Coffea arabica,100,270.0,955.3171,1120.969,1072.8973,-117.5802,647.115,80.8086,0.2243,51.5789,28.71,10.6333
+Coffea arabica → Manihot esculenta → Oryza sativa,2,Manihot esculenta,100,272.0,1058.1964,1116.7121,1025.3165,32.8799,592.1006,87.3808,0.2215,49.3879,24.19,8.8934
+Coffea arabica → Manihot esculenta → Oryza sativa,3,Oryza sativa,100,130.0,586.455,525.0331,602.152,-15.697,328.4606,82.9078,0.2228,50.3631,10.28,7.9077
+Coffea arabica → Manihot esculenta → Phaseolus vulgaris,1,Coffea arabica,98,270.0,945.9609,1120.9139,1072.9115,-126.9506,649.7296,80.417,0.2245,51.67,28.0918,10.4044
+Coffea arabica → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,98,272.0,1054.2441,1117.6302,1025.8776,28.3665,594.4234,87.1232,0.222,49.7338,24.6837,9.0749
+Coffea arabica → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,98,160.0,719.9809,646.3318,607.2062,112.7747,317.1039,90.2733,0.222,49.8139,12.9082,8.0676
+Coffea arabica → Manihot esculenta → Saccharum officinarum,1,Coffea arabica,90,270.0,933.2416,1118.9913,1071.0025,-137.7609,648.5915,78.9221,0.2263,52.8222,24.2778,8.9918
+Coffea arabica → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,90,272.0,1040.9713,1122.4033,1030.3705,10.6009,602.1037,85.9786,0.2231,50.4896,26.8778,9.8815
+Coffea arabica → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,90,288.0,1295.5021,1163.8628,1211.6434,83.8587,654.9072,94.8963,0.2206,48.8612,25.4556,8.8387
+Coffea arabica → Manihot esculenta → Solanum tuberosum,1,Coffea arabica,101,270.0,960.6204,1120.7128,1072.6228,-112.0024,645.3111,80.9986,0.2243,51.5915,28.8218,10.6747
+Coffea arabica → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,101,272.0,1061.1531,1116.4202,1025.1451,36.0079,590.7068,87.5057,0.2212,49.1987,23.9505,8.8053
+Coffea arabica → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,101,125.0,564.971,504.5037,500.2031,64.7679,262.3794,86.969,0.2232,50.6281,9.7822,7.8257
+Coffea arabica → Manihot esculenta → Zea mays,1,Coffea arabica,95,270.0,938.9201,1119.8617,1071.9487,-133.0286,650.4085,79.7986,0.2251,52.048,26.7368,9.9025
+Coffea arabica → Manihot esculenta → Zea mays,2,Manihot esculenta,95,272.0,1046.7444,1119.6683,1027.4012,19.3432,597.37,86.7166,0.2226,50.1339,25.4632,9.3615
+Coffea arabica → Manihot esculenta → Zea mays,3,Zea mays,95,215.0,966.0373,868.6055,844.9395,121.0977,449.2898,92.9195,0.221,49.1257,18.0,8.3721
+Coffea arabica → Oryza sativa,1,Coffea arabica,118,270.0,1008.0627,1111.5589,1063.877,-55.8142,620.9622,83.7361,0.2233,50.7944,24.9746,9.2498
+Coffea arabica → Oryza sativa,2,Oryza sativa,118,130.0,520.0234,533.4654,611.8888,-91.8655,361.8659,73.9008,0.2202,48.5699,10.4576,8.0443
+Coffea arabica → Oryza sativa → Lycopersicon esculentum,1,Coffea arabica,111,270.0,994.2259,1115.2314,1067.3075,-73.0815,628.9068,82.7105,0.2246,51.7081,26.5495,9.8332
+Coffea arabica → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,111,130.0,500.0932,534.7766,613.3577,-113.2645,372.4933,72.2549,0.2187,47.5619,11.1171,8.5516
+Coffea arabica → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,465.7722,448.7073,454.9516,10.8205,252.2638,80.2243,0.2217,49.5737,8.3874,7.6249
+Coffea arabica → Oryza sativa → Manihot esculenta,1,Coffea arabica,100,270.0,955.3171,1120.969,1072.8973,-117.5802,647.115,80.8086,0.2243,51.5789,28.71,10.6333
+Coffea arabica → Oryza sativa → Manihot esculenta,2,Oryza sativa,100,130.0,482.5273,536.2553,615.0344,-132.5071,381.1907,70.2985,0.2224,50.019,12.34,9.4923
+Coffea arabica → Oryza sativa → Manihot esculenta,3,Manihot esculenta,100,272.0,1162.1241,1105.4899,1013.9596,148.1645,544.7711,93.1984,0.2217,49.5523,22.13,8.136
+Coffea arabica → Oryza sativa → Phaseolus vulgaris,1,Coffea arabica,108,270.0,989.2042,1116.6184,1068.6709,-79.4668,632.0213,82.2302,0.2248,51.8852,27.287,10.1063
+Coffea arabica → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,108,130.0,489.8966,535.2108,613.8578,-123.9612,377.1619,71.4842,0.2193,47.9586,11.4259,8.7892
+Coffea arabica → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,682.1984,652.0432,612.5594,69.639,333.1681,86.0036,0.2216,49.5133,12.2778,7.6736
+Coffea arabica → Oryza sativa → Saccharum officinarum,1,Coffea arabica,99,270.0,950.2876,1121.005,1072.9694,-122.6818,648.5452,80.6148,0.2244,51.6043,28.4444,10.535
+Coffea arabica → Oryza sativa → Saccharum officinarum,2,Oryza sativa,99,130.0,483.8486,536.522,615.3387,-131.4901,381.1267,70.4012,0.2226,50.1712,12.4646,9.5882
+Coffea arabica → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,99,288.0,1228.7005,1170.3549,1217.2744,11.4261,678.7147,90.1596,0.2217,49.5576,23.6364,8.2071
+Coffea arabica → Oryza sativa → Solanum tuberosum,1,Coffea arabica,110,270.0,992.9606,1115.7402,1067.8,-74.8394,629.9169,82.5533,0.2247,51.788,26.7909,9.9226
+Coffea arabica → Oryza sativa → Solanum tuberosum,2,Oryza sativa,110,130.0,496.2595,534.8921,613.488,-117.2285,374.1839,72.0027,0.2188,47.6329,11.2182,8.6294
+Coffea arabica → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,110,125.0,530.3191,509.8265,505.4864,24.8327,278.415,81.7221,0.2217,49.5333,9.5364,7.6291
+Coffea arabica → Oryza sativa → Zea mays,1,Coffea arabica,104,270.0,977.4247,1118.9256,1070.8905,-93.4658,638.4674,81.5468,0.2246,51.7599,28.3365,10.495
+Coffea arabica → Oryza sativa → Zea mays,2,Oryza sativa,104,130.0,481.0492,535.8426,614.6024,-133.5532,381.2294,70.422,0.2208,48.9553,11.8654,9.1272
+Coffea arabica → Oryza sativa → Zea mays,3,Zea mays,104,215.0,919.794,874.7697,850.6779,69.1161,466.8984,88.6861,0.2216,49.4966,16.9327,7.8757
+Coffea arabica → Phaseolus vulgaris,1,Coffea arabica,116,270.0,1003.8399,1112.3363,1064.585,-60.7451,623.2927,83.4557,0.2237,51.1236,25.4052,9.4093
+Coffea arabica → Phaseolus vulgaris,2,Phaseolus vulgaris,116,160.0,641.7336,656.652,617.5213,24.2123,350.483,81.3302,0.2198,48.3142,13.1034,8.1897
+Coffea arabica → Phaseolus vulgaris → Lycopersicon esculentum,1,Coffea arabica,109,270.0,991.2465,1116.2116,1068.2652,-77.0187,630.9603,82.3932,0.2248,51.8471,27.0367,10.0136
+Coffea arabica → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,109,160.0,616.473,658.2288,618.8435,-2.3705,361.526,80.1313,0.2189,47.6959,13.945,8.7156
+Coffea arabica → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,109,110.0,471.2092,447.7007,453.983,17.2261,248.7454,81.2175,0.2225,50.069,8.1009,7.3645
+Coffea arabica → Phaseolus vulgaris → Manihot esculenta,1,Coffea arabica,98,270.0,945.9609,1120.9139,1072.9115,-126.9506,649.7296,80.417,0.2245,51.67,28.0918,10.4044
+Coffea arabica → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,98,160.0,600.2315,660.3871,620.699,-20.4675,369.609,78.2694,0.2224,50.0435,15.5102,9.6939
+Coffea arabica → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,98,272.0,1173.9935,1103.5748,1012.3874,161.6061,539.9916,94.1096,0.2217,49.5987,22.0816,8.1182
+Coffea arabica → Phaseolus vulgaris → Oryza sativa,1,Coffea arabica,108,270.0,989.2042,1116.6184,1068.6709,-79.4668,632.0213,82.2302,0.2248,51.8852,27.287,10.1063
+Coffea arabica → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,108,160.0,612.6311,658.3722,618.9883,-6.3572,363.1829,79.9473,0.2191,47.8136,14.0741,8.7963
+Coffea arabica → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,108,130.0,559.4639,528.8818,606.5678,-47.104,342.0757,79.2973,0.2224,50.0506,9.6296,7.4074
+Coffea arabica → Phaseolus vulgaris → Saccharum officinarum,1,Coffea arabica,97,270.0,942.9206,1120.6269,1072.6618,-129.7412,650.3456,80.2151,0.2247,51.7766,27.6495,10.2405
+Coffea arabica → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,97,160.0,600.4272,660.8702,621.1131,-20.6859,369.7301,78.0454,0.2225,50.1109,15.6701,9.7938
+Coffea arabica → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,97,288.0,1240.5559,1168.4715,1215.5109,25.045,673.1126,91.109,0.2217,49.5539,23.6598,8.2152
+Coffea arabica → Phaseolus vulgaris → Solanum tuberosum,1,Coffea arabica,108,270.0,989.2042,1116.6184,1068.6709,-79.4668,632.0213,82.2302,0.2248,51.8852,27.287,10.1063
+Coffea arabica → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,108,160.0,612.6311,658.3722,618.9883,-6.3572,363.1829,79.9473,0.2191,47.8136,14.0741,8.7963
+Coffea arabica → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,108,125.0,536.5098,508.7062,504.4509,32.0589,274.7573,82.8394,0.2224,49.9992,9.2685,7.4148
+Coffea arabica → Phaseolus vulgaris → Zea mays,1,Coffea arabica,102,270.0,966.1769,1120.3041,1072.2117,-106.0348,643.211,81.1849,0.2244,51.6306,28.7941,10.6645
+Coffea arabica → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,102,160.0,598.2187,659.2814,620.014,-21.7953,369.5585,78.7677,0.2212,49.2403,14.902,9.3137
+Coffea arabica → Phaseolus vulgaris → Zea mays,3,Zea mays,102,215.0,930.5645,872.7307,848.824,81.7405,461.317,89.7741,0.222,49.7602,16.7941,7.8112
+Coffea arabica → Saccharum officinarum,1,Coffea arabica,108,270.0,989.2042,1116.6184,1068.6709,-79.4668,632.0213,82.2302,0.2248,51.8852,27.287,10.1063
+Coffea arabica → Saccharum officinarum,2,Saccharum officinarum,108,288.0,1161.836,1179.0639,1227.5351,-65.6991,710.3386,85.3633,0.2206,48.7967,23.5463,8.1758
+Coffea arabica → Saccharum officinarum → Lycopersicon esculentum,1,Coffea arabica,101,270.0,960.6204,1120.7128,1072.6228,-112.0024,645.3111,80.9986,0.2243,51.5915,28.8218,10.6747
+Coffea arabica → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,101,288.0,1131.0819,1181.3792,1230.0149,-98.933,727.9233,84.3489,0.2212,49.2239,25.1782,8.7424
+Coffea arabica → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,101,110.0,499.5851,443.609,449.7581,49.8271,236.2255,85.7771,0.2234,50.7748,8.6337,7.8488
+Coffea arabica → Saccharum officinarum → Manihot esculenta,1,Coffea arabica,90,270.0,933.2416,1118.9913,1071.0025,-137.7609,648.5915,78.9221,0.2263,52.8222,24.2778,8.9918
+Coffea arabica → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,90,288.0,1106.1228,1187.4879,1236.0368,-129.9141,742.1499,82.436,0.2231,50.5304,28.2556,9.811
+Coffea arabica → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,90,272.0,1230.3507,1098.7782,1008.9015,221.4492,523.4257,97.9398,0.2204,48.7221,24.0778,8.8521
+Coffea arabica → Saccharum officinarum → Oryza sativa,1,Coffea arabica,99,270.0,950.2876,1121.005,1072.9694,-122.6818,648.5452,80.6148,0.2244,51.6043,28.4444,10.535
+Coffea arabica → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,99,288.0,1124.7551,1182.0201,1230.459,-105.7039,731.1875,84.0327,0.2217,49.5486,25.6869,8.9191
+Coffea arabica → Saccharum officinarum → Oryza sativa,3,Oryza sativa,99,130.0,587.794,524.8568,601.8972,-14.1032,328.0895,82.9782,0.2226,50.191,10.4141,8.0109
+Coffea arabica → Saccharum officinarum → Phaseolus vulgaris,1,Coffea arabica,97,270.0,942.9206,1120.6269,1072.6618,-129.7412,650.3456,80.2151,0.2247,51.7766,27.6495,10.2405
+Coffea arabica → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,97,288.0,1119.5305,1183.1397,1231.2943,-111.7638,733.8507,83.7035,0.2221,49.8492,26.2165,9.1029
+Coffea arabica → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,97,160.0,721.4526,646.202,607.0611,114.3915,316.6324,90.3315,0.2217,49.5794,13.1134,8.1959
+Coffea arabica → Saccharum officinarum → Solanum tuberosum,1,Coffea arabica,100,270.0,955.3171,1120.969,1072.8973,-117.5802,647.115,80.8086,0.2243,51.5789,28.71,10.6333
+Coffea arabica → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,100,288.0,1127.5132,1181.6542,1230.2016,-102.6884,729.6752,84.1924,0.2215,49.3824,25.43,8.8299
+Coffea arabica → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,100,125.0,567.0716,504.2204,499.89,67.1816,261.6542,87.0785,0.223,50.4737,9.9,7.92
+Coffea arabica → Saccharum officinarum → Zea mays,1,Coffea arabica,94,270.0,937.2431,1119.4966,1071.5922,-134.3491,650.1765,79.5922,0.2253,52.2024,26.266,9.7281
+Coffea arabica → Saccharum officinarum → Zea mays,2,Saccharum officinarum,94,288.0,1111.7844,1185.2793,1233.2659,-121.4816,737.4523,83.1834,0.2227,50.23,27.0532,9.3935
+Coffea arabica → Saccharum officinarum → Zea mays,3,Zea mays,94,215.0,972.1665,868.4789,845.0063,127.1602,448.2893,93.1902,0.2207,48.9181,18.2553,8.4908
+Coffea arabica → Solanum tuberosum,1,Coffea arabica,119,270.0,1010.8842,1111.3165,1063.6568,-52.7726,619.7293,83.8728,0.223,50.6206,24.7647,9.1721
+Coffea arabica → Solanum tuberosum,2,Solanum tuberosum,119,125.0,499.7132,512.5697,508.5489,-8.8357,290.7391,77.7174,0.2205,48.7938,9.9664,7.9731
+Coffea arabica → Solanum tuberosum → Lycopersicon esculentum,1,Coffea arabica,111,270.0,994.2259,1115.2314,1067.3075,-73.0815,628.9068,82.7105,0.2246,51.7081,26.5495,9.8332
+Coffea arabica → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,111,125.0,479.3409,514.1631,510.2085,-30.8676,300.3935,76.1114,0.2187,47.563,10.6847,8.5477
+Coffea arabica → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,462.7836,449.1143,455.3475,7.4361,253.1687,79.742,0.2215,49.4215,8.4775,7.7068
+Coffea arabica → Solanum tuberosum → Manihot esculenta,1,Coffea arabica,101,270.0,960.6204,1120.7128,1072.6228,-112.0024,645.3111,80.9986,0.2243,51.5915,28.8218,10.6747
+Coffea arabica → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,101,125.0,462.6461,515.3675,511.4005,-48.7544,308.2903,74.1732,0.2221,49.8566,11.7426,9.3941
+Coffea arabica → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,101,272.0,1163.4779,1105.5564,1013.9553,149.5226,544.3649,93.2291,0.2217,49.5533,21.9901,8.0846
+Coffea arabica → Solanum tuberosum → Oryza sativa,1,Coffea arabica,110,270.0,992.9606,1115.7402,1067.8,-74.8394,629.9169,82.5533,0.2247,51.788,26.7909,9.9226
+Coffea arabica → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,110,125.0,475.5225,514.2762,510.2948,-34.7723,301.8172,75.8942,0.2189,47.652,10.7818,8.6255
+Coffea arabica → Solanum tuberosum → Oryza sativa,3,Oryza sativa,110,130.0,551.0562,530.4424,608.3504,-57.2942,347.789,78.0806,0.2215,49.4419,9.9727,7.6713
+Coffea arabica → Solanum tuberosum → Phaseolus vulgaris,1,Coffea arabica,108,270.0,989.2042,1116.6184,1068.6709,-79.4668,632.0213,82.2302,0.2248,51.8852,27.287,10.1063
+Coffea arabica → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,108,125.0,469.7195,514.5715,510.6091,-40.8896,304.433,75.4478,0.2194,47.9943,10.9815,8.7852
+Coffea arabica → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,679.4214,652.5069,612.9747,66.4467,334.4274,85.7594,0.2214,49.3799,12.3611,7.7257
+Coffea arabica → Solanum tuberosum → Saccharum officinarum,1,Coffea arabica,100,270.0,955.3171,1120.969,1072.8973,-117.5802,647.115,80.8086,0.2243,51.5789,28.71,10.6333
+Coffea arabica → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,100,125.0,463.4006,515.5319,511.5247,-48.1241,308.0967,74.139,0.2225,50.0734,11.86,9.488
+Coffea arabica → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,100,288.0,1231.1842,1170.3427,1217.1782,14.006,677.6028,90.2056,0.2217,49.5561,23.47,8.1493
+Coffea arabica → Solanum tuberosum → Zea mays,1,Coffea arabica,105,270.0,981.7079,1118.2599,1070.2586,-88.5507,636.478,81.7225,0.2247,51.8264,28.0667,10.3951
+Coffea arabica → Solanum tuberosum → Zea mays,2,Solanum tuberosum,105,125.0,462.2114,515.0756,511.1894,-48.9779,307.6545,74.7463,0.2205,48.7197,11.2952,9.0362
+Coffea arabica → Solanum tuberosum → Zea mays,3,Zea mays,105,215.0,919.61,875.0051,850.776,68.834,466.9125,88.685,0.2217,49.5352,16.8476,7.8361
+Coffea arabica → Zea mays,1,Coffea arabica,113,270.0,996.616,1114.0987,1066.2263,-69.6103,626.8321,83.0165,0.2243,51.5062,26.0796,9.6591
+Coffea arabica → Zea mays,2,Zea mays,113,215.0,867.1273,881.0849,857.7287,9.3986,491.0303,84.0125,0.22,48.4251,17.3982,8.0922
+Coffea arabica → Zea mays → Lycopersicon esculentum,1,Coffea arabica,106,270.0,985.3775,1117.6581,1069.6833,-84.3057,634.7533,81.8949,0.2248,51.8749,27.8019,10.297
+Coffea arabica → Zea mays → Lycopersicon esculentum,2,Zea mays,106,215.0,835.6287,883.3759,859.8079,-24.1792,505.6418,82.9567,0.2197,48.2263,18.5472,8.6266
+Coffea arabica → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,106,110.0,481.7194,445.8673,452.1095,29.61,242.2602,83.3308,0.2235,50.8297,8.2264,7.4786
+Coffea arabica → Zea mays → Manihot esculenta,1,Coffea arabica,95,270.0,938.9201,1119.8617,1071.9487,-133.0286,650.4085,79.7986,0.2251,52.048,26.7368,9.9025
+Coffea arabica → Zea mays → Manihot esculenta,2,Zea mays,95,215.0,816.3546,887.042,862.8466,-46.4919,515.9116,81.0132,0.2226,50.1882,20.6947,9.6255
+Coffea arabica → Zea mays → Manihot esculenta,3,Manihot esculenta,95,272.0,1196.4271,1101.2318,1010.3353,186.0918,531.9801,95.7973,0.2213,49.294,22.7684,8.3707
+Coffea arabica → Zea mays → Oryza sativa,1,Coffea arabica,104,270.0,977.4247,1118.9256,1070.8905,-93.4658,638.4674,81.5468,0.2246,51.7599,28.3365,10.495
+Coffea arabica → Zea mays → Oryza sativa,2,Zea mays,104,215.0,827.6125,883.5914,860.1069,-32.4944,509.465,82.629,0.2203,48.5738,18.9038,8.7925
+Coffea arabica → Zea mays → Oryza sativa,3,Oryza sativa,104,130.0,573.2308,527.0208,604.4876,-31.2568,334.8329,81.3676,0.223,50.4815,9.8942,7.6109
+Coffea arabica → Zea mays → Phaseolus vulgaris,1,Coffea arabica,102,270.0,966.1769,1120.3041,1072.2117,-106.0348,643.211,81.1849,0.2244,51.6306,28.7941,10.6645
+Coffea arabica → Zea mays → Phaseolus vulgaris,2,Zea mays,102,215.0,822.7353,883.8233,860.4384,-37.7031,512.153,82.2884,0.2209,49.0431,19.2745,8.9649
+Coffea arabica → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,102,160.0,706.0479,648.1888,609.0493,96.9986,321.2832,88.9665,0.2226,50.2038,12.4216,7.7635
+Coffea arabica → Zea mays → Saccharum officinarum,1,Coffea arabica,94,270.0,937.2431,1119.4966,1071.5922,-134.3491,650.1765,79.5922,0.2253,52.2024,26.266,9.7281
+Coffea arabica → Zea mays → Saccharum officinarum,2,Zea mays,94,215.0,815.9614,887.5756,863.4406,-47.4792,516.4406,80.8112,0.2227,50.2505,20.9149,9.7279
+Coffea arabica → Zea mays → Saccharum officinarum,3,Saccharum officinarum,94,288.0,1267.9895,1166.1826,1213.2396,54.7499,663.1151,92.8891,0.2212,49.2353,24.3936,8.47
+Coffea arabica → Zea mays → Solanum tuberosum,1,Coffea arabica,105,270.0,981.7079,1118.2599,1070.2586,-88.5507,636.478,81.7225,0.2247,51.8264,28.0667,10.3951
+Coffea arabica → Zea mays → Solanum tuberosum,2,Zea mays,105,215.0,831.3496,883.4825,859.9552,-28.6056,507.678,82.7944,0.22,48.3759,18.7238,8.7087
+Coffea arabica → Zea mays → Solanum tuberosum,3,Solanum tuberosum,105,125.0,550.4718,506.5982,502.3117,48.1601,267.4977,85.0675,0.2234,50.7138,9.419,7.5352
+Lycopersicon esculentum → Coffea arabica,1,Lycopersicon esculentum,120,110.0,398.9556,454.6427,461.1408,-62.1852,278.7883,72.357,0.2229,50.6901,12.1,11.0
+Lycopersicon esculentum → Coffea arabica,2,Coffea arabica,120,270.0,1054.9157,1107.257,1059.9016,-4.9859,602.584,85.0846,0.222,49.7777,21.1167,7.821
+Lycopersicon esculentum → Coffea arabica → Manihot esculenta,1,Lycopersicon esculentum,102,110.0,372.4054,458.8331,465.3382,-92.9328,291.6616,68.5911,0.2218,50.0853,14.1373,12.852
+Lycopersicon esculentum → Coffea arabica → Manihot esculenta,2,Coffea arabica,102,270.0,999.3751,1114.7968,1067.0752,-67.7001,630.7178,82.4525,0.2245,51.5259,24.8431,9.2012
+Lycopersicon esculentum → Coffea arabica → Manihot esculenta,3,Manihot esculenta,102,272.0,1155.9341,1106.7728,1014.9825,140.9517,547.5192,92.6064,0.2215,49.4547,22.0392,8.1027
+Lycopersicon esculentum → Coffea arabica → Oryza sativa,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Coffea arabica → Oryza sativa,2,Coffea arabica,111,270.0,1016.3351,1109.9491,1062.5001,-46.1649,619.9666,83.8753,0.2229,50.4067,22.8288,8.4551
+Lycopersicon esculentum → Coffea arabica → Oryza sativa,3,Oryza sativa,111,130.0,546.8216,531.107,609.1091,-62.2875,350.5793,77.6058,0.2211,49.1837,10.1441,7.8032
+Lycopersicon esculentum → Coffea arabica → Phaseolus vulgaris,1,Lycopersicon esculentum,109,110.0,392.3628,458.1368,464.6853,-72.3225,283.8371,70.6082,0.2227,50.6435,13.3211,12.1101
+Lycopersicon esculentum → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,109,270.0,1011.8991,1110.7192,1063.203,-51.304,622.5003,83.5794,0.2234,50.7541,23.2477,8.6103
+Lycopersicon esculentum → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,109,160.0,674.6668,653.2851,613.6584,61.0084,336.8993,85.1478,0.2211,49.1453,12.5138,7.8211
+Lycopersicon esculentum → Coffea arabica → Saccharum officinarum,1,Lycopersicon esculentum,101,110.0,369.4166,458.9172,465.4962,-96.0796,292.7134,68.2801,0.2219,50.1452,14.0198,12.7453
+Lycopersicon esculentum → Coffea arabica → Saccharum officinarum,2,Coffea arabica,101,270.0,997.3648,1115.2176,1067.4972,-70.1324,631.7947,82.2787,0.2246,51.5669,25.0891,9.2923
+Lycopersicon esculentum → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1224.506,1171.5662,1218.3644,6.1417,681.1864,89.6765,0.2216,49.4874,23.5248,8.1683
+Lycopersicon esculentum → Coffea arabica → Solanum tuberosum,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Coffea arabica → Solanum tuberosum,2,Coffea arabica,111,270.0,1016.3351,1109.9491,1062.5001,-46.1649,619.9666,83.8753,0.2229,50.4067,22.8288,8.4551
+Lycopersicon esculentum → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,111,125.0,523.0808,510.9005,506.5224,16.5585,281.7013,80.7565,0.221,49.1156,9.8018,7.8414
+Lycopersicon esculentum → Coffea arabica → Zea mays,1,Lycopersicon esculentum,106,110.0,386.7754,458.2843,464.7794,-78.0041,286.5103,69.7763,0.2223,50.396,13.6981,12.4528
+Lycopersicon esculentum → Coffea arabica → Zea mays,2,Coffea arabica,106,270.0,1004.285,1112.5434,1064.9004,-60.6154,626.3289,83.1147,0.224,51.1605,23.9057,8.8539
+Lycopersicon esculentum → Coffea arabica → Zea mays,3,Zea mays,106,215.0,911.6653,876.0736,851.7782,59.8871,470.1191,87.9292,0.2214,49.3454,16.9717,7.8938
+Lycopersicon esculentum → Manihot esculenta,1,Lycopersicon esculentum,120,110.0,398.9556,454.6427,461.1408,-62.1852,278.7883,72.357,0.2229,50.6901,12.1,11.0
+Lycopersicon esculentum → Manihot esculenta,2,Manihot esculenta,120,272.0,1061.2144,1115.4832,1024.4638,36.7506,584.628,86.1993,0.222,49.7764,21.2917,7.8278
+Lycopersicon esculentum → Manihot esculenta → Coffea arabica,1,Lycopersicon esculentum,102,110.0,372.4054,458.8331,465.3382,-92.9328,291.6616,68.5911,0.2218,50.0853,14.1373,12.852
+Lycopersicon esculentum → Manihot esculenta → Coffea arabica,2,Manihot esculenta,102,272.0,1005.4791,1123.1539,1031.1369,-25.6578,612.805,83.7639,0.2245,51.5021,25.049,9.2092
+Lycopersicon esculentum → Manihot esculenta → Coffea arabica,3,Coffea arabica,102,270.0,1149.8301,1098.4158,1051.2146,98.6155,568.6335,91.6334,0.2215,49.4633,21.8333,8.0864
+Lycopersicon esculentum → Manihot esculenta → Oryza sativa,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Manihot esculenta → Oryza sativa,2,Manihot esculenta,111,272.0,1022.7746,1118.2716,1027.0982,-4.3236,603.5055,85.0804,0.2229,50.3827,23.018,8.4625
+Lycopersicon esculentum → Manihot esculenta → Oryza sativa,3,Oryza sativa,111,130.0,549.1853,530.7854,608.7682,-59.5829,349.7508,77.8496,0.2212,49.2346,10.0991,7.7685
+Lycopersicon esculentum → Manihot esculenta → Phaseolus vulgaris,1,Lycopersicon esculentum,109,110.0,392.3628,458.1368,464.6853,-72.3225,283.8371,70.6082,0.2227,50.6435,13.3211,12.1101
+Lycopersicon esculentum → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,109,272.0,1018.0089,1119.0504,1027.5826,-9.5737,605.9935,84.8066,0.2234,50.7265,23.4404,8.6178
+Lycopersicon esculentum → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,109,160.0,677.1084,652.9877,613.4503,63.6581,336.3033,85.3883,0.2212,49.1903,12.4679,7.7924
+Lycopersicon esculentum → Manihot esculenta → Saccharum officinarum,1,Lycopersicon esculentum,101,110.0,369.4166,458.9172,465.4962,-96.0796,292.7134,68.2801,0.2219,50.1452,14.0198,12.7453
+Lycopersicon esculentum → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,101,272.0,1003.519,1123.5796,1031.6803,-28.1612,613.7561,83.6032,0.2246,51.5451,25.297,9.3004
+Lycopersicon esculentum → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1226.1833,1171.23,1218.0824,8.1009,680.1994,89.7674,0.2216,49.5077,23.4752,8.1511
+Lycopersicon esculentum → Manihot esculenta → Solanum tuberosum,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,111,272.0,1022.7746,1118.2716,1027.0982,-4.3236,603.5055,85.0804,0.2229,50.3827,23.018,8.4625
+Lycopersicon esculentum → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,111,125.0,527.2395,510.6238,506.2898,20.9498,281.1658,81.0893,0.2211,49.1804,9.7568,7.8054
+Lycopersicon esculentum → Manihot esculenta → Zea mays,1,Lycopersicon esculentum,105,110.0,383.7833,458.3661,464.8337,-81.0504,287.6174,69.4885,0.2221,50.278,13.8286,12.5714
+Lycopersicon esculentum → Manihot esculenta → Zea mays,2,Manihot esculenta,105,272.0,1009.2296,1121.4877,1029.4351,-20.2054,609.9831,84.2278,0.2241,51.2478,24.3333,8.9461
+Lycopersicon esculentum → Manihot esculenta → Zea mays,3,Zea mays,105,215.0,910.8775,876.4085,852.1214,58.7561,471.3555,87.8814,0.2212,49.2532,17.0857,7.9468
+Lycopersicon esculentum → Oryza sativa,1,Lycopersicon esculentum,129,110.0,412.8302,453.7194,460.1583,-47.3281,272.8484,74.0217,0.2201,48.7902,11.2558,10.2326
+Lycopersicon esculentum → Oryza sativa,2,Oryza sativa,129,130.0,520.9354,532.0691,610.2803,-89.3448,357.2829,74.7452,0.2241,51.2603,9.4109,7.2391
+Lycopersicon esculentum → Oryza sativa → Coffea arabica,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Oryza sativa → Coffea arabica,2,Oryza sativa,111,130.0,486.8467,534.3568,612.8889,-126.0422,374.6537,71.4973,0.2264,52.7956,10.9369,8.413
+Lycopersicon esculentum → Oryza sativa → Coffea arabica,3,Coffea arabica,111,270.0,1076.3101,1106.6993,1059.3524,16.9577,598.9716,86.3547,0.2204,48.6676,22.036,8.1615
+Lycopersicon esculentum → Oryza sativa → Manihot esculenta,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Oryza sativa → Manihot esculenta,2,Oryza sativa,111,130.0,486.8467,534.3568,612.8889,-126.0422,374.6537,71.4973,0.2264,52.7956,10.9369,8.413
+Lycopersicon esculentum → Oryza sativa → Manihot esculenta,3,Manihot esculenta,111,272.0,1085.1132,1114.7002,1023.7976,61.3156,578.1663,87.5763,0.2204,48.6808,22.1802,8.1545
+Lycopersicon esculentum → Oryza sativa → Phaseolus vulgaris,1,Lycopersicon esculentum,118,110.0,400.3288,454.8863,461.2987,-60.9698,278.3672,72.3919,0.2235,51.125,12.3051,11.1864
+Lycopersicon esculentum → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,118,130.0,492.2083,533.6918,612.1443,-119.9359,371.8752,72.391,0.2236,50.9337,10.2881,7.914
+Lycopersicon esculentum → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,118,160.0,635.549,656.4462,617.2385,18.3105,352.0041,80.7702,0.2203,48.6466,12.839,8.0244
+Lycopersicon esculentum → Oryza sativa → Saccharum officinarum,1,Lycopersicon esculentum,110,110.0,394.9385,457.9849,464.5053,-69.5668,282.8747,70.8754,0.2228,50.7284,13.2,12.0
+Lycopersicon esculentum → Oryza sativa → Saccharum officinarum,2,Oryza sativa,110,130.0,487.6054,534.5167,613.0715,-125.4661,374.5215,71.5286,0.2267,52.9958,11.0364,8.4895
+Lycopersicon esculentum → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,110,288.0,1148.9175,1180.0095,1228.8829,-79.9655,716.7295,84.4542,0.2205,48.7862,23.5091,8.1629
+Lycopersicon esculentum → Oryza sativa → Solanum tuberosum,1,Lycopersicon esculentum,121,110.0,398.818,454.6517,461.1527,-62.3346,278.9626,72.442,0.2225,50.4269,12.0,10.9091
+Lycopersicon esculentum → Oryza sativa → Solanum tuberosum,2,Oryza sativa,121,130.0,501.4117,533.3289,611.7105,-110.2988,367.7859,73.0755,0.2229,50.4328,10.0331,7.7177
+Lycopersicon esculentum → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,121,125.0,495.9412,512.0681,507.9925,-12.0514,291.5211,77.4037,0.2213,49.3148,9.7355,7.7884
+Lycopersicon esculentum → Oryza sativa → Zea mays,1,Lycopersicon esculentum,115,110.0,401.6496,455.8589,462.2165,-60.5669,278.5828,72.1417,0.2237,51.2756,12.6261,11.4783
+Lycopersicon esculentum → Oryza sativa → Zea mays,2,Oryza sativa,115,130.0,486.019,534.0943,612.6178,-126.5988,374.5375,71.6708,0.2248,51.6898,10.5565,8.1204
+Lycopersicon esculentum → Oryza sativa → Zea mays,3,Zea mays,115,215.0,857.7035,881.5935,858.3876,-0.6841,494.9137,83.1843,0.2201,48.5122,17.4783,8.1294
+Lycopersicon esculentum → Phaseolus vulgaris,1,Lycopersicon esculentum,127,110.0,407.3062,453.9802,460.3992,-53.093,274.9335,73.6126,0.2204,49.0538,11.4331,10.3937
+Lycopersicon esculentum → Phaseolus vulgaris,2,Phaseolus vulgaris,127,160.0,637.2431,655.005,615.7971,21.4461,347.9046,81.7762,0.2235,50.8609,11.7717,7.3573
+Lycopersicon esculentum → Phaseolus vulgaris → Coffea arabica,1,Lycopersicon esculentum,109,110.0,392.3628,458.1368,464.6853,-72.3225,283.8371,70.6082,0.2227,50.6435,13.3211,12.1101
+Lycopersicon esculentum → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,109,160.0,598.8837,658.0748,618.4847,-19.601,365.5015,79.0936,0.2262,52.6746,13.7156,8.5722
+Lycopersicon esculentum → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,109,270.0,1087.6822,1105.9295,1058.5692,29.113,594.3339,87.2003,0.2204,48.6627,22.0459,8.1651
+Lycopersicon esculentum → Phaseolus vulgaris → Manihot esculenta,1,Lycopersicon esculentum,109,110.0,392.3628,458.1368,464.6853,-72.3225,283.8371,70.6082,0.2227,50.6435,13.3211,12.1101
+Lycopersicon esculentum → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,109,160.0,598.8837,658.0748,618.4847,-19.601,365.5015,79.0936,0.2262,52.6746,13.7156,8.5722
+Lycopersicon esculentum → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,109,272.0,1096.2337,1113.9632,1022.7948,73.4389,572.8977,88.4227,0.2204,48.6769,22.1927,8.1591
+Lycopersicon esculentum → Phaseolus vulgaris → Oryza sativa,1,Lycopersicon esculentum,118,110.0,400.3288,454.8863,461.2987,-60.9698,278.3672,72.3919,0.2235,51.125,12.3051,11.1864
+Lycopersicon esculentum → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,118,160.0,607.7339,656.6726,617.2909,-9.557,360.5843,80.3863,0.2231,50.5671,12.6695,7.9184
+Lycopersicon esculentum → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,118,130.0,520.0234,533.4654,611.8888,-91.8655,361.8659,73.9008,0.2202,48.5699,10.4576,8.0443
+Lycopersicon esculentum → Phaseolus vulgaris → Saccharum officinarum,1,Lycopersicon esculentum,108,110.0,390.1337,458.1929,464.7615,-74.6278,284.8027,70.336,0.2226,50.5763,13.4444,12.2222
+Lycopersicon esculentum → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,108,160.0,599.0705,658.4255,618.7668,-19.6963,365.4793,78.9147,0.2264,52.785,13.8426,8.6516
+Lycopersicon esculentum → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,108,288.0,1161.836,1179.0639,1227.5351,-65.6991,710.3386,85.3633,0.2206,48.7967,23.5463,8.1758
+Lycopersicon esculentum → Phaseolus vulgaris → Solanum tuberosum,1,Lycopersicon esculentum,119,110.0,399.3544,454.7441,461.1799,-61.8255,278.5765,72.3179,0.2232,50.9273,12.2017,11.0924
+Lycopersicon esculentum → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,119,160.0,611.5298,656.5724,617.1647,-5.6348,359.1458,80.5511,0.2229,50.4097,12.563,7.8519
+Lycopersicon esculentum → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,119,125.0,499.7132,512.5697,508.5489,-8.8357,290.7391,77.7174,0.2205,48.7938,9.9664,7.9731
+Lycopersicon esculentum → Phaseolus vulgaris → Zea mays,1,Lycopersicon esculentum,113,110.0,399.3874,456.8512,463.2677,-63.8802,280.0169,71.6486,0.2234,51.1021,12.8496,11.6814
+Lycopersicon esculentum → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,113,160.0,597.2286,657.2475,618.0043,-20.7757,365.3187,79.5184,0.2249,51.784,13.2301,8.2688
+Lycopersicon esculentum → Phaseolus vulgaris → Zea mays,3,Zea mays,113,215.0,867.1273,881.0849,857.7287,9.3986,491.0303,84.0125,0.22,48.4251,17.3982,8.0922
+Lycopersicon esculentum → Saccharum officinarum,1,Lycopersicon esculentum,118,110.0,400.3288,454.8863,461.2987,-60.9698,278.3672,72.3919,0.2235,51.125,12.3051,11.1864
+Lycopersicon esculentum → Saccharum officinarum,2,Saccharum officinarum,118,288.0,1119.8398,1181.9983,1230.8997,-111.0599,728.4341,82.5766,0.2218,49.6727,22.9661,7.9743
+Lycopersicon esculentum → Saccharum officinarum → Coffea arabica,1,Lycopersicon esculentum,101,110.0,369.4166,458.9172,465.4962,-96.0796,292.7134,68.2801,0.2219,50.1452,14.0198,12.7453
+Lycopersicon esculentum → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,101,288.0,1065.8646,1189.6596,1238.5463,-172.6818,758.1994,79.6439,0.2243,51.3566,26.8317,9.3166
+Lycopersicon esculentum → Saccharum officinarum → Coffea arabica,3,Coffea arabica,101,270.0,1156.0062,1097.1242,1049.9976,106.0086,565.2777,92.2101,0.2217,49.5731,21.7822,8.0675
+Lycopersicon esculentum → Saccharum officinarum → Manihot esculenta,1,Lycopersicon esculentum,101,110.0,369.4166,458.9172,465.4962,-96.0796,292.7134,68.2801,0.2219,50.1452,14.0198,12.7453
+Lycopersicon esculentum → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,101,288.0,1065.8646,1189.6596,1238.5463,-172.6818,758.1994,79.6439,0.2243,51.3566,26.8317,9.3166
+Lycopersicon esculentum → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,101,272.0,1163.8377,1105.1501,1013.6644,150.1733,543.4168,93.21,0.2217,49.5874,21.9406,8.0664
+Lycopersicon esculentum → Saccharum officinarum → Oryza sativa,1,Lycopersicon esculentum,110,110.0,394.9385,457.9849,464.5053,-69.5668,282.8747,70.8754,0.2228,50.7284,13.2,12.0
+Lycopersicon esculentum → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,110,288.0,1086.2383,1184.4548,1233.3911,-147.1528,746.8006,81.3094,0.2228,50.349,24.6364,8.5543
+Lycopersicon esculentum → Saccharum officinarum → Oryza sativa,3,Oryza sativa,110,130.0,550.2845,530.0714,607.9419,-57.6574,347.3836,78.0101,0.2217,49.5335,9.9091,7.6224
+Lycopersicon esculentum → Saccharum officinarum → Phaseolus vulgaris,1,Lycopersicon esculentum,108,110.0,390.1337,458.1929,464.7615,-74.6278,284.8027,70.336,0.2226,50.5763,13.4444,12.2222
+Lycopersicon esculentum → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,108,288.0,1081.0855,1185.4439,1234.1275,-153.042,749.5558,80.9633,0.2233,50.6459,25.0926,8.7127
+Lycopersicon esculentum → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,679.821,652.0455,612.6681,67.1529,333.7932,85.8278,0.2216,49.4564,12.2963,7.6852
+Lycopersicon esculentum → Saccharum officinarum → Solanum tuberosum,1,Lycopersicon esculentum,110,110.0,394.9385,457.9849,464.5053,-69.5668,282.8747,70.8754,0.2228,50.7284,13.2,12.0
+Lycopersicon esculentum → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,110,288.0,1086.2383,1184.4548,1233.3911,-147.1528,746.8006,81.3094,0.2228,50.349,24.6364,8.5543
+Lycopersicon esculentum → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,110,125.0,529.3885,509.8867,505.5816,23.807,279.1238,81.473,0.2216,49.4785,9.5818,7.6655
+Lycopersicon esculentum → Saccharum officinarum → Zea mays,1,Lycopersicon esculentum,104,110.0,380.4692,458.5059,464.9534,-84.4842,288.9797,69.1951,0.2219,50.1705,13.9615,12.6923
+Lycopersicon esculentum → Saccharum officinarum → Zea mays,2,Saccharum officinarum,104,288.0,1070.8781,1188.0396,1236.553,-165.6749,754.5765,80.2311,0.224,51.1293,26.0577,9.0478
+Lycopersicon esculentum → Saccharum officinarum → Zea mays,3,Zea mays,104,215.0,917.5848,875.0201,850.9061,66.6787,467.665,88.5075,0.2216,49.4623,16.9712,7.8936
+Lycopersicon esculentum → Solanum tuberosum,1,Lycopersicon esculentum,129,110.0,412.8302,453.7194,460.1583,-47.3281,272.8484,74.0217,0.2201,48.7902,11.2558,10.2326
+Lycopersicon esculentum → Solanum tuberosum,2,Solanum tuberosum,129,125.0,501.1319,511.8081,507.765,-6.6332,287.4518,78.3787,0.2241,51.2645,9.0698,7.2558
+Lycopersicon esculentum → Solanum tuberosum → Coffea arabica,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,111,125.0,467.7274,514.0058,509.9553,-42.2279,302.526,75.3319,0.2265,52.877,10.5405,8.4324
+Lycopersicon esculentum → Solanum tuberosum → Coffea arabica,3,Coffea arabica,111,270.0,1071.6886,1106.8438,1059.5117,12.1768,600.4534,86.0099,0.2204,48.6653,22.0901,8.1815
+Lycopersicon esculentum → Solanum tuberosum → Manihot esculenta,1,Lycopersicon esculentum,111,110.0,396.9345,457.6592,464.152,-67.2175,281.8966,71.1378,0.223,50.8513,13.0811,11.8919
+Lycopersicon esculentum → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,111,125.0,467.7274,514.0058,509.9553,-42.2279,302.526,75.3319,0.2265,52.877,10.5405,8.4324
+Lycopersicon esculentum → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,111,272.0,1082.2868,1114.8897,1024.1007,58.1861,579.8104,87.1482,0.2204,48.6839,22.2342,8.1744
+Lycopersicon esculentum → Solanum tuberosum → Oryza sativa,1,Lycopersicon esculentum,121,110.0,398.818,454.6517,461.1527,-62.3346,278.9626,72.442,0.2225,50.4269,12.0,10.9091
+Lycopersicon esculentum → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,121,125.0,481.4193,512.9712,508.9544,-27.5351,296.484,76.9491,0.223,50.4743,9.6694,7.7355
+Lycopersicon esculentum → Solanum tuberosum → Oryza sativa,3,Oryza sativa,121,130.0,515.9335,532.4259,610.6587,-94.7252,362.0284,73.3524,0.2213,49.3179,10.0992,7.7686
+Lycopersicon esculentum → Solanum tuberosum → Phaseolus vulgaris,1,Lycopersicon esculentum,119,110.0,399.3544,454.7441,461.1799,-61.8255,278.5765,72.3179,0.2232,50.9273,12.2017,11.0924
+Lycopersicon esculentum → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,119,125.0,475.3989,513.2322,509.1924,-33.7935,298.8675,76.5617,0.2234,50.7906,9.8319,7.8655
+Lycopersicon esculentum → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,119,160.0,635.8441,655.9099,616.7358,19.1083,351.5198,80.7351,0.2206,48.8497,12.6975,7.9359
+Lycopersicon esculentum → Solanum tuberosum → Saccharum officinarum,1,Lycopersicon esculentum,110,110.0,394.9385,457.9849,464.5053,-69.5668,282.8747,70.8754,0.2228,50.7284,13.2,12.0
+Lycopersicon esculentum → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,110,125.0,468.9027,514.1869,510.107,-41.2043,302.3469,75.393,0.2268,53.0718,10.6364,8.5091
+Lycopersicon esculentum → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,110,288.0,1146.7241,1180.1546,1229.2122,-82.4881,718.6705,84.1927,0.2206,48.7894,23.5818,8.1881
+Lycopersicon esculentum → Solanum tuberosum → Zea mays,1,Lycopersicon esculentum,115,110.0,401.6496,455.8589,462.2165,-60.5669,278.5828,72.1417,0.2237,51.2756,12.6261,11.4783
+Lycopersicon esculentum → Solanum tuberosum → Zea mays,2,Solanum tuberosum,115,125.0,466.8033,513.7568,509.8052,-43.0019,302.4709,75.7465,0.2249,51.7656,10.1739,8.1391
+Lycopersicon esculentum → Solanum tuberosum → Zea mays,3,Zea mays,115,215.0,855.6383,881.716,858.5931,-2.9548,496.0707,82.9686,0.2201,48.4907,17.513,8.1456
+Lycopersicon esculentum → Zea mays,1,Lycopersicon esculentum,123,110.0,399.2617,454.5457,461.0384,-61.7767,278.3186,72.7545,0.2217,49.8926,11.8049,10.7317
+Lycopersicon esculentum → Zea mays,2,Zea mays,123,215.0,843.5614,881.0042,857.397,-13.8356,496.3581,82.6337,0.2226,50.203,16.3659,7.612
+Lycopersicon esculentum → Zea mays → Coffea arabica,1,Lycopersicon esculentum,106,110.0,386.7754,458.2843,464.7794,-78.0041,286.5103,69.7763,0.2223,50.396,13.6981,12.4528
+Lycopersicon esculentum → Zea mays → Coffea arabica,2,Zea mays,106,215.0,796.0858,885.8694,861.4805,-65.3947,518.7288,79.8653,0.2254,52.0865,18.9906,8.8328
+Lycopersicon esculentum → Zea mays → Coffea arabica,3,Coffea arabica,106,270.0,1119.8645,1102.7476,1055.4073,64.4572,581.1699,89.3923,0.2208,48.9777,21.8868,8.1062
+Lycopersicon esculentum → Zea mays → Manihot esculenta,1,Lycopersicon esculentum,105,110.0,383.7833,458.3661,464.8337,-81.0504,287.6174,69.4885,0.2221,50.278,13.8286,12.5714
+Lycopersicon esculentum → Zea mays → Manihot esculenta,2,Zea mays,105,215.0,795.4493,886.3707,861.985,-66.5356,519.1601,79.6736,0.2255,52.1716,19.1714,8.9169
+Lycopersicon esculentum → Zea mays → Manihot esculenta,3,Manihot esculenta,105,272.0,1124.6578,1111.5256,1019.7367,104.9211,561.8855,90.3371,0.2208,48.941,22.2476,8.1793
+Lycopersicon esculentum → Zea mays → Oryza sativa,1,Lycopersicon esculentum,115,110.0,401.6496,455.8589,462.2165,-60.5669,278.5828,72.1417,0.2237,51.2756,12.6261,11.4783
+Lycopersicon esculentum → Zea mays → Oryza sativa,2,Zea mays,115,215.0,808.8915,882.979,859.2313,-50.3398,512.0371,81.4257,0.2229,50.4163,17.5043,8.1416
+Lycopersicon esculentum → Zea mays → Oryza sativa,3,Oryza sativa,115,130.0,534.831,532.7087,611.0386,-76.2075,356.8025,75.632,0.2202,48.5407,10.5304,8.1003
+Lycopersicon esculentum → Zea mays → Phaseolus vulgaris,1,Lycopersicon esculentum,113,110.0,399.3874,456.8512,463.2677,-63.8802,280.0169,71.6486,0.2234,51.1021,12.8496,11.6814
+Lycopersicon esculentum → Zea mays → Phaseolus vulgaris,2,Zea mays,113,215.0,803.5747,883.1615,859.5102,-55.9355,514.7539,81.0969,0.2236,50.8599,17.8142,8.2857
+Lycopersicon esculentum → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,113,160.0,660.7812,655.1709,615.8761,44.905,344.1052,83.3164,0.2201,48.5122,12.8142,8.0088
+Lycopersicon esculentum → Zea mays → Saccharum officinarum,1,Lycopersicon esculentum,104,110.0,380.4692,458.5059,464.9534,-84.4842,288.9797,69.1951,0.2219,50.1705,13.9615,12.6923
+Lycopersicon esculentum → Zea mays → Saccharum officinarum,2,Zea mays,104,215.0,794.9676,886.896,862.5636,-67.596,519.8274,79.4781,0.2256,52.23,19.3558,9.0027
+Lycopersicon esculentum → Zea mays → Saccharum officinarum,3,Saccharum officinarum,104,288.0,1193.4953,1176.1636,1223.6611,-30.1658,696.8659,87.4716,0.221,49.0631,23.6731,8.2198
+Lycopersicon esculentum → Zea mays → Solanum tuberosum,1,Lycopersicon esculentum,115,110.0,401.6496,455.8589,462.2165,-60.5669,278.5828,72.1417,0.2237,51.2756,12.6261,11.4783
+Lycopersicon esculentum → Zea mays → Solanum tuberosum,2,Zea mays,115,215.0,808.8915,882.979,859.2313,-50.3398,512.0371,81.4257,0.2229,50.4163,17.5043,8.1416
+Lycopersicon esculentum → Zea mays → Solanum tuberosum,3,Solanum tuberosum,115,125.0,513.5501,512.4938,508.4181,5.132,287.3856,79.4816,0.22,48.4535,10.1826,8.1461
+Manihot esculenta → Coffea arabica,1,Manihot esculenta,109,272.0,998.1751,1124.4693,1031.2907,-33.1155,609.4199,83.9115,0.2248,51.8385,27.211,10.004
+Manihot esculenta → Coffea arabica,2,Coffea arabica,109,270.0,1089.305,1105.7056,1058.3533,30.9517,593.6239,87.4161,0.2204,48.6621,22.0183,8.1549
+Manihot esculenta → Coffea arabica → Lycopersicon esculentum,1,Manihot esculenta,102,272.0,973.4081,1128.5809,1035.3138,-61.9056,619.9829,82.8074,0.2244,51.6384,28.9804,10.6546
+Manihot esculenta → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,102,270.0,1057.6292,1107.9235,1060.5107,-2.8815,608.6253,86.5525,0.2209,48.9977,23.5294,8.7146
+Manihot esculenta → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,102,110.0,496.6773,443.8984,450.0607,46.6166,236.8313,85.3361,0.2236,50.8913,8.5098,7.7362
+Manihot esculenta → Coffea arabica → Oryza sativa,1,Manihot esculenta,100,272.0,962.6169,1129.2563,1036.2574,-73.6405,624.5718,82.4635,0.2243,51.5862,28.9,10.625
+Manihot esculenta → Coffea arabica → Oryza sativa,2,Coffea arabica,100,270.0,1050.8966,1108.4248,1060.9665,-10.0699,611.5854,86.2835,0.2214,49.3643,24.0,8.8889
+Manihot esculenta → Coffea arabica → Oryza sativa,3,Oryza sativa,100,130.0,586.455,525.0331,602.152,-15.697,328.4606,82.9078,0.2228,50.3631,10.28,7.9077
+Manihot esculenta → Coffea arabica → Phaseolus vulgaris,1,Manihot esculenta,98,272.0,953.2396,1129.2331,1036.6728,-83.4332,628.3414,82.1056,0.2245,51.6711,28.2857,10.3992
+Manihot esculenta → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,98,270.0,1046.9654,1109.3109,1061.7735,-14.8081,614.0863,86.0036,0.2219,49.7183,24.4898,9.0703
+Manihot esculenta → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,98,160.0,719.9809,646.3318,607.2062,112.7747,317.1039,90.2733,0.222,49.8139,12.9082,8.0676
+Manihot esculenta → Coffea arabica → Saccharum officinarum,1,Manihot esculenta,90,272.0,940.4941,1127.2984,1034.338,-93.8439,628.5485,80.6534,0.2263,52.8104,24.4889,9.0033
+Manihot esculenta → Coffea arabica → Saccharum officinarum,2,Coffea arabica,90,270.0,1033.7188,1114.0962,1066.3549,-32.6362,623.6568,84.7595,0.2231,50.4841,26.6667,9.8765
+Manihot esculenta → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,90,288.0,1295.5021,1163.8628,1211.6434,83.8587,654.9072,94.8963,0.2206,48.8612,25.4556,8.8387
+Manihot esculenta → Coffea arabica → Solanum tuberosum,1,Manihot esculenta,101,272.0,967.9197,1128.9899,1035.8228,-67.9031,622.2804,82.6372,0.2244,51.5998,29.0099,10.6654
+Manihot esculenta → Coffea arabica → Solanum tuberosum,2,Coffea arabica,101,270.0,1053.8538,1108.1431,1060.7109,-6.8571,610.221,86.4193,0.2211,49.1727,23.7624,8.8009
+Manihot esculenta → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,101,125.0,564.971,504.5037,500.2031,64.7679,262.3794,86.969,0.2232,50.6281,9.7822,7.8257
+Manihot esculenta → Coffea arabica → Zea mays,1,Manihot esculenta,95,272.0,946.042,1128.193,1036.0022,-89.9602,630.6274,81.5406,0.2251,52.0453,26.9368,9.9033
+Manihot esculenta → Coffea arabica → Zea mays,2,Coffea arabica,95,270.0,1039.6225,1111.3371,1063.6614,-24.0389,617.9657,85.5616,0.2225,50.1224,25.2632,9.3567
+Manihot esculenta → Coffea arabica → Zea mays,3,Zea mays,95,215.0,966.0373,868.6055,844.9395,121.0977,449.2898,92.9195,0.221,49.1257,18.0,8.3721
+Manihot esculenta → Lycopersicon esculentum,1,Manihot esculenta,120,272.0,1022.3455,1119.3503,1027.1661,-4.8206,597.9904,85.3863,0.2228,50.4605,24.7167,9.087
+Manihot esculenta → Lycopersicon esculentum,2,Lycopersicon esculentum,120,110.0,437.8245,450.7756,457.2882,-19.4637,262.3632,76.241,0.2208,48.9985,8.675,7.8864
+Manihot esculenta → Lycopersicon esculentum → Coffea arabica,1,Manihot esculenta,102,272.0,973.4081,1128.5809,1035.3138,-61.9056,619.9829,82.8074,0.2244,51.6384,28.9804,10.6546
+Manihot esculenta → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,102,110.0,404.4764,453.4061,460.0822,-55.6058,278.5719,72.4645,0.222,49.7484,10.2059,9.2781
+Manihot esculenta → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,102,270.0,1149.8301,1098.4158,1051.2146,98.6155,568.6335,91.6334,0.2215,49.4633,21.8333,8.0864
+Manihot esculenta → Lycopersicon esculentum → Oryza sativa,1,Manihot esculenta,111,272.0,1001.217,1123.4793,1030.2315,-29.0145,607.6792,84.2014,0.2246,51.6969,26.7207,9.8238
+Manihot esculenta → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,111,110.0,418.4921,452.4515,459.0527,-40.5606,271.9787,74.3146,0.2188,47.6018,9.3784,8.5258
+Manihot esculenta → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,111,130.0,549.1853,530.7854,608.7682,-59.5829,349.7508,77.8496,0.2212,49.2346,10.0991,7.7685
+Manihot esculenta → Lycopersicon esculentum → Phaseolus vulgaris,1,Manihot esculenta,109,272.0,998.1751,1124.4693,1031.2907,-33.1155,609.4199,83.9115,0.2248,51.8385,27.211,10.004
+Manihot esculenta → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,109,110.0,412.1966,452.7179,459.31,-47.1134,274.4007,73.8433,0.2192,47.8937,9.5505,8.6822
+Manihot esculenta → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,109,160.0,677.1084,652.9877,613.4503,63.6581,336.3033,85.3883,0.2212,49.1903,12.4679,7.7924
+Manihot esculenta → Lycopersicon esculentum → Saccharum officinarum,1,Manihot esculenta,101,272.0,967.9197,1128.9899,1035.8228,-67.9031,622.2804,82.6372,0.2244,51.5998,29.0099,10.6654
+Manihot esculenta → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,101,110.0,405.0159,453.5069,460.122,-55.1061,278.304,72.4222,0.2224,50.01,10.3069,9.3699
+Manihot esculenta → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1226.1833,1171.23,1218.0824,8.1009,680.1994,89.7674,0.2216,49.5077,23.4752,8.1511
+Manihot esculenta → Lycopersicon esculentum → Solanum tuberosum,1,Manihot esculenta,111,272.0,1001.217,1123.4793,1030.2315,-29.0145,607.6792,84.2014,0.2246,51.6969,26.7207,9.8238
+Manihot esculenta → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,111,110.0,418.4921,452.4515,459.0527,-40.5606,271.9787,74.3146,0.2188,47.6018,9.3784,8.5258
+Manihot esculenta → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,111,125.0,527.2395,510.6238,506.2898,20.9498,281.1658,81.0893,0.2211,49.1804,9.7568,7.8054
+Manihot esculenta → Lycopersicon esculentum → Zea mays,1,Manihot esculenta,105,272.0,988.8189,1126.531,1033.4691,-44.6502,614.0208,83.2986,0.2247,51.828,28.2476,10.3852
+Manihot esculenta → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,105,110.0,404.1941,453.3229,460.0054,-55.8113,278.2579,72.8468,0.2206,48.8435,9.9143,9.013
+Manihot esculenta → Lycopersicon esculentum → Zea mays,3,Zea mays,105,215.0,910.8775,876.4085,852.1214,58.7561,471.3555,87.8814,0.2212,49.2532,17.0857,7.9468
+Manihot esculenta → Oryza sativa,1,Manihot esculenta,118,272.0,1015.7279,1119.8041,1027.4445,-11.7166,600.9189,85.1386,0.2232,50.7841,25.1356,9.241
+Manihot esculenta → Oryza sativa,2,Oryza sativa,118,130.0,519.9569,533.488,611.892,-91.9351,361.9747,73.9859,0.2202,48.5605,10.4322,8.0248
+Manihot esculenta → Oryza sativa → Coffea arabica,1,Manihot esculenta,100,272.0,962.6169,1129.2563,1036.2574,-73.6405,624.5718,82.4635,0.2243,51.5862,28.9,10.625
+Manihot esculenta → Oryza sativa → Coffea arabica,2,Oryza sativa,100,130.0,481.707,536.2995,615.0701,-133.3631,381.464,70.2705,0.2223,49.9481,12.31,9.4692
+Manihot esculenta → Oryza sativa → Coffea arabica,3,Coffea arabica,100,270.0,1155.6446,1097.1583,1050.0384,105.6062,565.5897,92.2798,0.2217,49.5641,21.97,8.137
+Manihot esculenta → Oryza sativa → Lycopersicon esculentum,1,Manihot esculenta,111,272.0,1001.217,1123.4793,1030.2315,-29.0145,607.6792,84.2014,0.2246,51.6969,26.7207,9.8238
+Manihot esculenta → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,111,130.0,500.7629,534.843,613.4172,-112.6544,372.4057,72.3454,0.2187,47.5105,11.0901,8.5308
+Manihot esculenta → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,466.9145,448.3939,454.6894,12.2251,251.7296,80.5473,0.2218,49.6394,8.3874,7.6249
+Manihot esculenta → Oryza sativa → Phaseolus vulgaris,1,Manihot esculenta,108,272.0,996.1883,1124.8759,1031.7974,-35.6091,610.3081,83.7625,0.2248,51.8788,27.463,10.0967
+Manihot esculenta → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,108,130.0,490.2349,535.2586,613.895,-123.6601,377.131,71.5772,0.2192,47.8874,11.3981,8.7678
+Manihot esculenta → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,682.7298,651.8539,612.3851,70.3447,332.7499,86.0635,0.2217,49.5834,12.287,7.6794
+Manihot esculenta → Oryza sativa → Saccharum officinarum,1,Manihot esculenta,99,272.0,957.513,1129.3145,1036.5535,-79.0405,626.6116,82.2864,0.2244,51.6086,28.6364,10.5281
+Manihot esculenta → Oryza sativa → Saccharum officinarum,2,Oryza sativa,99,130.0,483.0665,536.5459,615.3508,-132.2843,381.3926,70.3833,0.2225,50.1111,12.4343,9.5649
+Manihot esculenta → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,99,288.0,1231.5077,1169.9888,1216.9876,14.5201,677.8441,90.2284,0.2217,49.5664,23.6364,8.2071
+Manihot esculenta → Oryza sativa → Solanum tuberosum,1,Manihot esculenta,110,272.0,999.8325,1123.9953,1030.7517,-30.9192,608.5568,84.0578,0.2247,51.7779,26.9636,9.9131
+Manihot esculenta → Oryza sativa → Solanum tuberosum,2,Oryza sativa,110,130.0,496.6672,534.9546,613.5407,-116.8735,374.0899,72.094,0.2187,47.572,11.1909,8.6084
+Manihot esculenta → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,110,125.0,530.9903,509.4257,505.1726,25.8176,277.991,82.0521,0.2218,49.6073,9.5182,7.6145
+Manihot esculenta → Oryza sativa → Zea mays,1,Manihot esculenta,104,272.0,984.5968,1127.1889,1034.0488,-49.452,615.6611,83.138,0.2246,51.7643,28.5192,10.485
+Manihot esculenta → Oryza sativa → Zea mays,2,Oryza sativa,104,130.0,480.7966,535.8831,614.6357,-133.8391,381.3425,70.484,0.2207,48.8726,11.8365,9.105
+Manihot esculenta → Oryza sativa → Zea mays,3,Zea mays,104,215.0,921.096,874.464,850.442,70.6539,466.2619,88.8184,0.2217,49.5352,16.9135,7.8667
+Manihot esculenta → Phaseolus vulgaris,1,Manihot esculenta,116,272.0,1011.2663,1120.5789,1027.915,-16.6487,603.1635,84.8824,0.2237,51.1107,25.569,9.4004
+Manihot esculenta → Phaseolus vulgaris,2,Phaseolus vulgaris,116,160.0,641.8658,656.5421,617.4342,24.4316,350.2634,81.427,0.2198,48.3193,13.0862,8.1789
+Manihot esculenta → Phaseolus vulgaris → Coffea arabica,1,Manihot esculenta,98,272.0,953.2396,1129.2331,1036.6728,-83.4332,628.3414,82.1056,0.2245,51.6711,28.2857,10.3992
+Manihot esculenta → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,98,160.0,599.6022,660.2516,620.631,-21.0287,369.5864,78.3208,0.2224,50.0092,15.4898,9.6811
+Manihot esculenta → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,98,270.0,1167.3441,1095.3911,1048.3698,118.9743,560.5435,93.2182,0.2217,49.6026,21.9082,8.1141
+Manihot esculenta → Phaseolus vulgaris → Lycopersicon esculentum,1,Manihot esculenta,109,272.0,998.1751,1124.4693,1031.2907,-33.1155,609.4199,83.9115,0.2248,51.8385,27.211,10.004
+Manihot esculenta → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,109,160.0,617.0957,658.1464,618.8036,-1.708,361.2419,80.2343,0.2189,47.6607,13.9266,8.7041
+Manihot esculenta → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,109,110.0,472.2094,447.5592,453.839,18.3704,248.3547,81.5255,0.2225,50.1186,8.0917,7.3561
+Manihot esculenta → Phaseolus vulgaris → Oryza sativa,1,Manihot esculenta,108,272.0,996.1883,1124.8759,1031.7974,-35.6091,610.3081,83.7625,0.2248,51.8788,27.463,10.0967
+Manihot esculenta → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,108,160.0,613.0451,658.2907,618.9446,-5.8995,362.9237,80.0513,0.219,47.7695,14.0556,8.7847
+Manihot esculenta → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,108,130.0,559.9196,528.8218,606.4857,-46.566,341.7265,79.3756,0.2225,50.12,9.6296,7.4074
+Manihot esculenta → Phaseolus vulgaris → Saccharum officinarum,1,Manihot esculenta,97,272.0,950.1377,1128.9487,1036.5758,-86.438,629.5363,81.9212,0.2247,51.7762,27.8454,10.2373
+Manihot esculenta → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,97,160.0,599.7538,660.7356,621.0335,-21.2797,369.6836,78.0973,0.2225,50.0819,15.6495,9.7809
+Manihot esculenta → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,97,288.0,1243.601,1168.3427,1215.3693,28.2318,672.5307,91.1945,0.2217,49.5503,23.6495,8.2116
+Manihot esculenta → Phaseolus vulgaris → Solanum tuberosum,1,Manihot esculenta,108,272.0,996.1883,1124.8759,1031.7974,-35.6091,610.3081,83.7625,0.2248,51.8788,27.463,10.0967
+Manihot esculenta → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,108,160.0,613.0451,658.2907,618.9446,-5.8995,362.9237,80.0513,0.219,47.7695,14.0556,8.7847
+Manihot esculenta → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,108,125.0,538.1741,508.5931,504.3289,33.8452,274.2497,83.2024,0.2224,50.0566,9.25,7.4
+Manihot esculenta → Phaseolus vulgaris → Zea mays,1,Manihot esculenta,102,272.0,973.4081,1128.5809,1035.3138,-61.9056,619.9829,82.8074,0.2244,51.6384,28.9804,10.6546
+Manihot esculenta → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,102,160.0,597.9961,659.1718,619.9701,-21.974,369.4581,78.8778,0.2211,49.1823,14.8824,9.3015
+Manihot esculenta → Phaseolus vulgaris → Zea mays,3,Zea mays,102,215.0,931.9625,872.5475,848.6325,83.33,460.7552,89.8914,0.222,49.7832,16.7647,7.7975
+Manihot esculenta → Saccharum officinarum,1,Manihot esculenta,108,272.0,996.1883,1124.8759,1031.7974,-35.6091,610.3081,83.7625,0.2248,51.8788,27.463,10.0967
+Manihot esculenta → Saccharum officinarum,2,Saccharum officinarum,108,288.0,1165.1108,1178.9965,1227.4128,-62.3019,709.463,85.5359,0.2206,48.8011,23.5278,8.1694
+Manihot esculenta → Saccharum officinarum → Coffea arabica,1,Manihot esculenta,90,272.0,940.4941,1127.2984,1034.338,-93.8439,628.5485,80.6534,0.2263,52.8104,24.4889,9.0033
+Manihot esculenta → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,90,288.0,1109.0321,1187.4364,1235.8995,-126.8674,741.4479,82.643,0.2231,50.5286,28.2333,9.8032
+Manihot esculenta → Saccharum officinarum → Coffea arabica,3,Coffea arabica,90,270.0,1220.1888,1090.5226,1043.8463,176.3425,541.0577,97.0279,0.2204,48.7055,23.8889,8.8477
+Manihot esculenta → Saccharum officinarum → Lycopersicon esculentum,1,Manihot esculenta,101,272.0,967.9197,1128.9899,1035.8228,-67.9031,622.2804,82.6372,0.2244,51.5998,29.0099,10.6654
+Manihot esculenta → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,101,288.0,1134.4512,1181.3511,1229.9466,-95.4954,727.1013,84.5334,0.2212,49.2043,25.1584,8.7356
+Manihot esculenta → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,101,110.0,496.748,443.3858,449.5841,47.1639,236.13,85.6559,0.2234,50.8044,8.6238,7.8398
+Manihot esculenta → Saccharum officinarum → Oryza sativa,1,Manihot esculenta,99,272.0,957.513,1129.3145,1036.5535,-79.0405,626.6116,82.2864,0.2244,51.6086,28.6364,10.5281
+Manihot esculenta → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,99,288.0,1128.252,1181.943,1230.3573,-102.1053,730.4097,84.2209,0.2217,49.5279,25.6667,8.912
+Manihot esculenta → Saccharum officinarum → Oryza sativa,3,Oryza sativa,99,130.0,586.3221,524.5917,601.6183,-15.2962,328.1141,83.0759,0.2226,50.1964,10.404,8.0031
+Manihot esculenta → Saccharum officinarum → Phaseolus vulgaris,1,Manihot esculenta,97,272.0,950.1377,1128.9487,1036.5758,-86.438,629.5363,81.9212,0.2247,51.7762,27.8454,10.2373
+Manihot esculenta → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,97,288.0,1122.7731,1183.034,1231.1581,-108.385,733.1126,83.8956,0.2221,49.8322,26.1959,9.0958
+Manihot esculenta → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,97,160.0,720.5818,646.0443,606.9701,113.6117,316.5925,90.3268,0.2217,49.5744,13.1031,8.1894
+Manihot esculenta → Saccharum officinarum → Solanum tuberosum,1,Manihot esculenta,100,272.0,962.6169,1129.2563,1036.2574,-73.6405,624.5718,82.4635,0.2243,51.5862,28.9,10.625
+Manihot esculenta → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,100,288.0,1130.9346,1181.6087,1230.1218,-99.1872,728.8612,84.3787,0.2214,49.361,25.41,8.8229
+Manihot esculenta → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,100,125.0,564.9778,503.9923,499.7232,65.2546,261.6135,86.9834,0.223,50.495,9.89,7.912
+Manihot esculenta → Saccharum officinarum → Zea mays,1,Manihot esculenta,94,272.0,944.4337,1127.8177,1035.6022,-91.1685,630.6799,81.3442,0.2253,52.1977,26.4681,9.7309
+Manihot esculenta → Saccharum officinarum → Zea mays,2,Saccharum officinarum,94,288.0,1114.7282,1185.1808,1233.1112,-118.383,736.7581,83.3816,0.2227,50.2174,27.0319,9.3861
+Manihot esculenta → Saccharum officinarum → Zea mays,3,Zea mays,94,215.0,971.5212,868.37,844.9666,126.5546,447.9112,93.1884,0.2207,48.9157,18.266,8.4958
+Manihot esculenta → Solanum tuberosum,1,Manihot esculenta,118,272.0,1015.7279,1119.8041,1027.4445,-11.7166,600.9189,85.1386,0.2232,50.7841,25.1356,9.241
+Manihot esculenta → Solanum tuberosum,2,Solanum tuberosum,118,125.0,499.6313,512.9735,509.008,-9.3768,291.0797,77.5958,0.2201,48.5355,10.0593,8.0475
+Manihot esculenta → Solanum tuberosum → Coffea arabica,1,Manihot esculenta,101,272.0,967.9197,1128.9899,1035.8228,-67.9031,622.2804,82.6372,0.2244,51.5998,29.0099,10.6654
+Manihot esculenta → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,101,125.0,462.9794,515.4246,511.4577,-48.4783,307.9946,74.2192,0.222,49.7882,11.7525,9.402
+Manihot esculenta → Solanum tuberosum → Coffea arabica,3,Coffea arabica,101,270.0,1155.8453,1097.2222,1050.0864,105.7589,565.6642,92.1916,0.2217,49.5615,21.7921,8.0711
+Manihot esculenta → Solanum tuberosum → Lycopersicon esculentum,1,Manihot esculenta,111,272.0,1001.217,1123.4793,1030.2315,-29.0145,607.6792,84.2014,0.2246,51.6969,26.7207,9.8238
+Manihot esculenta → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,111,125.0,480.1114,514.1976,510.2472,-30.1357,299.965,76.183,0.2187,47.5226,10.6937,8.555
+Manihot esculenta → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,465.6202,448.8778,455.1364,10.4837,252.9925,79.9204,0.2216,49.4857,8.4414,7.674
+Manihot esculenta → Solanum tuberosum → Oryza sativa,1,Manihot esculenta,110,272.0,999.8325,1123.9953,1030.7517,-30.9192,608.5568,84.0578,0.2247,51.7779,26.9636,9.9131
+Manihot esculenta → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,110,125.0,476.3853,514.3007,510.3232,-33.9379,301.3815,75.9664,0.2188,47.6021,10.7909,8.6327
+Manihot esculenta → Solanum tuberosum → Oryza sativa,3,Oryza sativa,110,130.0,551.2722,530.0795,607.9763,-56.7041,347.6489,78.1508,0.2216,49.5001,9.9182,7.6294
+Manihot esculenta → Solanum tuberosum → Phaseolus vulgaris,1,Manihot esculenta,108,272.0,996.1883,1124.8759,1031.7974,-35.6091,610.3081,83.7625,0.2248,51.8788,27.463,10.0967
+Manihot esculenta → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,108,125.0,470.2444,514.6039,510.6345,-40.39,304.0011,75.5214,0.2193,47.9335,10.9907,8.7926
+Manihot esculenta → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,680.9747,652.2799,612.7993,68.1754,334.053,85.9209,0.2215,49.4281,12.3148,7.6968
+Manihot esculenta → Solanum tuberosum → Saccharum officinarum,1,Manihot esculenta,100,272.0,962.6169,1129.2563,1036.2574,-73.6405,624.5718,82.4635,0.2243,51.5862,28.9,10.625
+Manihot esculenta → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,100,125.0,463.7927,515.5702,511.5614,-47.7687,307.7579,74.1998,0.2224,50.0124,11.87,9.496
+Manihot esculenta → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,100,288.0,1232.1197,1170.0308,1216.9198,15.1999,677.0724,90.1995,0.2217,49.5705,23.43,8.1354
+Manihot esculenta → Solanum tuberosum → Zea mays,1,Manihot esculenta,104,272.0,984.5968,1127.1889,1034.0488,-49.452,615.6611,83.138,0.2246,51.7643,28.5192,10.485
+Manihot esculenta → Solanum tuberosum → Zea mays,2,Solanum tuberosum,104,125.0,462.3031,515.2018,511.3237,-49.0206,307.8863,74.5799,0.2208,48.9344,11.4135,9.1308
+Manihot esculenta → Solanum tuberosum → Zea mays,3,Zea mays,104,215.0,917.4005,875.2001,851.0379,66.3626,467.9797,88.5275,0.2215,49.4418,16.9808,7.898
+Manihot esculenta → Zea mays,1,Manihot esculenta,113,272.0,1003.6459,1122.3493,1029.2139,-25.568,605.9969,84.481,0.2243,51.4932,26.2478,9.6499
+Manihot esculenta → Zea mays,2,Zea mays,113,215.0,866.8948,880.9673,857.6094,9.2854,490.6532,84.0296,0.22,48.4448,17.3717,8.0799
+Manihot esculenta → Zea mays → Coffea arabica,1,Manihot esculenta,95,272.0,946.042,1128.193,1036.0022,-89.9602,630.6274,81.5406,0.2251,52.0453,26.9368,9.9033
+Manihot esculenta → Zea mays → Coffea arabica,2,Zea mays,95,215.0,815.4242,886.9739,862.754,-47.3298,515.7637,81.0144,0.2226,50.1796,20.6632,9.6108
+Manihot esculenta → Zea mays → Coffea arabica,3,Coffea arabica,95,270.0,1190.2356,1092.9687,1046.079,144.1566,551.3426,94.8681,0.2212,49.2832,22.6,8.3704
+Manihot esculenta → Zea mays → Lycopersicon esculentum,1,Manihot esculenta,105,272.0,988.8189,1126.531,1033.4691,-44.6502,614.0208,83.2986,0.2247,51.828,28.2476,10.3852
+Manihot esculenta → Zea mays → Lycopersicon esculentum,2,Zea mays,105,215.0,830.6999,883.4288,859.8948,-29.1949,507.3378,82.8128,0.2199,48.3545,18.6952,8.6955
+Manihot esculenta → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,105,110.0,484.3717,446.3026,452.5682,31.8035,242.7514,83.2395,0.2232,50.6001,8.3048,7.5498
+Manihot esculenta → Zea mays → Oryza sativa,1,Manihot esculenta,104,272.0,984.5968,1127.1889,1034.0488,-49.452,615.6611,83.138,0.2246,51.7643,28.5192,10.485
+Manihot esculenta → Zea mays → Oryza sativa,2,Zea mays,104,215.0,826.9003,883.5387,860.0447,-33.1444,509.1746,82.6475,0.2202,48.5465,18.875,8.7791
+Manihot esculenta → Zea mays → Oryza sativa,3,Oryza sativa,104,130.0,574.9923,526.8084,604.2438,-29.2515,334.1439,81.5371,0.2231,50.5078,9.875,7.5962
+Manihot esculenta → Zea mays → Phaseolus vulgaris,1,Manihot esculenta,102,272.0,973.4081,1128.5809,1035.3138,-61.9056,619.9829,82.8074,0.2244,51.6384,28.9804,10.6546
+Manihot esculenta → Zea mays → Phaseolus vulgaris,2,Zea mays,102,215.0,821.8192,883.7584,860.3709,-38.5516,511.9268,82.3073,0.2209,49.0122,19.2451,8.9512
+Manihot esculenta → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,102,160.0,708.1393,647.9609,608.857,99.2823,320.8273,89.2097,0.2226,50.2184,12.402,7.7512
+Manihot esculenta → Zea mays → Saccharum officinarum,1,Manihot esculenta,94,272.0,944.4337,1127.8177,1035.6022,-91.1685,630.6799,81.3442,0.2253,52.1977,26.4681,9.7309
+Manihot esculenta → Zea mays → Saccharum officinarum,2,Zea mays,94,215.0,815.0171,887.5219,863.3431,-48.326,516.2561,80.8124,0.2227,50.2463,20.883,9.713
+Manihot esculenta → Zea mays → Saccharum officinarum,3,Saccharum officinarum,94,288.0,1271.2322,1166.0289,1213.1261,58.1061,662.3167,93.0084,0.2212,49.2241,24.4149,8.4774
+Manihot esculenta → Zea mays → Solanum tuberosum,1,Manihot esculenta,104,272.0,984.5968,1127.1889,1034.0488,-49.452,615.6611,83.138,0.2246,51.7643,28.5192,10.485
+Manihot esculenta → Zea mays → Solanum tuberosum,2,Zea mays,104,215.0,826.9003,883.5387,860.0447,-33.1444,509.1746,82.6475,0.2202,48.5465,18.875,8.7791
+Manihot esculenta → Zea mays → Solanum tuberosum,3,Solanum tuberosum,104,125.0,552.8033,506.8632,502.6451,50.1582,267.6194,84.9778,0.223,50.4743,9.5192,7.6154
+Oryza sativa → Coffea arabica,1,Oryza sativa,118,130.0,475.0187,536.9817,615.852,-140.8332,380.8697,70.1384,0.2236,51.1927,13.8898,10.6845
+Oryza sativa → Coffea arabica,2,Coffea arabica,118,270.0,1053.0674,1108.0426,1060.6455,-7.5781,604.8166,84.9398,0.2216,49.5316,21.5424,7.9787
+Oryza sativa → Coffea arabica → Lycopersicon esculentum,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,111,270.0,1021.2645,1110.1645,1062.7078,-41.4433,619.258,83.9901,0.2222,49.9516,22.9009,8.4818
+Oryza sativa → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,465.7722,448.7073,454.9516,10.8205,252.2638,80.2243,0.2217,49.5737,8.3874,7.6249
+Oryza sativa → Coffea arabica → Manihot esculenta,1,Oryza sativa,100,130.0,439.5538,541.477,621.0879,-181.5341,399.1128,65.7252,0.2226,50.5481,15.63,12.0231
+Oryza sativa → Coffea arabica → Manihot esculenta,2,Coffea arabica,100,270.0,998.2906,1115.7473,1067.9889,-69.6983,632.7076,82.229,0.2242,51.3242,25.42,9.4148
+Oryza sativa → Coffea arabica → Manihot esculenta,3,Manihot esculenta,100,272.0,1162.1241,1105.4899,1013.9596,148.1645,544.7711,93.1984,0.2217,49.5523,22.13,8.136
+Oryza sativa → Coffea arabica → Phaseolus vulgaris,1,Oryza sativa,108,130.0,466.0749,540.7079,620.1864,-154.1115,388.2389,68.2641,0.2231,50.8765,15.1759,11.6738
+Oryza sativa → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,108,270.0,1013.0258,1111.1213,1063.5834,-50.5576,623.3254,83.5454,0.223,50.4803,23.537,8.7174
+Oryza sativa → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,682.1984,652.0432,612.5594,69.639,333.1681,86.0036,0.2216,49.5133,12.2778,7.6736
+Oryza sativa → Coffea arabica → Saccharum officinarum,1,Oryza sativa,99,130.0,437.6218,541.3045,620.9002,-183.2783,399.2447,65.393,0.2228,50.7036,15.2323,11.7172
+Oryza sativa → Coffea arabica → Saccharum officinarum,2,Coffea arabica,99,270.0,996.5143,1116.2225,1068.4629,-71.9485,633.9694,82.0495,0.2243,51.3479,25.6768,9.5099
+Oryza sativa → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,99,288.0,1228.7005,1170.3549,1217.2744,11.4261,678.7147,90.1596,0.2217,49.5576,23.6364,8.2071
+Oryza sativa → Coffea arabica → Solanum tuberosum,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Coffea arabica → Solanum tuberosum,2,Coffea arabica,110,270.0,1017.9645,1110.3839,1062.9087,-44.9441,620.7158,83.8446,0.2225,50.1249,23.1091,8.5589
+Oryza sativa → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,110,125.0,530.3191,509.8265,505.4864,24.8327,278.415,81.7221,0.2217,49.5333,9.5364,7.6291
+Oryza sativa → Coffea arabica → Zea mays,1,Oryza sativa,104,130.0,454.8721,541.1734,620.6711,-165.799,393.8797,67.0435,0.2225,50.5063,15.7596,12.1228
+Oryza sativa → Coffea arabica → Zea mays,2,Coffea arabica,104,270.0,1003.6018,1113.5948,1065.8892,-62.2873,628.3407,82.9125,0.2238,51.0131,24.4423,9.0527
+Oryza sativa → Coffea arabica → Zea mays,3,Zea mays,104,215.0,919.794,874.7697,850.6779,69.1161,466.8984,88.6861,0.2216,49.4966,16.9327,7.8757
+Oryza sativa → Lycopersicon esculentum,1,Oryza sativa,129,130.0,492.5267,535.6811,614.3717,-121.8449,372.8373,71.9525,0.2204,48.9935,12.7054,9.7734
+Oryza sativa → Lycopersicon esculentum,2,Lycopersicon esculentum,129,110.0,441.2389,450.1074,456.5741,-15.3352,259.4428,77.2344,0.2244,51.4692,7.9612,7.2375
+Oryza sativa → Lycopersicon esculentum → Coffea arabica,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,111,110.0,410.7266,452.1725,458.7418,-48.0152,273.7578,73.9348,0.2263,52.7253,9.2523,8.4111
+Oryza sativa → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,111,270.0,1076.3101,1106.6993,1059.3524,16.9577,598.9716,86.3547,0.2204,48.6676,22.036,8.1615
+Oryza sativa → Lycopersicon esculentum → Manihot esculenta,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,111,110.0,410.7266,452.1725,458.7418,-48.0152,273.7578,73.9348,0.2263,52.7253,9.2523,8.4111
+Oryza sativa → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,111,272.0,1085.1132,1114.7002,1023.7976,61.3156,578.1663,87.5763,0.2204,48.6808,22.1802,8.1545
+Oryza sativa → Lycopersicon esculentum → Phaseolus vulgaris,1,Oryza sativa,118,130.0,475.0187,536.9817,615.852,-140.8332,380.8697,70.1384,0.2236,51.1927,13.8898,10.6845
+Oryza sativa → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,118,110.0,417.5184,451.5964,458.1385,-40.6201,270.4746,75.1122,0.2235,50.8189,8.7034,7.9122
+Oryza sativa → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,118,160.0,635.549,656.4462,617.2385,18.3105,352.0041,80.7702,0.2203,48.6466,12.839,8.0244
+Oryza sativa → Lycopersicon esculentum → Saccharum officinarum,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,110,110.0,411.2883,452.2531,458.7756,-47.4874,273.4731,73.9097,0.2267,52.9841,9.3364,8.4876
+Oryza sativa → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,110,288.0,1148.9175,1180.0095,1228.8829,-79.9655,716.7295,84.4542,0.2205,48.7862,23.5091,8.1629
+Oryza sativa → Lycopersicon esculentum → Solanum tuberosum,1,Oryza sativa,121,130.0,474.5366,536.6783,615.5394,-141.0028,380.9985,70.2703,0.2226,50.4773,13.5455,10.4196
+Oryza sativa → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,121,110.0,425.6931,451.3023,457.8628,-32.1698,267.2023,75.7292,0.2228,50.3743,8.4876,7.716
+Oryza sativa → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,121,125.0,495.9412,512.0681,507.9925,-12.0514,291.5211,77.4037,0.2213,49.3148,9.7355,7.7884
+Oryza sativa → Lycopersicon esculentum → Zea mays,1,Oryza sativa,115,130.0,477.023,537.9007,616.9034,-139.8803,381.1565,70.1589,0.224,51.4694,14.2522,10.9632
+Oryza sativa → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,115,110.0,410.6456,452.0525,458.6501,-48.0045,273.1776,74.4629,0.2245,51.536,8.9304,8.1186
+Oryza sativa → Lycopersicon esculentum → Zea mays,3,Zea mays,115,215.0,857.7035,881.5935,858.3876,-0.6841,494.9137,83.1843,0.2201,48.5122,17.4783,8.1294
+Oryza sativa → Manihot esculenta,1,Oryza sativa,118,130.0,475.0187,536.9817,615.852,-140.8332,380.8697,70.1384,0.2236,51.1927,13.8898,10.6845
+Oryza sativa → Manihot esculenta,2,Manihot esculenta,118,272.0,1060.666,1116.3104,1025.1734,35.4926,586.7065,86.0505,0.2216,49.5261,21.678,7.9698
+Oryza sativa → Manihot esculenta → Coffea arabica,1,Oryza sativa,100,130.0,439.5538,541.477,621.0879,-181.5341,399.1128,65.7252,0.2226,50.5481,15.63,12.0231
+Oryza sativa → Manihot esculenta → Coffea arabica,2,Manihot esculenta,100,272.0,1004.7701,1124.0788,1032.03,-27.2599,614.6588,83.5396,0.2242,51.2995,25.58,9.4044
+Oryza sativa → Manihot esculenta → Coffea arabica,3,Coffea arabica,100,270.0,1155.6446,1097.1583,1050.0384,105.6062,565.5897,92.2798,0.2217,49.5641,21.97,8.137
+Oryza sativa → Manihot esculenta → Lycopersicon esculentum,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,111,272.0,1028.9253,1118.4788,1027.305,1.6204,602.4491,85.1708,0.2222,49.9288,23.045,8.4724
+Oryza sativa → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,466.9145,448.3939,454.6894,12.2251,251.7296,80.5473,0.2218,49.6394,8.3874,7.6249
+Oryza sativa → Manihot esculenta → Phaseolus vulgaris,1,Oryza sativa,108,130.0,466.0749,540.7079,620.1864,-154.1115,388.2389,68.2641,0.2231,50.8765,15.1759,11.6738
+Oryza sativa → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,108,272.0,1020.3483,1119.4266,1027.9049,-7.5566,606.6321,84.7589,0.223,50.4502,23.6852,8.7078
+Oryza sativa → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,682.7298,651.8539,612.3851,70.3447,332.7499,86.0635,0.2217,49.5834,12.287,7.6794
+Oryza sativa → Manihot esculenta → Saccharum officinarum,1,Oryza sativa,99,130.0,437.6218,541.3045,620.9002,-183.2783,399.2447,65.393,0.2228,50.7036,15.2323,11.7172
+Oryza sativa → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,99,272.0,1002.9577,1124.556,1032.6163,-29.6586,615.7658,83.3733,0.2242,51.3254,25.8384,9.4994
+Oryza sativa → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,99,288.0,1231.5077,1169.9888,1216.9876,14.5201,677.8441,90.2284,0.2217,49.5664,23.6364,8.2071
+Oryza sativa → Manihot esculenta → Solanum tuberosum,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,110,272.0,1025.2441,1118.7014,1027.4506,-2.2065,604.0708,85.036,0.2225,50.0979,23.2545,8.5495
+Oryza sativa → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,110,125.0,530.9903,509.4257,505.1726,25.8176,277.991,82.0521,0.2218,49.6073,9.5182,7.6145
+Oryza sativa → Manihot esculenta → Zea mays,1,Oryza sativa,104,130.0,454.8721,541.1734,620.6711,-165.799,393.8797,67.0435,0.2225,50.5063,15.7596,12.1228
+Oryza sativa → Manihot esculenta → Zea mays,2,Manihot esculenta,104,272.0,1010.5213,1121.8986,1029.7344,-19.213,610.7412,84.1727,0.2238,50.9835,24.5962,9.0427
+Oryza sativa → Manihot esculenta → Zea mays,3,Zea mays,104,215.0,921.096,874.464,850.442,70.6539,466.2619,88.8184,0.2217,49.5352,16.9135,7.8667
+Oryza sativa → Phaseolus vulgaris,1,Oryza sativa,126,130.0,483.1722,536.0522,614.7969,-131.6246,377.0109,71.2847,0.2209,49.3408,13.0079,10.0061
+Oryza sativa → Phaseolus vulgaris,2,Phaseolus vulgaris,126,160.0,634.1479,655.0228,615.6055,18.5425,348.6628,81.4767,0.2234,50.776,11.8968,7.4355
+Oryza sativa → Phaseolus vulgaris → Coffea arabica,1,Oryza sativa,108,130.0,466.0749,540.7079,620.1864,-154.1115,388.2389,68.2641,0.2231,50.8765,15.1759,11.6738
+Oryza sativa → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,108,160.0,593.5655,658.2332,618.4186,-24.8532,366.9637,78.6872,0.2259,52.4737,13.8796,8.6748
+Oryza sativa → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,108,270.0,1101.6588,1104.9313,1057.5733,44.0855,589.4753,88.0791,0.2205,48.726,21.9352,8.1241
+Oryza sativa → Phaseolus vulgaris → Lycopersicon esculentum,1,Oryza sativa,118,130.0,475.0187,536.9817,615.852,-140.8332,380.8697,70.1384,0.2236,51.1927,13.8898,10.6845
+Oryza sativa → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,118,160.0,608.4745,656.7361,617.1093,-8.6348,359.9152,80.2209,0.2226,50.2079,12.7034,7.9396
+Oryza sativa → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,118,110.0,444.5929,451.3065,457.9035,-13.3107,262.0994,76.5697,0.2201,48.5479,8.839,8.0354
+Oryza sativa → Phaseolus vulgaris → Manihot esculenta,1,Oryza sativa,108,130.0,466.0749,540.7079,620.1864,-154.1115,388.2389,68.2641,0.2231,50.8765,15.1759,11.6738
+Oryza sativa → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,108,160.0,593.5655,658.2332,618.4186,-24.8532,366.9637,78.6872,0.2259,52.4737,13.8796,8.6748
+Oryza sativa → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,108,272.0,1109.5127,1113.0474,1021.6627,87.85,568.1579,89.0859,0.2205,48.75,22.0926,8.1223
+Oryza sativa → Phaseolus vulgaris → Saccharum officinarum,1,Oryza sativa,107,130.0,463.5493,540.8369,620.32,-156.7708,389.5671,67.9675,0.223,50.7962,15.3178,11.7829
+Oryza sativa → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,107,160.0,594.1169,658.5716,618.6725,-24.5556,366.8887,78.5776,0.2261,52.5966,14.0093,8.7558
+Oryza sativa → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,107,288.0,1177.5218,1178.0837,1226.1837,-48.6619,704.4565,86.2482,0.2207,48.8702,23.4766,8.1516
+Oryza sativa → Phaseolus vulgaris → Solanum tuberosum,1,Oryza sativa,117,130.0,476.1055,537.1782,616.0782,-139.9728,380.7959,70.2334,0.2239,51.3503,14.0085,10.7758
+Oryza sativa → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,117,160.0,604.4604,656.8478,617.23,-12.7696,361.4105,80.0519,0.2228,50.35,12.812,8.0075
+Oryza sativa → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,117,125.0,504.9098,513.1035,509.1098,-4.2,290.4022,78.0081,0.2199,48.3911,10.1368,8.1094
+Oryza sativa → Phaseolus vulgaris → Zea mays,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,111,160.0,592.143,657.6032,618.0713,-25.9284,366.9919,78.9736,0.225,51.8065,13.5045,8.4403
+Oryza sativa → Phaseolus vulgaris → Zea mays,3,Zea mays,111,215.0,871.1529,881.062,857.4716,13.6813,489.3564,84.345,0.2199,48.3562,17.4414,8.1123
+Oryza sativa → Saccharum officinarum,1,Oryza sativa,117,130.0,476.1055,537.1782,616.0782,-139.9728,380.7959,70.2334,0.2239,51.3503,14.0085,10.7758
+Oryza sativa → Saccharum officinarum,2,Saccharum officinarum,117,288.0,1122.6145,1182.1177,1230.9866,-108.3721,728.0932,82.6833,0.2215,49.4865,23.1709,8.0455
+Oryza sativa → Saccharum officinarum → Coffea arabica,1,Oryza sativa,99,130.0,437.6218,541.3045,620.9002,-183.2783,399.2447,65.393,0.2228,50.7036,15.2323,11.7172
+Oryza sativa → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,99,288.0,1065.2459,1190.392,1239.3897,-174.1438,759.9569,79.5348,0.224,51.1829,27.3838,9.5083
+Oryza sativa → Saccharum officinarum → Coffea arabica,3,Coffea arabica,99,270.0,1159.969,1096.1854,1049.1233,110.8457,563.231,92.7312,0.2218,49.6142,21.9293,8.122
+Oryza sativa → Saccharum officinarum → Lycopersicon esculentum,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,110,288.0,1091.903,1184.419,1233.4327,-141.5297,745.2786,81.5813,0.2222,49.9466,24.6455,8.5574
+Oryza sativa → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,110,110.0,468.3027,447.8437,454.1223,14.1804,249.9528,80.8998,0.2223,49.9459,8.2,7.4545
+Oryza sativa → Saccharum officinarum → Manihot esculenta,1,Oryza sativa,99,130.0,437.6218,541.3045,620.9002,-183.2783,399.2447,65.393,0.2228,50.7036,15.2323,11.7172
+Oryza sativa → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,99,288.0,1065.2459,1190.392,1239.3897,-174.1438,759.9569,79.5348,0.224,51.1829,27.3838,9.5083
+Oryza sativa → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,99,272.0,1169.2195,1104.1527,1012.878,156.3415,541.7057,93.6978,0.2218,49.6139,22.0909,8.1217
+Oryza sativa → Saccharum officinarum → Phaseolus vulgaris,1,Oryza sativa,107,130.0,463.5493,540.8369,620.32,-156.7708,389.5671,67.9675,0.223,50.7962,15.3178,11.7829
+Oryza sativa → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,107,288.0,1083.4792,1185.6213,1234.3168,-150.8377,749.8532,81.0649,0.2229,50.4053,25.3364,8.7974
+Oryza sativa → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,107,160.0,688.1595,651.034,611.7145,76.445,330.1936,86.7159,0.2221,49.8336,12.1495,7.5935
+Oryza sativa → Saccharum officinarum → Solanum tuberosum,1,Oryza sativa,109,130.0,468.9061,540.5263,619.9829,-151.0767,386.999,68.5552,0.2232,50.9737,15.0367,11.5667
+Oryza sativa → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,109,288.0,1088.5767,1184.7109,1233.6412,-145.0645,746.9816,81.4123,0.2225,50.1009,24.8716,8.636
+Oryza sativa → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,109,125.0,535.5331,508.9345,504.6752,30.8579,276.0557,82.7908,0.2222,49.8768,9.3945,7.5156
+Oryza sativa → Saccharum officinarum → Zea mays,1,Oryza sativa,103,130.0,450.4133,541.3547,620.8784,-170.4651,395.663,66.7235,0.2224,50.4369,15.9029,12.233
+Oryza sativa → Saccharum officinarum → Zea mays,2,Saccharum officinarum,103,288.0,1072.3797,1188.277,1236.7334,-164.3537,754.9594,80.3295,0.2236,50.8984,26.3204,9.139
+Oryza sativa → Saccharum officinarum → Zea mays,3,Zea mays,103,215.0,927.1449,873.4272,849.4475,77.6974,463.1266,89.5312,0.2219,49.6983,16.8252,7.8257
+Oryza sativa → Solanum tuberosum,1,Oryza sativa,128,130.0,488.9257,535.7818,614.4824,-125.5566,374.2911,71.7334,0.2205,49.0542,12.8047,9.8498
+Oryza sativa → Solanum tuberosum,2,Solanum tuberosum,128,125.0,500.0423,511.6061,507.5044,-7.4622,288.1013,78.4226,0.2241,51.251,9.0938,7.275
+Oryza sativa → Solanum tuberosum → Coffea arabica,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,110,125.0,466.1389,513.9316,509.8303,-43.6914,303.6966,75.3185,0.2263,52.7232,10.5818,8.4655
+Oryza sativa → Solanum tuberosum → Coffea arabica,3,Coffea arabica,110,270.0,1082.1447,1106.2787,1058.9328,23.2119,596.6458,86.7719,0.2203,48.6481,22.0636,8.1717
+Oryza sativa → Solanum tuberosum → Lycopersicon esculentum,1,Oryza sativa,121,130.0,474.5366,536.6783,615.5394,-141.0028,380.9985,70.2703,0.2226,50.4773,13.5455,10.4196
+Oryza sativa → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,121,125.0,484.585,512.8299,508.8068,-24.2218,295.7213,77.1743,0.2227,50.2841,9.6198,7.6959
+Oryza sativa → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,121,110.0,437.0492,450.5405,457.0621,-20.013,262.9457,75.9477,0.2212,49.2728,8.6033,7.8212
+Oryza sativa → Solanum tuberosum → Manihot esculenta,1,Oryza sativa,110,130.0,471.2556,540.2484,619.658,-148.4023,385.7795,68.8411,0.2234,51.0871,14.9,11.4615
+Oryza sativa → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,110,125.0,466.1389,513.9316,509.8303,-43.6914,303.6966,75.3185,0.2263,52.7232,10.5818,8.4655
+Oryza sativa → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,110,272.0,1090.0955,1114.1955,1023.2319,66.8635,575.5948,87.9444,0.2204,48.666,22.1909,8.1584
+Oryza sativa → Solanum tuberosum → Phaseolus vulgaris,1,Oryza sativa,117,130.0,476.1055,537.1782,616.0782,-139.9728,380.7959,70.2334,0.2239,51.3503,14.0085,10.7758
+Oryza sativa → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,117,125.0,472.1113,513.2456,509.1883,-37.0771,300.6292,76.3939,0.2235,50.8308,9.9487,7.959
+Oryza sativa → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,117,160.0,637.259,656.7057,617.4594,19.7995,351.516,80.8394,0.22,48.444,13.0,8.125
+Oryza sativa → Solanum tuberosum → Saccharum officinarum,1,Oryza sativa,109,130.0,468.9061,540.5263,619.9829,-151.0767,386.999,68.5552,0.2232,50.9737,15.0367,11.5667
+Oryza sativa → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,109,125.0,466.7647,514.0843,509.9518,-43.1872,303.5321,75.2743,0.2266,52.9315,10.6789,8.5431
+Oryza sativa → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,109,288.0,1157.3451,1179.5611,1228.2853,-70.9401,713.6908,84.995,0.2205,48.775,23.5872,8.19
+Oryza sativa → Solanum tuberosum → Zea mays,1,Oryza sativa,114,130.0,476.5195,538.3405,617.4188,-140.8993,381.6242,69.9344,0.224,51.4537,14.3772,11.0594
+Oryza sativa → Solanum tuberosum → Zea mays,2,Solanum tuberosum,114,125.0,465.445,513.6966,509.6893,-44.2443,303.386,75.7727,0.2246,51.5818,10.2105,8.1684
+Oryza sativa → Solanum tuberosum → Zea mays,3,Zea mays,114,215.0,861.6323,881.2882,858.0985,3.5338,493.1334,83.4713,0.22,48.4466,17.4649,8.1232
+Oryza sativa → Zea mays,1,Oryza sativa,122,130.0,474.5974,536.6339,615.4842,-140.8868,380.7046,70.3432,0.2222,50.2182,13.4344,10.3342
+Oryza sativa → Zea mays,2,Zea mays,122,215.0,844.02,880.9749,857.3311,-13.3111,496.9803,82.6875,0.2222,49.9799,16.4918,7.6706
+Oryza sativa → Zea mays → Coffea arabica,1,Oryza sativa,104,130.0,454.8721,541.1734,620.6711,-165.799,393.8797,67.0435,0.2225,50.5063,15.7596,12.1228
+Oryza sativa → Zea mays → Coffea arabica,2,Zea mays,104,215.0,794.9519,886.4732,861.9702,-67.0183,520.4783,79.7225,0.2251,51.8765,19.3462,8.9982
+Oryza sativa → Zea mays → Coffea arabica,3,Coffea arabica,104,270.0,1128.4439,1101.8913,1054.5315,73.9124,578.0324,90.2095,0.221,49.118,22.0288,8.1588
+Oryza sativa → Zea mays → Lycopersicon esculentum,1,Oryza sativa,115,130.0,477.023,537.9007,616.9034,-139.8803,381.1565,70.1589,0.224,51.4694,14.2522,10.9632
+Oryza sativa → Zea mays → Lycopersicon esculentum,2,Zea mays,115,215.0,813.4203,883.0222,859.1569,-45.7366,510.9039,81.6337,0.2222,49.9315,17.4957,8.1375
+Oryza sativa → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,115,110.0,454.9288,450.6238,456.9673,-2.0385,257.9155,78.5209,0.2205,48.7619,8.913,8.1028
+Oryza sativa → Zea mays → Manihot esculenta,1,Oryza sativa,104,130.0,454.8721,541.1734,620.6711,-165.799,393.8797,67.0435,0.2225,50.5063,15.7596,12.1228
+Oryza sativa → Zea mays → Manihot esculenta,2,Zea mays,104,215.0,794.9519,886.4732,861.9702,-67.0183,520.4783,79.7225,0.2251,51.8765,19.3462,8.9982
+Oryza sativa → Zea mays → Manihot esculenta,3,Manihot esculenta,104,272.0,1136.6654,1109.8894,1017.883,118.7824,556.031,91.3991,0.2211,49.1329,22.1635,8.1483
+Oryza sativa → Zea mays → Phaseolus vulgaris,1,Oryza sativa,111,130.0,473.0546,539.8436,619.183,-146.1284,384.5454,69.1218,0.2236,51.2099,14.7658,11.3583
+Oryza sativa → Zea mays → Phaseolus vulgaris,2,Zea mays,111,215.0,801.3841,883.4844,859.7409,-58.3568,516.8922,80.9719,0.2234,50.7542,18.1261,8.4308
+Oryza sativa → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,111,160.0,661.9117,655.1809,615.5001,46.4116,342.2375,83.6241,0.2203,48.5841,12.8198,8.0124
+Oryza sativa → Zea mays → Saccharum officinarum,1,Oryza sativa,103,130.0,450.4133,541.3547,620.8784,-170.4651,395.663,66.7235,0.2224,50.4369,15.9029,12.233
+Oryza sativa → Zea mays → Saccharum officinarum,2,Zea mays,103,215.0,794.6758,886.9721,862.5249,-67.8491,521.0821,79.5256,0.2252,51.9406,19.534,9.0856
+Oryza sativa → Zea mays → Saccharum officinarum,3,Saccharum officinarum,103,288.0,1204.8487,1174.7321,1221.724,-16.8753,690.6803,88.4227,0.2212,49.2245,23.6117,8.1985
+Oryza sativa → Zea mays → Solanum tuberosum,1,Oryza sativa,114,130.0,476.5195,538.3405,617.4188,-140.8993,381.6242,69.9344,0.224,51.4537,14.3772,11.0594
+Oryza sativa → Zea mays → Solanum tuberosum,2,Zea mays,114,215.0,809.2299,883.1272,859.2908,-50.0609,512.8114,81.4726,0.2224,50.0873,17.6491,8.2089
+Oryza sativa → Zea mays → Solanum tuberosum,3,Solanum tuberosum,114,125.0,517.8474,511.8576,507.5732,10.2742,284.8795,80.0582,0.2205,48.7597,10.0263,8.0211
+Phaseolus vulgaris → Coffea arabica,1,Phaseolus vulgaris,116,160.0,588.5465,660.8593,620.6306,-32.0841,367.7909,78.4468,0.2243,51.599,16.5517,10.3448
+Phaseolus vulgaris → Coffea arabica,2,Coffea arabica,116,270.0,1057.0271,1108.129,1060.7326,-3.7055,605.0838,85.0367,0.2211,49.177,21.9569,8.1322
+Phaseolus vulgaris → Coffea arabica → Lycopersicon esculentum,1,Phaseolus vulgaris,109,160.0,582.602,664.1707,624.0298,-41.4278,372.3954,77.1096,0.2241,51.5017,17.6147,11.0092
+Phaseolus vulgaris → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,109,270.0,1025.1175,1110.2697,1062.815,-37.6975,619.6823,84.0758,0.2217,49.5918,23.367,8.6544
+Phaseolus vulgaris → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,109,110.0,471.2092,447.7007,453.983,17.2261,248.7454,81.2175,0.2225,50.069,8.1009,7.3645
+Phaseolus vulgaris → Coffea arabica → Manihot esculenta,1,Phaseolus vulgaris,98,160.0,544.1364,665.3019,625.4126,-81.2761,386.0524,74.5403,0.2237,51.2548,17.6122,11.0077
+Phaseolus vulgaris → Coffea arabica → Manihot esculenta,2,Coffea arabica,98,270.0,1002.056,1115.9991,1068.2346,-66.1786,633.4862,82.2884,0.2237,50.9521,25.9898,9.6259
+Phaseolus vulgaris → Coffea arabica → Manihot esculenta,3,Manihot esculenta,98,272.0,1173.9935,1103.5748,1012.3874,161.6061,539.9916,94.1096,0.2217,49.5987,22.0816,8.1182
+Phaseolus vulgaris → Coffea arabica → Oryza sativa,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Coffea arabica → Oryza sativa,2,Coffea arabica,108,270.0,1021.8336,1110.4915,1063.0181,-41.1845,621.133,83.9284,0.222,49.7662,23.5833,8.7346
+Phaseolus vulgaris → Coffea arabica → Oryza sativa,3,Oryza sativa,108,130.0,559.4639,528.8818,606.5678,-47.104,342.0757,79.2973,0.2224,50.0506,9.6296,7.4074
+Phaseolus vulgaris → Coffea arabica → Saccharum officinarum,1,Phaseolus vulgaris,97,160.0,543.0153,665.0001,625.1227,-82.1075,385.7405,74.2788,0.2241,51.4707,17.0619,10.6637
+Phaseolus vulgaris → Coffea arabica → Saccharum officinarum,2,Coffea arabica,97,270.0,1000.3326,1116.497,1068.7299,-68.3974,634.7719,82.1058,0.2237,50.9707,26.2577,9.7251
+Phaseolus vulgaris → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,97,288.0,1240.5559,1168.4715,1215.5109,25.045,673.1126,91.109,0.2217,49.5539,23.6598,8.2152
+Phaseolus vulgaris → Coffea arabica → Solanum tuberosum,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Coffea arabica → Solanum tuberosum,2,Coffea arabica,108,270.0,1021.8336,1110.4915,1063.0181,-41.1845,621.133,83.9284,0.222,49.7662,23.5833,8.7346
+Phaseolus vulgaris → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,108,125.0,536.5098,508.7062,504.4509,32.0589,274.7573,82.8394,0.2224,49.9992,9.2685,7.4148
+Phaseolus vulgaris → Coffea arabica → Zea mays,1,Phaseolus vulgaris,102,160.0,556.9683,665.8087,625.3854,-68.4171,382.244,75.5387,0.2231,50.8975,18.7255,11.7034
+Phaseolus vulgaris → Coffea arabica → Zea mays,2,Coffea arabica,102,270.0,1007.4273,1113.7768,1066.0682,-58.6409,628.9651,82.983,0.2233,50.6485,24.9706,9.2484
+Phaseolus vulgaris → Coffea arabica → Zea mays,3,Zea mays,102,215.0,930.5645,872.7307,848.824,81.7405,461.317,89.7741,0.222,49.7602,16.7941,7.8112
+Phaseolus vulgaris → Lycopersicon esculentum,1,Phaseolus vulgaris,127,160.0,605.1483,659.0304,619.0696,-13.9213,360.502,80.0792,0.2211,49.4402,15.1181,9.4488
+Phaseolus vulgaris → Lycopersicon esculentum,2,Lycopersicon esculentum,127,110.0,439.401,449.9547,456.3653,-16.9643,260.7513,76.8295,0.2239,51.1203,8.0866,7.3515
+Phaseolus vulgaris → Lycopersicon esculentum → Coffea arabica,1,Phaseolus vulgaris,109,160.0,582.602,664.1707,624.0298,-41.4278,372.3954,77.1096,0.2241,51.5017,17.6147,11.0092
+Phaseolus vulgaris → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,109,110.0,408.6445,452.0409,458.5471,-49.9026,275.4115,73.4399,0.2258,52.3496,9.422,8.5655
+Phaseolus vulgaris → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,109,270.0,1087.6822,1105.9295,1058.5692,29.113,594.3339,87.2003,0.2204,48.6627,22.0459,8.1651
+Phaseolus vulgaris → Lycopersicon esculentum → Manihot esculenta,1,Phaseolus vulgaris,109,160.0,582.602,664.1707,624.0298,-41.4278,372.3954,77.1096,0.2241,51.5017,17.6147,11.0092
+Phaseolus vulgaris → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,109,110.0,408.6445,452.0409,458.5471,-49.9026,275.4115,73.4399,0.2258,52.3496,9.422,8.5655
+Phaseolus vulgaris → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,109,272.0,1096.2337,1113.9632,1022.7948,73.4389,572.8977,88.4227,0.2204,48.6769,22.1927,8.1591
+Phaseolus vulgaris → Lycopersicon esculentum → Oryza sativa,1,Phaseolus vulgaris,118,160.0,587.4899,660.3331,620.2727,-32.7828,367.905,78.6055,0.2238,51.2787,16.2712,10.1695
+Phaseolus vulgaris → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,118,110.0,420.5728,451.2258,457.7144,-37.1416,269.8889,75.0623,0.2224,50.09,8.7034,7.9122
+Phaseolus vulgaris → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,118,130.0,520.0234,533.4654,611.8888,-91.8655,361.8659,73.9008,0.2202,48.5699,10.4576,8.0443
+Phaseolus vulgaris → Lycopersicon esculentum → Saccharum officinarum,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,108,110.0,409.2025,452.1193,458.5824,-49.3799,275.1361,73.4106,0.2261,52.6063,9.5093,8.6448
+Phaseolus vulgaris → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,108,288.0,1161.836,1179.0639,1227.5351,-65.6991,710.3386,85.3633,0.2206,48.7967,23.5463,8.1758
+Phaseolus vulgaris → Lycopersicon esculentum → Solanum tuberosum,1,Phaseolus vulgaris,119,160.0,587.4006,660.1332,620.1839,-32.7833,367.9101,78.74,0.2235,51.0574,16.1345,10.084
+Phaseolus vulgaris → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,119,110.0,423.4836,451.1833,457.6802,-34.1966,268.7277,75.2719,0.2223,49.9853,8.6303,7.8457
+Phaseolus vulgaris → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,119,125.0,499.7132,512.5697,508.5489,-8.8357,290.7391,77.7174,0.2205,48.7938,9.9664,7.9731
+Phaseolus vulgaris → Lycopersicon esculentum → Zea mays,1,Phaseolus vulgaris,113,160.0,588.145,662.1774,621.8482,-33.7032,368.5139,77.9199,0.2245,51.7476,16.9912,10.6195
+Phaseolus vulgaris → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,113,110.0,408.4711,451.9213,458.4623,-49.9912,274.8209,73.9589,0.224,51.155,9.0885,8.2623
+Phaseolus vulgaris → Lycopersicon esculentum → Zea mays,3,Zea mays,113,215.0,867.1273,881.0849,857.7287,9.3986,491.0303,84.0125,0.22,48.4251,17.3982,8.0922
+Phaseolus vulgaris → Manihot esculenta,1,Phaseolus vulgaris,116,160.0,588.5465,660.8593,620.6306,-32.0841,367.7909,78.4468,0.2243,51.599,16.5517,10.3448
+Phaseolus vulgaris → Manihot esculenta,2,Manihot esculenta,116,272.0,1064.5856,1116.2617,1025.2259,39.3597,586.3929,86.1282,0.2211,49.1814,22.1034,8.1263
+Phaseolus vulgaris → Manihot esculenta → Coffea arabica,1,Phaseolus vulgaris,98,160.0,544.1364,665.3019,625.4126,-81.2761,386.0524,74.5403,0.2237,51.2548,17.6122,11.0077
+Phaseolus vulgaris → Manihot esculenta → Coffea arabica,2,Manihot esculenta,98,272.0,1008.7054,1124.1828,1032.2346,-23.5292,614.7869,83.5803,0.2237,50.9383,26.1633,9.6188
+Phaseolus vulgaris → Manihot esculenta → Coffea arabica,3,Coffea arabica,98,270.0,1167.3441,1095.3911,1048.3698,118.9743,560.5435,93.2182,0.2217,49.6026,21.9082,8.1141
+Phaseolus vulgaris → Manihot esculenta → Lycopersicon esculentum,1,Phaseolus vulgaris,109,160.0,582.602,664.1707,624.0298,-41.4278,372.3954,77.1096,0.2241,51.5017,17.6147,11.0092
+Phaseolus vulgaris → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,109,272.0,1032.6688,1118.4449,1027.3869,5.282,602.3547,85.2374,0.2217,49.5791,23.5229,8.6481
+Phaseolus vulgaris → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,109,110.0,472.2094,447.5592,453.839,18.3704,248.3547,81.5255,0.2225,50.1186,8.0917,7.3561
+Phaseolus vulgaris → Manihot esculenta → Oryza sativa,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Manihot esculenta → Oryza sativa,2,Manihot esculenta,108,272.0,1029.2318,1118.6676,1027.5336,1.6982,603.9716,85.1007,0.2219,49.7494,23.7407,8.7282
+Phaseolus vulgaris → Manihot esculenta → Oryza sativa,3,Oryza sativa,108,130.0,559.9196,528.8218,606.4857,-46.566,341.7265,79.3756,0.2225,50.12,9.6296,7.4074
+Phaseolus vulgaris → Manihot esculenta → Saccharum officinarum,1,Phaseolus vulgaris,97,160.0,543.0153,665.0001,625.1227,-82.1075,385.7405,74.2788,0.2241,51.4707,17.0619,10.6637
+Phaseolus vulgaris → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,97,272.0,1006.8763,1124.6841,1032.8408,-25.9645,615.9461,83.4111,0.2237,50.9593,26.433,9.718
+Phaseolus vulgaris → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,97,288.0,1243.601,1168.3427,1215.3693,28.2318,672.5307,91.1945,0.2217,49.5503,23.6495,8.2116
+Phaseolus vulgaris → Manihot esculenta → Solanum tuberosum,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,108,272.0,1029.2318,1118.6676,1027.5336,1.6982,603.9716,85.1007,0.2219,49.7494,23.7407,8.7282
+Phaseolus vulgaris → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,108,125.0,538.1741,508.5931,504.3289,33.8452,274.2497,83.2024,0.2224,50.0566,9.25,7.4
+Phaseolus vulgaris → Manihot esculenta → Zea mays,1,Phaseolus vulgaris,102,160.0,556.9683,665.8087,625.3854,-68.4171,382.244,75.5387,0.2231,50.8975,18.7255,11.7034
+Phaseolus vulgaris → Manihot esculenta → Zea mays,2,Manihot esculenta,102,272.0,1014.4359,1121.944,1029.883,-15.4471,610.7774,84.2242,0.2232,50.6294,25.1373,9.2416
+Phaseolus vulgaris → Manihot esculenta → Zea mays,3,Zea mays,102,215.0,931.9625,872.5475,848.6325,83.33,460.7552,89.8914,0.222,49.7832,16.7647,7.7975
+Phaseolus vulgaris → Oryza sativa,1,Phaseolus vulgaris,126,160.0,601.3085,659.1615,619.1878,-17.8793,361.9534,79.9211,0.2213,49.5403,15.2381,9.5238
+Phaseolus vulgaris → Oryza sativa,2,Oryza sativa,126,130.0,516.0117,531.9135,610.0401,-94.0285,359.5365,73.9076,0.2235,50.8617,9.6667,7.4359
+Phaseolus vulgaris → Oryza sativa → Coffea arabica,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Oryza sativa → Coffea arabica,2,Oryza sativa,108,130.0,479.6387,534.442,612.9136,-133.2749,378.1286,70.4507,0.2256,52.2109,11.2778,8.6752
+Phaseolus vulgaris → Oryza sativa → Coffea arabica,3,Coffea arabica,108,270.0,1101.6588,1104.9313,1057.5733,44.0855,589.4753,88.0791,0.2205,48.726,21.9352,8.1241
+Phaseolus vulgaris → Oryza sativa → Lycopersicon esculentum,1,Phaseolus vulgaris,118,160.0,587.4899,660.3331,620.2727,-32.7828,367.905,78.6055,0.2238,51.2787,16.2712,10.1695
+Phaseolus vulgaris → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,118,130.0,496.0033,533.3848,611.7029,-115.6996,370.4115,72.1386,0.2221,49.8747,10.322,7.94
+Phaseolus vulgaris → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,118,110.0,444.5929,451.3065,457.9035,-13.3107,262.0994,76.5697,0.2201,48.5479,8.839,8.0354
+Phaseolus vulgaris → Oryza sativa → Manihot esculenta,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Oryza sativa → Manihot esculenta,2,Oryza sativa,108,130.0,479.6387,534.442,612.9136,-133.2749,378.1286,70.4507,0.2256,52.2109,11.2778,8.6752
+Phaseolus vulgaris → Oryza sativa → Manihot esculenta,3,Manihot esculenta,108,272.0,1109.5127,1113.0474,1021.6627,87.85,568.1579,89.0859,0.2205,48.75,22.0926,8.1223
+Phaseolus vulgaris → Oryza sativa → Saccharum officinarum,1,Phaseolus vulgaris,107,160.0,577.292,664.8119,624.6919,-47.4,374.9526,76.6817,0.2237,51.2744,17.9439,11.215
+Phaseolus vulgaris → Oryza sativa → Saccharum officinarum,2,Oryza sativa,107,130.0,480.3742,534.5966,613.0867,-132.7125,377.9967,70.4787,0.2259,52.4235,11.3832,8.7563
+Phaseolus vulgaris → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,107,288.0,1177.5218,1178.0837,1226.1837,-48.6619,704.4565,86.2482,0.2207,48.8702,23.4766,8.1516
+Phaseolus vulgaris → Oryza sativa → Solanum tuberosum,1,Phaseolus vulgaris,117,160.0,588.2662,660.5478,620.4151,-32.1489,367.8167,78.574,0.2241,51.463,16.4103,10.2564
+Phaseolus vulgaris → Oryza sativa → Solanum tuberosum,2,Oryza sativa,117,130.0,492.2997,533.4781,611.8108,-119.5111,371.9834,71.9005,0.2223,49.9805,10.4103,8.0079
+Phaseolus vulgaris → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,117,125.0,504.9098,513.1035,509.1098,-4.2,290.4022,78.0081,0.2199,48.3911,10.1368,8.1094
+Phaseolus vulgaris → Oryza sativa → Zea mays,1,Phaseolus vulgaris,111,160.0,586.4506,663.2029,622.9972,-36.5466,370.1354,77.522,0.2244,51.6784,17.2973,10.8108
+Phaseolus vulgaris → Oryza sativa → Zea mays,2,Oryza sativa,111,130.0,478.7469,534.2439,612.7197,-133.9728,378.2363,70.5389,0.2243,51.3676,10.973,8.4407
+Phaseolus vulgaris → Oryza sativa → Zea mays,3,Zea mays,111,215.0,871.1529,881.062,857.4716,13.6813,489.3564,84.345,0.2199,48.3562,17.4414,8.1123
+Phaseolus vulgaris → Saccharum officinarum,1,Phaseolus vulgaris,115,160.0,588.8478,661.2504,620.9509,-32.103,367.8259,78.3039,0.2244,51.6791,16.6957,10.4348
+Phaseolus vulgaris → Saccharum officinarum,2,Saccharum officinarum,115,288.0,1127.3376,1182.0025,1230.9844,-103.6469,727.6743,82.881,0.2211,49.1978,23.487,8.1552
+Phaseolus vulgaris → Saccharum officinarum → Coffea arabica,1,Phaseolus vulgaris,97,160.0,543.0153,665.0001,625.1227,-82.1075,385.7405,74.2788,0.2241,51.4707,17.0619,10.6637
+Phaseolus vulgaris → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,97,288.0,1069.5689,1190.457,1239.5749,-170.0061,760.0586,79.7043,0.2236,50.8806,27.8454,9.6685
+Phaseolus vulgaris → Saccharum officinarum → Coffea arabica,3,Coffea arabica,97,270.0,1171.3196,1094.5115,1047.5531,123.7665,557.8191,93.6443,0.2217,49.5556,22.0722,8.1749
+Phaseolus vulgaris → Saccharum officinarum → Lycopersicon esculentum,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,108,288.0,1096.4103,1184.3167,1233.453,-137.0427,745.0903,81.7714,0.2218,49.655,25.0093,8.6838
+Phaseolus vulgaris → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,108,110.0,474.6282,446.8665,453.2406,21.3877,246.1952,82.122,0.2229,50.3589,8.0463,7.3148
+Phaseolus vulgaris → Saccharum officinarum → Manihot esculenta,1,Phaseolus vulgaris,97,160.0,543.0153,665.0001,625.1227,-82.1075,385.7405,74.2788,0.2241,51.4707,17.0619,10.6637
+Phaseolus vulgaris → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,97,288.0,1069.5689,1190.457,1239.5749,-170.0061,760.0586,79.7043,0.2236,50.8806,27.8454,9.6685
+Phaseolus vulgaris → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,97,272.0,1180.9085,1102.5698,1011.6016,169.3069,537.2663,94.5773,0.2217,49.5507,22.2371,8.1754
+Phaseolus vulgaris → Saccharum officinarum → Oryza sativa,1,Phaseolus vulgaris,107,160.0,577.292,664.8119,624.6919,-47.4,374.9526,76.6817,0.2237,51.2744,17.9439,11.215
+Phaseolus vulgaris → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,107,288.0,1093.0639,1184.6131,1233.6656,-140.6016,746.8233,81.6011,0.222,49.8095,25.243,8.7649
+Phaseolus vulgaris → Saccharum officinarum → Oryza sativa,3,Oryza sativa,107,130.0,564.8321,528.0672,605.6745,-40.8425,338.6547,80.0579,0.2229,50.3428,9.6168,7.3976
+Phaseolus vulgaris → Saccharum officinarum → Solanum tuberosum,1,Phaseolus vulgaris,107,160.0,577.292,664.8119,624.6919,-47.4,374.9526,76.6817,0.2237,51.2744,17.9439,11.215
+Phaseolus vulgaris → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,107,288.0,1093.0639,1184.6131,1233.6656,-140.6016,746.8233,81.6011,0.222,49.8095,25.243,8.7649
+Phaseolus vulgaris → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,107,125.0,542.3675,507.8356,503.7303,38.6372,271.9966,84.0405,0.2227,50.2632,9.2523,7.4019
+Phaseolus vulgaris → Saccharum officinarum → Zea mays,1,Phaseolus vulgaris,101,160.0,552.8598,665.7909,625.4887,-72.6289,383.7718,75.2965,0.2232,50.9199,18.6535,11.6584
+Phaseolus vulgaris → Saccharum officinarum → Zea mays,2,Saccharum officinarum,101,288.0,1076.6527,1188.2616,1236.836,-160.1833,754.9277,80.5081,0.2232,50.6023,26.7426,9.2856
+Phaseolus vulgaris → Saccharum officinarum → Zea mays,3,Zea mays,101,215.0,937.969,871.5729,847.718,90.2511,457.9921,90.575,0.2221,49.8495,16.8416,7.8333
+Phaseolus vulgaris → Solanum tuberosum,1,Phaseolus vulgaris,126,160.0,601.3085,659.1615,619.1878,-17.8793,361.9534,79.9211,0.2213,49.5403,15.2381,9.5238
+Phaseolus vulgaris → Solanum tuberosum,2,Solanum tuberosum,126,125.0,497.2777,511.4419,507.2853,-10.0076,289.6679,77.9844,0.2235,50.8638,9.254,7.4032
+Phaseolus vulgaris → Solanum tuberosum → Coffea arabica,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,108,125.0,462.6315,513.7367,509.5914,-46.9599,305.6949,74.7729,0.2257,52.3071,10.7963,8.637
+Phaseolus vulgaris → Solanum tuberosum → Coffea arabica,3,Coffea arabica,108,270.0,1095.7119,1105.461,1058.0815,37.6304,591.5321,87.8431,0.2204,48.6977,22.0556,8.1687
+Phaseolus vulgaris → Solanum tuberosum → Lycopersicon esculentum,1,Phaseolus vulgaris,119,160.0,587.4006,660.1332,620.1839,-32.7833,367.9101,78.74,0.2235,51.0574,16.1345,10.084
+Phaseolus vulgaris → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,119,125.0,481.4307,512.6736,508.5947,-27.164,297.5046,76.6893,0.2221,49.8623,9.7983,7.8387
+Phaseolus vulgaris → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,119,110.0,441.7661,451.0794,457.6037,-15.8376,261.9772,76.6107,0.2205,48.7711,8.7983,7.9985
+Phaseolus vulgaris → Solanum tuberosum → Manihot esculenta,1,Phaseolus vulgaris,108,160.0,580.0017,664.4991,624.4099,-44.4082,373.6463,76.8977,0.2239,51.3894,17.7778,11.1111
+Phaseolus vulgaris → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,108,125.0,462.6315,513.7367,509.5914,-46.9599,305.6949,74.7729,0.2257,52.3071,10.7963,8.637
+Phaseolus vulgaris → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,108,272.0,1104.7744,1113.524,1022.1141,82.6603,569.8273,88.9884,0.2204,48.7151,22.1944,8.1597
+Phaseolus vulgaris → Solanum tuberosum → Oryza sativa,1,Phaseolus vulgaris,117,160.0,588.2662,660.5478,620.4151,-32.1489,367.8167,78.574,0.2241,51.463,16.4103,10.2564
+Phaseolus vulgaris → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,117,125.0,474.4197,512.817,508.6906,-34.2709,300.1467,76.2908,0.2223,50.0362,9.9658,7.9726
+Phaseolus vulgaris → Solanum tuberosum → Oryza sativa,3,Oryza sativa,117,130.0,522.7898,533.7647,612.207,-89.4172,361.2557,74.2127,0.2199,48.3986,10.5812,8.1394
+Phaseolus vulgaris → Solanum tuberosum → Saccharum officinarum,1,Phaseolus vulgaris,107,160.0,577.292,664.8119,624.6919,-47.4,374.9526,76.6817,0.2237,51.2744,17.9439,11.215
+Phaseolus vulgaris → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,107,125.0,463.2362,513.8904,509.7129,-46.4767,305.5459,74.7228,0.226,52.5155,10.8972,8.7178
+Phaseolus vulgaris → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,107,288.0,1172.1952,1178.5583,1226.7128,-54.5176,706.6455,86.0842,0.2206,48.8319,23.5981,8.1938
+Phaseolus vulgaris → Solanum tuberosum → Zea mays,1,Phaseolus vulgaris,112,160.0,587.4945,662.6822,622.3929,-34.8984,369.1554,77.7227,0.2245,51.7342,17.1429,10.7143
+Phaseolus vulgaris → Solanum tuberosum → Zea mays,2,Solanum tuberosum,112,125.0,461.9501,513.5219,509.4701,-47.52,305.3616,75.2324,0.224,51.165,10.4107,8.3286
+Phaseolus vulgaris → Solanum tuberosum → Zea mays,3,Zea mays,112,215.0,872.286,880.8755,857.2999,14.9861,488.8916,84.4124,0.22,48.4265,17.3839,8.0855
+Phaseolus vulgaris → Zea mays,1,Phaseolus vulgaris,120,160.0,587.5726,659.9347,620.0821,-32.5095,367.6624,78.9171,0.2232,50.8206,16.0,10.0
+Phaseolus vulgaris → Zea mays,2,Zea mays,120,215.0,844.1316,881.4661,857.8432,-13.7116,498.1621,82.4544,0.2215,49.4783,16.775,7.8023
+Phaseolus vulgaris → Zea mays → Coffea arabica,1,Phaseolus vulgaris,102,160.0,556.9683,665.8087,625.3854,-68.4171,382.244,75.5387,0.2231,50.8975,18.7255,11.7034
+Phaseolus vulgaris → Zea mays → Coffea arabica,2,Zea mays,102,215.0,794.4599,887.1352,862.6503,-68.1904,522.2302,79.3865,0.2243,51.3322,19.7353,9.1792
+Phaseolus vulgaris → Zea mays → Coffea arabica,3,Coffea arabica,102,270.0,1143.5319,1099.3723,1052.1144,91.4174,571.1521,91.3504,0.2214,49.3967,22.0294,8.159
+Phaseolus vulgaris → Zea mays → Lycopersicon esculentum,1,Phaseolus vulgaris,113,160.0,588.145,662.1774,621.8482,-33.7032,368.5139,77.9199,0.2245,51.7476,16.9912,10.6195
+Phaseolus vulgaris → Zea mays → Lycopersicon esculentum,2,Zea mays,113,215.0,813.0219,883.537,859.7084,-46.6866,512.4092,81.3675,0.2214,49.4075,17.8142,8.2857
+Phaseolus vulgaris → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,113,110.0,462.5765,449.4692,455.7139,6.8626,254.4604,79.6563,0.2212,49.2348,8.6726,7.8842
+Phaseolus vulgaris → Zea mays → Manihot esculenta,1,Phaseolus vulgaris,102,160.0,556.9683,665.8087,625.3854,-68.4171,382.244,75.5387,0.2231,50.8975,18.7255,11.7034
+Phaseolus vulgaris → Zea mays → Manihot esculenta,2,Zea mays,102,215.0,794.4599,887.1352,862.6503,-68.1904,522.2302,79.3865,0.2243,51.3322,19.7353,9.1792
+Phaseolus vulgaris → Zea mays → Manihot esculenta,3,Manihot esculenta,102,272.0,1151.9384,1107.3563,1015.4912,136.4473,549.2179,92.5068,0.2215,49.405,22.1667,8.1495
+Phaseolus vulgaris → Zea mays → Oryza sativa,1,Phaseolus vulgaris,111,160.0,586.4506,663.2029,622.9972,-36.5466,370.1354,77.522,0.2244,51.6784,17.2973,10.8108
+Phaseolus vulgaris → Zea mays → Oryza sativa,2,Zea mays,111,215.0,805.3651,883.7464,859.9919,-54.6268,516.0034,81.0317,0.222,49.7672,18.1351,8.4349
+Phaseolus vulgaris → Zea mays → Oryza sativa,3,Oryza sativa,111,130.0,544.5347,531.5595,609.6173,-65.0827,351.1801,77.1209,0.2209,49.0341,10.2793,7.9071
+Phaseolus vulgaris → Zea mays → Saccharum officinarum,1,Phaseolus vulgaris,101,160.0,552.8598,665.7909,625.4887,-72.6289,383.7718,75.2965,0.2232,50.9199,18.6535,11.6584
+Phaseolus vulgaris → Zea mays → Saccharum officinarum,2,Zea mays,101,215.0,794.0044,887.6651,863.2306,-69.2262,522.8696,79.1824,0.2244,51.39,19.9307,9.2701
+Phaseolus vulgaris → Zea mays → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1220.6173,1172.1693,1218.9801,1.6372,683.1804,89.5468,0.2215,49.4523,23.6535,8.213
+Phaseolus vulgaris → Zea mays → Solanum tuberosum,1,Phaseolus vulgaris,112,160.0,587.4945,662.6822,622.3929,-34.8984,369.1554,77.7227,0.2245,51.7342,17.1429,10.7143
+Phaseolus vulgaris → Zea mays → Solanum tuberosum,2,Zea mays,112,215.0,808.7531,883.6484,859.8497,-51.0966,514.3642,81.2011,0.2217,49.5615,17.9732,8.3596
+Phaseolus vulgaris → Zea mays → Solanum tuberosum,3,Solanum tuberosum,112,125.0,525.4829,510.7489,506.3439,19.139,281.36,81.1238,0.2212,49.2127,9.8214,7.8571
+Saccharum officinarum → Coffea arabica,1,Saccharum officinarum,108,288.0,1053.5476,1190.6716,1238.4031,-184.8555,755.5443,79.1172,0.2247,51.7709,28.8611,10.0212
+Saccharum officinarum → Coffea arabica,2,Coffea arabica,108,270.0,1097.4926,1105.0106,1057.6494,39.8431,590.4309,87.9606,0.2204,48.7127,21.9722,8.1379
+Saccharum officinarum → Coffea arabica → Lycopersicon esculentum,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,101,270.0,1065.8767,1107.2472,1059.8203,6.0565,605.4995,87.1262,0.221,49.0453,23.495,8.7019
+Saccharum officinarum → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,101,110.0,499.5851,443.609,449.7581,49.8271,236.2255,85.7771,0.2234,50.7748,8.6337,7.8488
+Saccharum officinarum → Coffea arabica → Manihot esculenta,1,Saccharum officinarum,90,288.0,995.329,1193.4917,1241.7771,-246.4481,777.4292,75.6655,0.2261,52.678,26.1667,9.0856
+Saccharum officinarum → Coffea arabica → Manihot esculenta,2,Coffea arabica,90,270.0,1044.0353,1112.9875,1065.2221,-21.1868,619.1834,85.5527,0.2231,50.5314,26.3667,9.7654
+Saccharum officinarum → Coffea arabica → Manihot esculenta,3,Manihot esculenta,90,272.0,1230.3507,1098.7782,1008.9015,221.4492,523.4257,97.9398,0.2204,48.7221,24.0778,8.8521
+Saccharum officinarum → Coffea arabica → Oryza sativa,1,Saccharum officinarum,99,288.0,1015.8826,1195.286,1244.0104,-228.1277,773.4611,77.2188,0.2244,51.6028,30.1616,10.4728
+Saccharum officinarum → Coffea arabica → Oryza sativa,2,Coffea arabica,99,270.0,1059.16,1107.7391,1060.2664,-1.1064,608.4819,86.8661,0.2215,49.4131,23.9697,8.8777
+Saccharum officinarum → Coffea arabica → Oryza sativa,3,Oryza sativa,99,130.0,587.794,524.8568,601.8972,-14.1032,328.0895,82.9782,0.2226,50.191,10.4141,8.0109
+Saccharum officinarum → Coffea arabica → Phaseolus vulgaris,1,Saccharum officinarum,97,288.0,1007.2404,1195.1384,1244.2427,-237.0023,777.0346,76.7491,0.2246,51.7281,29.4021,10.209
+Saccharum officinarum → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,97,270.0,1055.2107,1108.6282,1061.0744,-5.8637,610.9745,86.5953,0.222,49.7725,24.4639,9.0607
+Saccharum officinarum → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,97,160.0,721.4526,646.202,607.0611,114.3915,316.6324,90.3315,0.2217,49.5794,13.1134,8.1959
+Saccharum officinarum → Coffea arabica → Solanum tuberosum,1,Saccharum officinarum,100,288.0,1020.7919,1195.1516,1243.6116,-222.8197,771.1061,77.4466,0.2244,51.5945,30.41,10.559
+Saccharum officinarum → Coffea arabica → Solanum tuberosum,2,Coffea arabica,100,270.0,1062.0384,1107.4716,1060.0244,2.014,607.1568,86.9975,0.2212,49.2194,23.73,8.7889
+Saccharum officinarum → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,100,125.0,567.0716,504.2204,499.89,67.1816,261.6542,87.0785,0.223,50.4737,9.9,7.92
+Saccharum officinarum → Coffea arabica → Zea mays,1,Saccharum officinarum,94,288.0,1000.9713,1194.1304,1243.2705,-242.2992,778.7945,76.2042,0.2252,52.1211,28.0745,9.7481
+Saccharum officinarum → Coffea arabica → Zea mays,2,Coffea arabica,94,270.0,1048.0562,1110.6454,1062.9531,-14.8969,614.8074,86.1675,0.2226,50.1852,25.2447,9.3499
+Saccharum officinarum → Coffea arabica → Zea mays,3,Zea mays,94,215.0,972.1665,868.4789,845.0063,127.1602,448.2893,93.1902,0.2207,48.9181,18.2553,8.4908
+Saccharum officinarum → Lycopersicon esculentum,1,Saccharum officinarum,118,288.0,1077.0272,1185.4644,1233.3446,-156.3174,743.6247,80.8869,0.2231,50.6609,26.4153,9.172
+Saccharum officinarum → Lycopersicon esculentum,2,Lycopersicon esculentum,118,110.0,443.1414,451.4202,458.0125,-14.871,262.2137,76.4797,0.2201,48.5377,8.8559,8.0508
+Saccharum officinarum → Lycopersicon esculentum → Coffea arabica,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,101,110.0,409.4556,453.732,460.4265,-50.9709,278.0931,72.8822,0.2216,49.4793,10.3465,9.4059
+Saccharum officinarum → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,101,270.0,1156.0062,1097.1242,1049.9976,106.0086,565.2777,92.2101,0.2217,49.5731,21.7822,8.0675
+Saccharum officinarum → Lycopersicon esculentum → Manihot esculenta,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,101,110.0,409.4556,453.732,460.4265,-50.9709,278.0931,72.8822,0.2216,49.4793,10.3465,9.4059
+Saccharum officinarum → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,101,272.0,1163.8377,1105.1501,1013.6644,150.1733,543.4168,93.21,0.2217,49.5874,21.9406,8.0664
+Saccharum officinarum → Lycopersicon esculentum → Oryza sativa,1,Saccharum officinarum,110,288.0,1057.2749,1189.7726,1237.2169,-179.942,753.4259,79.4969,0.2245,51.6425,28.3364,9.839
+Saccharum officinarum → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,110,110.0,423.9019,452.6671,459.3155,-35.4136,271.3533,74.7691,0.2184,47.3418,9.5,8.6364
+Saccharum officinarum → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,110,130.0,550.2845,530.0714,607.9419,-57.6574,347.3836,78.0101,0.2217,49.5335,9.9091,7.6224
+Saccharum officinarum → Lycopersicon esculentum → Phaseolus vulgaris,1,Saccharum officinarum,108,288.0,1053.5476,1190.6716,1238.4031,-184.8555,755.5443,79.1172,0.2247,51.7709,28.8611,10.0212
+Saccharum officinarum → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,108,110.0,417.6716,452.9651,459.5921,-41.9205,273.7602,74.3018,0.2188,47.6311,9.6759,8.7963
+Saccharum officinarum → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,679.821,652.0455,612.6681,67.1529,333.7932,85.8278,0.2216,49.4564,12.2963,7.6852
+Saccharum officinarum → Lycopersicon esculentum → Solanum tuberosum,1,Saccharum officinarum,110,288.0,1057.2749,1189.7726,1237.2169,-179.942,753.4259,79.4969,0.2245,51.6425,28.3364,9.839
+Saccharum officinarum → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,110,110.0,423.9019,452.6671,459.3155,-35.4136,271.3533,74.7691,0.2184,47.3418,9.5,8.6364
+Saccharum officinarum → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,110,125.0,529.3885,509.8867,505.5816,23.807,279.1238,81.473,0.2216,49.4785,9.5818,7.6655
+Saccharum officinarum → Lycopersicon esculentum → Zea mays,1,Saccharum officinarum,104,288.0,1042.0772,1192.9439,1240.9621,-198.8848,761.5055,78.314,0.2246,51.7388,29.9712,10.4067
+Saccharum officinarum → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,104,110.0,409.2701,453.6016,460.313,-51.0429,277.7035,73.3134,0.2202,48.5747,10.0481,9.1346
+Saccharum officinarum → Lycopersicon esculentum → Zea mays,3,Zea mays,104,215.0,917.5848,875.0201,850.9061,66.6787,467.665,88.5075,0.2216,49.4623,16.9712,7.8936
+Saccharum officinarum → Manihot esculenta,1,Saccharum officinarum,108,288.0,1053.5476,1190.6716,1238.4031,-184.8555,755.5443,79.1172,0.2247,51.7709,28.8611,10.0212
+Saccharum officinarum → Manihot esculenta,2,Manihot esculenta,108,272.0,1107.7516,1113.2008,1021.8204,85.9311,568.6859,89.0536,0.2205,48.7344,22.1296,8.1359
+Saccharum officinarum → Manihot esculenta → Coffea arabica,1,Saccharum officinarum,90,288.0,995.329,1193.4917,1241.7771,-246.4481,777.4292,75.6655,0.2261,52.678,26.1667,9.0856
+Saccharum officinarum → Manihot esculenta → Coffea arabica,2,Manihot esculenta,90,272.0,1054.1972,1121.243,1028.7382,25.459,596.8383,86.8643,0.2231,50.5346,26.5556,9.7631
+Saccharum officinarum → Manihot esculenta → Coffea arabica,3,Coffea arabica,90,270.0,1220.1888,1090.5226,1043.8463,176.3425,541.0577,97.0279,0.2204,48.7055,23.8889,8.8477
+Saccharum officinarum → Manihot esculenta → Lycopersicon esculentum,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,101,272.0,1076.5453,1115.4962,1024.0662,52.4791,584.8035,88.2949,0.221,49.0516,23.6634,8.6998
+Saccharum officinarum → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,101,110.0,496.748,443.3858,449.5841,47.1639,236.13,85.6559,0.2234,50.8044,8.6238,7.8398
+Saccharum officinarum → Manihot esculenta → Oryza sativa,1,Saccharum officinarum,99,288.0,1015.8826,1195.286,1244.0104,-228.1277,773.4611,77.2188,0.2244,51.6028,30.1616,10.4728
+Saccharum officinarum → Manihot esculenta → Oryza sativa,2,Manihot esculenta,99,272.0,1069.8824,1115.9715,1024.3424,45.5401,587.9689,88.0584,0.2215,49.4116,24.1414,8.8755
+Saccharum officinarum → Manihot esculenta → Oryza sativa,3,Oryza sativa,99,130.0,586.3221,524.5917,601.6183,-15.2962,328.1141,83.0759,0.2226,50.1964,10.404,8.0031
+Saccharum officinarum → Manihot esculenta → Phaseolus vulgaris,1,Saccharum officinarum,97,288.0,1007.2404,1195.1384,1244.2427,-237.0023,777.0346,76.7491,0.2246,51.7281,29.4021,10.209
+Saccharum officinarum → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,97,272.0,1065.6704,1116.8442,1024.8579,40.8126,590.3339,87.8122,0.222,49.7689,24.6392,9.0585
+Saccharum officinarum → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,97,160.0,720.5818,646.0443,606.9701,113.6117,316.5925,90.3268,0.2217,49.5744,13.1031,8.1894
+Saccharum officinarum → Manihot esculenta → Solanum tuberosum,1,Saccharum officinarum,100,288.0,1020.7919,1195.1516,1243.6116,-222.8197,771.1061,77.4466,0.2244,51.5945,30.41,10.559
+Saccharum officinarum → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,100,272.0,1072.7596,1115.7134,1024.1967,48.5629,586.5659,88.1779,0.2212,49.2214,23.9,8.7868
+Saccharum officinarum → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,100,125.0,564.9778,503.9923,499.7232,65.2546,261.6135,86.9834,0.223,50.495,9.89,7.912
+Saccharum officinarum → Manihot esculenta → Zea mays,1,Saccharum officinarum,94,288.0,1000.9713,1194.1304,1243.2705,-242.2992,778.7945,76.2042,0.2252,52.1211,28.0745,9.7481
+Saccharum officinarum → Manihot esculenta → Zea mays,2,Manihot esculenta,94,272.0,1058.1906,1118.8681,1026.343,31.8476,593.2647,87.4232,0.2226,50.182,25.4255,9.3476
+Saccharum officinarum → Manihot esculenta → Zea mays,3,Zea mays,94,215.0,971.5212,868.37,844.9666,126.5546,447.9112,93.1884,0.2207,48.9157,18.266,8.4958
+Saccharum officinarum → Oryza sativa,1,Saccharum officinarum,117,288.0,1074.0832,1185.772,1233.5609,-159.4777,745.0981,80.7236,0.2233,50.8132,26.641,9.2504
+Saccharum officinarum → Oryza sativa,2,Oryza sativa,117,130.0,524.6368,533.5239,611.9557,-87.319,360.7424,74.6042,0.22,48.411,10.5385,8.1065
+Saccharum officinarum → Oryza sativa → Coffea arabica,1,Saccharum officinarum,99,288.0,1015.8826,1195.286,1244.0104,-228.1277,773.4611,77.2188,0.2244,51.6028,30.1616,10.4728
+Saccharum officinarum → Oryza sativa → Coffea arabica,2,Oryza sativa,99,130.0,486.9851,536.4105,615.2233,-128.2382,380.4634,70.9466,0.222,49.7733,12.4545,9.5804
+Saccharum officinarum → Oryza sativa → Coffea arabica,3,Coffea arabica,99,270.0,1159.969,1096.1854,1049.1233,110.8457,563.231,92.7312,0.2218,49.6142,21.9293,8.122
+Saccharum officinarum → Oryza sativa → Lycopersicon esculentum,1,Saccharum officinarum,110,288.0,1057.2749,1189.7726,1237.2169,-179.942,753.4259,79.4969,0.2245,51.6425,28.3364,9.839
+Saccharum officinarum → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,110,130.0,505.8837,534.8948,613.5033,-107.6196,371.1337,72.9881,0.2184,47.33,11.2091,8.6224
+Saccharum officinarum → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,110,110.0,468.3027,447.8437,454.1223,14.1804,249.9528,80.8998,0.2223,49.9459,8.2,7.4545
+Saccharum officinarum → Oryza sativa → Manihot esculenta,1,Saccharum officinarum,99,288.0,1015.8826,1195.286,1244.0104,-228.1277,773.4611,77.2188,0.2244,51.6028,30.1616,10.4728
+Saccharum officinarum → Oryza sativa → Manihot esculenta,2,Oryza sativa,99,130.0,486.9851,536.4105,615.2233,-128.2382,380.4634,70.9466,0.222,49.7733,12.4545,9.5804
+Saccharum officinarum → Oryza sativa → Manihot esculenta,3,Manihot esculenta,99,272.0,1169.2195,1104.1527,1012.878,156.3415,541.7057,93.6978,0.2218,49.6139,22.0909,8.1217
+Saccharum officinarum → Oryza sativa → Phaseolus vulgaris,1,Saccharum officinarum,107,288.0,1051.5261,1191.1352,1239.0014,-187.4754,756.7161,78.922,0.2247,51.8008,29.1308,10.1149
+Saccharum officinarum → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,107,130.0,495.5023,535.323,613.9968,-118.4945,375.9469,72.2307,0.2189,47.7045,11.5234,8.8641
+Saccharum officinarum → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,107,160.0,688.1595,651.034,611.7145,76.445,330.1936,86.7159,0.2221,49.8336,12.1495,7.5935
+Saccharum officinarum → Oryza sativa → Solanum tuberosum,1,Saccharum officinarum,109,288.0,1055.5051,1190.2253,1237.8019,-182.2967,754.515,79.3088,0.2246,51.7163,28.5963,9.9293
+Saccharum officinarum → Oryza sativa → Solanum tuberosum,2,Oryza sativa,109,130.0,501.9777,535.0119,613.6344,-111.6567,372.8244,72.7402,0.2185,47.3948,11.3119,8.7015
+Saccharum officinarum → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,109,125.0,535.5331,508.9345,504.6752,30.8579,276.0557,82.7908,0.2222,49.8768,9.3945,7.5156
+Saccharum officinarum → Oryza sativa → Zea mays,1,Saccharum officinarum,103,288.0,1036.8338,1193.6443,1241.6742,-204.8404,763.6048,78.1035,0.2245,51.6885,30.2524,10.5043
+Saccharum officinarum → Oryza sativa → Zea mays,2,Oryza sativa,103,130.0,485.9592,535.9874,614.7794,-128.8201,380.257,71.1523,0.2204,48.6866,11.9709,9.2084
+Saccharum officinarum → Oryza sativa → Zea mays,3,Zea mays,103,215.0,927.1449,873.4272,849.4475,77.6974,463.1266,89.5312,0.2219,49.6983,16.8252,7.8257
+Saccharum officinarum → Phaseolus vulgaris,1,Saccharum officinarum,115,288.0,1068.5234,1186.7352,1234.2723,-165.7489,747.6751,80.3883,0.2237,51.0951,27.1043,9.4112
+Saccharum officinarum → Phaseolus vulgaris,2,Phaseolus vulgaris,115,160.0,647.662,656.5176,617.3113,30.3507,349.0546,82.004,0.2197,48.2638,13.0783,8.1739
+Saccharum officinarum → Phaseolus vulgaris → Coffea arabica,1,Saccharum officinarum,97,288.0,1007.2404,1195.1384,1244.2427,-237.0023,777.0346,76.7491,0.2246,51.7281,29.4021,10.209
+Saccharum officinarum → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,97,160.0,605.3437,660.3187,620.5632,-15.2195,368.5366,78.9444,0.2223,49.9454,15.5052,9.6907
+Saccharum officinarum → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,97,270.0,1171.3196,1094.5115,1047.5531,123.7665,557.8191,93.6443,0.2217,49.5556,22.0722,8.1749
+Saccharum officinarum → Phaseolus vulgaris → Lycopersicon esculentum,1,Saccharum officinarum,108,288.0,1053.5476,1190.6716,1238.4031,-184.8555,755.5443,79.1172,0.2247,51.7709,28.8611,10.0212
+Saccharum officinarum → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,108,160.0,622.8644,658.1441,618.7086,4.1557,360.0821,80.8376,0.2188,47.581,13.9259,8.7037
+Saccharum officinarum → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,108,110.0,474.6282,446.8665,453.2406,21.3877,246.1952,82.122,0.2229,50.3589,8.0463,7.3148
+Saccharum officinarum → Phaseolus vulgaris → Manihot esculenta,1,Saccharum officinarum,97,288.0,1007.2404,1195.1384,1244.2427,-237.0023,777.0346,76.7491,0.2246,51.7281,29.4021,10.209
+Saccharum officinarum → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,97,160.0,605.3437,660.3187,620.5632,-15.2195,368.5366,78.9444,0.2223,49.9454,15.5052,9.6907
+Saccharum officinarum → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,97,272.0,1180.9085,1102.5698,1011.6016,169.3069,537.2663,94.5773,0.2217,49.5507,22.2371,8.1754
+Saccharum officinarum → Phaseolus vulgaris → Oryza sativa,1,Saccharum officinarum,107,288.0,1051.5261,1191.1352,1239.0014,-187.4754,756.7161,78.922,0.2247,51.8008,29.1308,10.1149
+Saccharum officinarum → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,107,160.0,618.8298,658.2898,618.85,-0.0201,361.7688,80.6585,0.2189,47.69,14.0561,8.785
+Saccharum officinarum → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,107,130.0,564.8321,528.0672,605.6745,-40.8425,338.6547,80.0579,0.2229,50.3428,9.6168,7.3976
+Saccharum officinarum → Phaseolus vulgaris → Solanum tuberosum,1,Saccharum officinarum,107,288.0,1051.5261,1191.1352,1239.0014,-187.4754,756.7161,78.922,0.2247,51.8008,29.1308,10.1149
+Saccharum officinarum → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,107,160.0,618.8298,658.2898,618.85,-0.0201,361.7688,80.6585,0.2189,47.69,14.0561,8.785
+Saccharum officinarum → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,107,125.0,542.3675,507.8356,503.7303,38.6372,271.9966,84.0405,0.2227,50.2632,9.2523,7.4019
+Saccharum officinarum → Phaseolus vulgaris → Zea mays,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,101,160.0,603.6869,659.2076,619.8925,-16.2055,368.3818,79.5095,0.221,49.1044,14.8911,9.3069
+Saccharum officinarum → Phaseolus vulgaris → Zea mays,3,Zea mays,101,215.0,937.969,871.5729,847.718,90.2511,457.9921,90.575,0.2221,49.8495,16.8416,7.8333
+Saccharum officinarum → Solanum tuberosum,1,Saccharum officinarum,117,288.0,1074.0832,1185.772,1233.5609,-159.4777,745.0981,80.7236,0.2233,50.8132,26.641,9.2504
+Saccharum officinarum → Solanum tuberosum,2,Solanum tuberosum,117,125.0,502.281,513.0883,509.1164,-6.8353,290.4899,77.9455,0.2199,48.3728,10.1538,8.1231
+Saccharum officinarum → Solanum tuberosum → Coffea arabica,1,Saccharum officinarum,100,288.0,1020.7919,1195.1516,1243.6116,-222.8197,771.1061,77.4466,0.2244,51.5945,30.41,10.559
+Saccharum officinarum → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,100,125.0,465.4851,515.6111,511.6325,-46.1474,307.5794,74.5746,0.2217,49.5907,11.88,9.504
+Saccharum officinarum → Solanum tuberosum → Coffea arabica,3,Coffea arabica,100,270.0,1163.6249,1096.0809,1049.0114,114.6135,562.0904,92.7179,0.2218,49.6282,21.75,8.0556
+Saccharum officinarum → Solanum tuberosum → Lycopersicon esculentum,1,Saccharum officinarum,110,288.0,1057.2749,1189.7726,1237.2169,-179.942,753.4259,79.4969,0.2245,51.6425,28.3364,9.839
+Saccharum officinarum → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,110,125.0,483.0086,514.3331,510.3884,-27.3797,299.4279,76.5421,0.2184,47.3264,10.8,8.64
+Saccharum officinarum → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,110,110.0,470.2818,448.2207,454.51,15.7718,250.7685,80.5596,0.222,49.7874,8.2818,7.5289
+Saccharum officinarum → Solanum tuberosum → Manihot esculenta,1,Saccharum officinarum,100,288.0,1020.7919,1195.1516,1243.6116,-222.8197,771.1061,77.4466,0.2244,51.5945,30.41,10.559
+Saccharum officinarum → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,100,125.0,465.4851,515.6111,511.6325,-46.1474,307.5794,74.5746,0.2217,49.5907,11.88,9.504
+Saccharum officinarum → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,100,272.0,1172.2523,1104.0945,1012.7677,159.4846,540.747,93.7141,0.2218,49.637,21.91,8.0551
+Saccharum officinarum → Solanum tuberosum → Oryza sativa,1,Saccharum officinarum,109,288.0,1055.5051,1190.2253,1237.8019,-182.2967,754.515,79.3088,0.2246,51.7163,28.5963,9.9293
+Saccharum officinarum → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,109,125.0,479.2664,514.4478,510.4743,-31.2079,300.8457,76.3268,0.2185,47.4091,10.8991,8.7193
+Saccharum officinarum → Solanum tuberosum → Oryza sativa,3,Oryza sativa,109,130.0,558.2444,529.4986,607.2907,-49.0463,344.7572,78.9449,0.222,49.7676,9.8073,7.5441
+Saccharum officinarum → Solanum tuberosum → Phaseolus vulgaris,1,Saccharum officinarum,107,288.0,1051.5261,1191.1352,1239.0014,-187.4754,756.7161,78.922,0.2247,51.8008,29.1308,10.1149
+Saccharum officinarum → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,107,125.0,472.7521,514.7693,510.7941,-38.042,303.5226,75.8844,0.219,47.7332,11.1028,8.8822
+Saccharum officinarum → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,107,160.0,688.4451,651.3561,612.0632,76.3819,331.273,86.7578,0.2219,49.6665,12.2056,7.6285
+Saccharum officinarum → Solanum tuberosum → Zea mays,1,Saccharum officinarum,103,288.0,1036.8338,1193.6443,1241.6742,-204.8404,763.6048,78.1035,0.2245,51.6885,30.2524,10.5043
+Saccharum officinarum → Solanum tuberosum → Zea mays,2,Solanum tuberosum,103,125.0,464.8258,515.3733,511.4916,-46.6658,307.4476,74.9478,0.2205,48.7301,11.534,9.2272
+Saccharum officinarum → Solanum tuberosum → Zea mays,3,Zea mays,103,215.0,925.0856,874.0826,850.0002,75.0854,464.694,89.1253,0.2218,49.6181,16.8932,7.8573
+Saccharum officinarum → Zea mays,1,Saccharum officinarum,112,288.0,1060.2534,1188.6104,1235.9567,-175.7033,751.1593,79.863,0.2242,51.457,27.8304,9.6633
+Saccharum officinarum → Zea mays,2,Zea mays,112,215.0,873.9547,880.5893,857.0456,16.9092,487.9805,84.4739,0.2201,48.4673,17.3214,8.0565
+Saccharum officinarum → Zea mays → Coffea arabica,1,Saccharum officinarum,94,288.0,1000.9713,1194.1304,1243.2705,-242.2992,778.7945,76.2042,0.2252,52.1211,28.0745,9.7481
+Saccharum officinarum → Zea mays → Coffea arabica,2,Zea mays,94,215.0,822.1671,886.6008,862.1422,-39.9751,513.0255,81.5202,0.2227,50.2142,20.6383,9.5992
+Saccharum officinarum → Zea mays → Coffea arabica,3,Coffea arabica,94,270.0,1198.0555,1092.5236,1045.6662,152.3894,548.8871,95.2745,0.2211,49.1531,22.8617,8.4673
+Saccharum officinarum → Zea mays → Lycopersicon esculentum,1,Saccharum officinarum,104,288.0,1042.0772,1192.9439,1240.9621,-198.8848,761.5055,78.314,0.2246,51.7388,29.9712,10.4067
+Saccharum officinarum → Zea mays → Lycopersicon esculentum,2,Zea mays,104,215.0,837.3665,883.0788,859.332,-21.9654,504.7036,83.2796,0.2199,48.3621,18.6538,8.6762
+Saccharum officinarum → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,104,110.0,489.4884,445.5428,451.8282,37.6601,240.5331,83.7812,0.2234,50.7249,8.3654,7.6049
+Saccharum officinarum → Zea mays → Manihot esculenta,1,Saccharum officinarum,94,288.0,1000.9713,1194.1304,1243.2705,-242.2992,778.7945,76.2042,0.2252,52.1211,28.0745,9.7481
+Saccharum officinarum → Zea mays → Manihot esculenta,2,Zea mays,94,215.0,822.1671,886.6008,862.1422,-39.9751,513.0255,81.5202,0.2227,50.2142,20.6383,9.5992
+Saccharum officinarum → Zea mays → Manihot esculenta,3,Manihot esculenta,94,272.0,1207.5447,1100.6373,1009.9248,197.6199,529.2926,96.2291,0.2211,49.1556,23.0532,8.4754
+Saccharum officinarum → Zea mays → Oryza sativa,1,Saccharum officinarum,103,288.0,1036.8338,1193.6443,1241.6742,-204.8404,763.6048,78.1035,0.2245,51.6885,30.2524,10.5043
+Saccharum officinarum → Zea mays → Oryza sativa,2,Zea mays,103,215.0,833.5948,883.1865,859.4779,-25.8832,506.5326,83.1172,0.2202,48.5561,18.835,8.7604
+Saccharum officinarum → Zea mays → Oryza sativa,3,Oryza sativa,103,130.0,579.5093,526.2281,603.545,-24.0357,332.0563,82.1498,0.2231,50.5757,9.9612,7.6624
+Saccharum officinarum → Zea mays → Phaseolus vulgaris,1,Saccharum officinarum,101,288.0,1025.8255,1194.8448,1243.0798,-217.2543,768.6374,77.6699,0.2244,51.6109,30.505,10.592
+Saccharum officinarum → Zea mays → Phaseolus vulgaris,2,Zea mays,101,215.0,827.959,883.4414,859.8139,-31.8549,509.3209,82.7829,0.2209,49.0241,19.2079,8.9339
+Saccharum officinarum → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,101,160.0,713.6969,647.3391,608.1667,105.5302,319.2161,89.7201,0.2226,50.2136,12.5248,7.828
+Saccharum officinarum → Zea mays → Solanum tuberosum,1,Saccharum officinarum,103,288.0,1036.8338,1193.6443,1241.6742,-204.8404,763.6048,78.1035,0.2245,51.6885,30.2524,10.5043
+Saccharum officinarum → Zea mays → Solanum tuberosum,2,Zea mays,103,215.0,833.5948,883.1865,859.4779,-25.8832,506.5326,83.1172,0.2202,48.5561,18.835,8.7604
+Saccharum officinarum → Zea mays → Solanum tuberosum,3,Solanum tuberosum,103,125.0,556.3167,506.2695,502.0056,54.3111,266.1094,85.436,0.2231,50.5567,9.5922,7.6738
+Solanum tuberosum → Coffea arabica,1,Solanum tuberosum,119,125.0,456.8094,516.333,512.0657,-55.2563,307.2566,74.1621,0.2233,50.9758,13.4118,10.7294
+Solanum tuberosum → Coffea arabica,2,Coffea arabica,119,270.0,1053.788,1107.5533,1060.1788,-6.3908,603.7442,84.9378,0.2217,49.6104,21.3193,7.896
+Solanum tuberosum → Coffea arabica → Lycopersicon esculentum,1,Solanum tuberosum,111,125.0,454.9362,519.3402,515.0375,-60.1013,310.1501,73.0381,0.2235,51.1325,14.3784,11.5027
+Solanum tuberosum → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,111,270.0,1018.6306,1110.0543,1062.6044,-43.9738,619.8905,83.8523,0.2224,50.0555,22.8559,8.4651
+Solanum tuberosum → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,462.7836,449.1143,455.3475,7.4361,253.1687,79.742,0.2215,49.4215,8.4775,7.7068
+Solanum tuberosum → Coffea arabica → Manihot esculenta,1,Solanum tuberosum,101,125.0,424.8646,520.8905,516.6651,-91.8005,321.9734,70.3687,0.2223,50.3854,15.4455,12.3564
+Solanum tuberosum → Coffea arabica → Manihot esculenta,2,Coffea arabica,101,270.0,998.402,1115.1898,1067.4461,-69.0441,632.2804,82.2535,0.2243,51.3467,25.1188,9.3033
+Solanum tuberosum → Coffea arabica → Manihot esculenta,3,Manihot esculenta,101,272.0,1163.4779,1105.5564,1013.9553,149.5226,544.3649,93.2291,0.2217,49.5533,21.9901,8.0846
+Solanum tuberosum → Coffea arabica → Oryza sativa,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Coffea arabica → Oryza sativa,2,Coffea arabica,110,270.0,1015.4672,1110.2797,1062.81,-47.3429,621.2488,83.7055,0.2227,50.235,23.0636,8.5421
+Solanum tuberosum → Coffea arabica → Oryza sativa,3,Oryza sativa,110,130.0,551.0562,530.4424,608.3504,-57.2942,347.789,78.0806,0.2215,49.4419,9.9727,7.6713
+Solanum tuberosum → Coffea arabica → Phaseolus vulgaris,1,Solanum tuberosum,108,125.0,447.6969,520.1304,515.9357,-68.2389,313.374,72.2892,0.223,50.8075,14.7778,11.8222
+Solanum tuberosum → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,108,270.0,1011.2269,1111.0595,1063.522,-52.2951,623.8157,83.4037,0.2232,50.5828,23.4907,8.7003
+Solanum tuberosum → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,679.4214,652.5069,612.9747,66.4467,334.4274,85.7594,0.2214,49.3799,12.3611,7.7257
+Solanum tuberosum → Coffea arabica → Saccharum officinarum,1,Solanum tuberosum,100,125.0,422.2969,520.8667,516.7358,-94.4389,322.8069,70.0723,0.2224,50.4855,15.2,12.16
+Solanum tuberosum → Coffea arabica → Saccharum officinarum,2,Coffea arabica,100,270.0,996.4208,1115.6342,1067.8906,-71.4698,633.3624,82.076,0.2243,51.3881,25.37,9.3963
+Solanum tuberosum → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,100,288.0,1231.1842,1170.3427,1217.1782,14.006,677.6028,90.2056,0.2217,49.5561,23.47,8.1493
+Solanum tuberosum → Coffea arabica → Zea mays,1,Solanum tuberosum,105,125.0,440.4212,520.4217,516.0938,-75.6725,316.5313,71.4975,0.2225,50.5338,15.2,12.16
+Solanum tuberosum → Coffea arabica → Zea mays,2,Coffea arabica,105,270.0,1003.4981,1112.9138,1065.2486,-61.7505,627.7498,82.9296,0.2238,50.9865,24.1619,8.9489
+Solanum tuberosum → Coffea arabica → Zea mays,3,Zea mays,105,215.0,919.61,875.0051,850.776,68.834,466.9125,88.685,0.2217,49.5352,16.8476,7.8361
+Solanum tuberosum → Lycopersicon esculentum,1,Solanum tuberosum,129,125.0,474.0271,515.1963,510.96,-36.9329,300.0946,75.9111,0.2203,48.9482,12.3721,9.8977
+Solanum tuberosum → Lycopersicon esculentum,2,Lycopersicon esculentum,129,110.0,439.935,450.3312,456.79,-16.8549,259.6464,76.7888,0.2243,51.4224,7.9535,7.2304
+Solanum tuberosum → Lycopersicon esculentum → Coffea arabica,1,Solanum tuberosum,111,125.0,454.9362,519.3402,515.0375,-60.1013,310.1501,73.0381,0.2235,51.1325,14.3784,11.5027
+Solanum tuberosum → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,111,110.0,409.7257,452.3248,458.8563,-49.1306,273.6865,73.5349,0.2265,52.8338,9.2432,8.4029
+Solanum tuberosum → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,111,270.0,1071.6886,1106.8438,1059.5117,12.1768,600.4534,86.0099,0.2204,48.6653,22.0901,8.1815
+Solanum tuberosum → Lycopersicon esculentum → Manihot esculenta,1,Solanum tuberosum,111,125.0,454.9362,519.3402,515.0375,-60.1013,310.1501,73.0381,0.2235,51.1325,14.3784,11.5027
+Solanum tuberosum → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,111,110.0,409.7257,452.3248,458.8563,-49.1306,273.6865,73.5349,0.2265,52.8338,9.2432,8.4029
+Solanum tuberosum → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,111,272.0,1082.2868,1114.8897,1024.1007,58.1861,579.8104,87.1482,0.2204,48.6839,22.2342,8.1744
+Solanum tuberosum → Lycopersicon esculentum → Oryza sativa,1,Solanum tuberosum,121,125.0,456.6117,516.1812,512.0022,-55.3905,307.3988,74.3829,0.2226,50.4727,13.1901,10.5521
+Solanum tuberosum → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,121,110.0,423.6257,451.4417,457.9694,-34.3437,267.6383,75.2541,0.2229,50.4288,8.4793,7.7085
+Solanum tuberosum → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,121,130.0,515.9335,532.4259,610.6587,-94.7252,362.0284,73.3524,0.2213,49.3179,10.0992,7.7686
+Solanum tuberosum → Lycopersicon esculentum → Phaseolus vulgaris,1,Solanum tuberosum,119,125.0,456.8094,516.333,512.0657,-55.2563,307.2566,74.1621,0.2233,50.9758,13.4118,10.7294
+Solanum tuberosum → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,119,110.0,417.9439,451.6434,458.1475,-40.2036,269.8287,74.8382,0.2233,50.7169,8.6218,7.838
+Solanum tuberosum → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,119,160.0,635.8441,655.9099,616.7358,19.1083,351.5198,80.7351,0.2206,48.8497,12.6975,7.9359
+Solanum tuberosum → Lycopersicon esculentum → Saccharum officinarum,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,110,110.0,410.8254,452.4351,458.9356,-48.1103,273.3922,73.6202,0.2268,53.0755,9.3273,8.4793
+Solanum tuberosum → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,110,288.0,1146.7241,1180.1546,1229.2122,-82.4881,718.6705,84.1927,0.2206,48.7894,23.5818,8.1881
+Solanum tuberosum → Lycopersicon esculentum → Zea mays,1,Solanum tuberosum,115,125.0,459.3126,517.4267,512.9974,-53.6848,307.1146,73.9759,0.224,51.4353,13.8783,11.1026
+Solanum tuberosum → Lycopersicon esculentum → Zea mays,2,Lycopersicon esculentum,115,110.0,409.1403,452.189,458.7729,-49.6327,273.4109,73.963,0.2247,51.651,8.9217,8.1107
+Solanum tuberosum → Lycopersicon esculentum → Zea mays,3,Zea mays,115,215.0,855.6383,881.716,858.5931,-2.9548,496.0707,82.9686,0.2201,48.4907,17.513,8.1456
+Solanum tuberosum → Manihot esculenta,1,Solanum tuberosum,118,125.0,457.4915,516.4618,512.1481,-54.6566,307.0456,74.1558,0.2236,51.1865,13.5254,10.8203
+Solanum tuberosum → Manihot esculenta,2,Manihot esculenta,118,272.0,1057.8676,1116.3158,1025.1946,32.673,587.0286,85.9361,0.2216,49.5658,21.6695,7.9667
+Solanum tuberosum → Manihot esculenta → Coffea arabica,1,Solanum tuberosum,101,125.0,424.8646,520.8905,516.6651,-91.8005,321.9734,70.3687,0.2223,50.3854,15.4455,12.3564
+Solanum tuberosum → Manihot esculenta → Coffea arabica,2,Manihot esculenta,101,272.0,1006.0346,1123.524,1031.4564,-25.4219,613.4321,83.5689,0.2242,51.3254,25.3168,9.3077
+Solanum tuberosum → Manihot esculenta → Coffea arabica,3,Coffea arabica,101,270.0,1155.8453,1097.2222,1050.0864,105.7589,565.6642,92.1916,0.2217,49.5615,21.7921,8.0711
+Solanum tuberosum → Manihot esculenta → Lycopersicon esculentum,1,Solanum tuberosum,111,125.0,454.9362,519.3402,515.0375,-60.1013,310.1501,73.0381,0.2235,51.1325,14.3784,11.5027
+Solanum tuberosum → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,111,272.0,1026.3923,1118.3367,1027.1942,-0.8019,602.5268,85.0492,0.2224,50.0379,23.036,8.4691
+Solanum tuberosum → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,111,110.0,465.6202,448.8778,455.1364,10.4837,252.9925,79.9204,0.2216,49.4857,8.4414,7.674
+Solanum tuberosum → Manihot esculenta → Oryza sativa,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Manihot esculenta → Oryza sativa,2,Manihot esculenta,110,272.0,1023.2019,1118.5594,1027.335,-4.133,604.0104,84.9133,0.2226,50.2134,23.2455,8.5461
+Solanum tuberosum → Manihot esculenta → Oryza sativa,3,Oryza sativa,110,130.0,551.2722,530.0795,607.9763,-56.7041,347.6489,78.1508,0.2216,49.5001,9.9182,7.6294
+Solanum tuberosum → Manihot esculenta → Phaseolus vulgaris,1,Solanum tuberosum,108,125.0,447.6969,520.1304,515.9357,-68.2389,313.374,72.2892,0.223,50.8075,14.7778,11.8222
+Solanum tuberosum → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,108,272.0,1018.7359,1119.3494,1027.828,-9.0921,606.4846,84.6339,0.2231,50.558,23.6759,8.7044
+Solanum tuberosum → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,108,160.0,680.9747,652.2799,612.7993,68.1754,334.053,85.9209,0.2215,49.4281,12.3148,7.6968
+Solanum tuberosum → Manihot esculenta → Saccharum officinarum,1,Solanum tuberosum,100,125.0,422.2969,520.8667,516.7358,-94.4389,322.8069,70.0723,0.2224,50.4855,15.2,12.16
+Solanum tuberosum → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,100,272.0,1004.1127,1123.9598,1032.0077,-27.895,614.3862,83.4046,0.2243,51.3688,25.57,9.4007
+Solanum tuberosum → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,100,288.0,1232.1197,1170.0308,1216.9198,15.1999,677.0724,90.1995,0.2217,49.5705,23.43,8.1354
+Solanum tuberosum → Manihot esculenta → Zea mays,1,Solanum tuberosum,104,125.0,437.0148,520.5575,516.1931,-79.1783,317.8564,71.2234,0.2223,50.4303,15.3462,12.2769
+Solanum tuberosum → Manihot esculenta → Zea mays,2,Manihot esculenta,104,272.0,1009.8851,1121.8332,1029.7197,-19.8346,610.5252,84.0429,0.2239,51.0768,24.5865,9.0392
+Solanum tuberosum → Manihot esculenta → Zea mays,3,Zea mays,104,215.0,917.4005,875.2001,851.0379,66.3626,467.9797,88.5275,0.2215,49.4418,16.9808,7.898
+Solanum tuberosum → Oryza sativa,1,Solanum tuberosum,128,125.0,470.762,515.2886,511.026,-40.2641,301.318,75.7229,0.2205,49.0238,12.4688,9.975
+Solanum tuberosum → Oryza sativa,2,Oryza sativa,128,130.0,518.206,532.0993,610.3016,-92.0956,358.3537,74.291,0.224,51.1958,9.4297,7.2536
+Solanum tuberosum → Oryza sativa → Coffea arabica,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Oryza sativa → Coffea arabica,2,Oryza sativa,110,130.0,484.3786,534.4434,612.9627,-128.584,375.881,70.9967,0.2263,52.7378,10.9727,8.4406
+Solanum tuberosum → Oryza sativa → Coffea arabica,3,Coffea arabica,110,270.0,1082.1447,1106.2787,1058.9328,23.2119,596.6458,86.7719,0.2203,48.6481,22.0636,8.1717
+Solanum tuberosum → Oryza sativa → Lycopersicon esculentum,1,Solanum tuberosum,121,125.0,456.6117,516.1812,512.0022,-55.3905,307.3988,74.3829,0.2226,50.4727,13.1901,10.5521
+Solanum tuberosum → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,121,130.0,502.51,533.3271,611.6946,-109.1846,367.4484,72.8038,0.2227,50.296,9.9752,7.6732
+Solanum tuberosum → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,121,110.0,437.0492,450.5405,457.0621,-20.013,262.9457,75.9477,0.2212,49.2728,8.6033,7.8212
+Solanum tuberosum → Oryza sativa → Manihot esculenta,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Oryza sativa → Manihot esculenta,2,Oryza sativa,110,130.0,484.3786,534.4434,612.9627,-128.584,375.881,70.9967,0.2263,52.7378,10.9727,8.4406
+Solanum tuberosum → Oryza sativa → Manihot esculenta,3,Manihot esculenta,110,272.0,1090.0955,1114.1955,1023.2319,66.8635,575.5948,87.9444,0.2204,48.666,22.1909,8.1584
+Solanum tuberosum → Oryza sativa → Phaseolus vulgaris,1,Solanum tuberosum,117,125.0,458.5981,516.6783,512.3353,-53.7372,306.9201,74.2177,0.2238,51.3382,13.641,10.9128
+Solanum tuberosum → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,117,130.0,489.6186,533.7455,612.1876,-122.569,373.1004,71.874,0.2235,50.8624,10.3162,7.9356
+Solanum tuberosum → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,117,160.0,637.259,656.7057,617.4594,19.7995,351.516,80.8394,0.22,48.444,13.0,8.125
+Solanum tuberosum → Oryza sativa → Saccharum officinarum,1,Solanum tuberosum,109,125.0,450.5972,519.9893,515.7644,-65.1673,312.2967,72.5434,0.2231,50.8965,14.6422,11.7138
+Solanum tuberosum → Oryza sativa → Saccharum officinarum,2,Oryza sativa,109,130.0,485.0737,534.6212,613.1666,-128.093,375.8052,71.0134,0.2266,52.9305,11.0734,8.518
+Solanum tuberosum → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,109,288.0,1157.3451,1179.5611,1228.2853,-70.9401,713.6908,84.995,0.2205,48.775,23.5872,8.19
+Solanum tuberosum → Oryza sativa → Zea mays,1,Solanum tuberosum,114,125.0,458.6812,517.875,513.4544,-54.7732,307.4522,73.7477,0.2239,51.4056,14.0,11.2
+Solanum tuberosum → Oryza sativa → Zea mays,2,Oryza sativa,114,130.0,483.2832,534.1621,612.6745,-129.3913,375.7834,71.1338,0.2247,51.6231,10.5877,8.1444
+Solanum tuberosum → Oryza sativa → Zea mays,3,Zea mays,114,215.0,861.6323,881.2882,858.0985,3.5338,493.1334,83.4713,0.22,48.4466,17.4649,8.1232
+Solanum tuberosum → Phaseolus vulgaris,1,Solanum tuberosum,126,125.0,465.0279,515.5747,511.3041,-46.2762,303.602,75.3376,0.2209,49.3219,12.6667,10.1333
+Solanum tuberosum → Phaseolus vulgaris,2,Phaseolus vulgaris,126,160.0,633.5583,655.0287,615.7455,17.8127,348.8933,81.3967,0.2234,50.7449,11.8254,7.3909
+Solanum tuberosum → Phaseolus vulgaris → Coffea arabica,1,Solanum tuberosum,108,125.0,447.6969,520.1304,515.9357,-68.2389,313.374,72.2892,0.223,50.8075,14.7778,11.8222
+Solanum tuberosum → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,108,160.0,594.9363,658.1054,618.4422,-23.5059,366.7485,78.6235,0.2261,52.561,13.7963,8.6227
+Solanum tuberosum → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,108,270.0,1095.7119,1105.461,1058.0815,37.6304,591.5321,87.8431,0.2204,48.6977,22.0556,8.1687
+Solanum tuberosum → Phaseolus vulgaris → Lycopersicon esculentum,1,Solanum tuberosum,119,125.0,456.8094,516.333,512.0657,-55.2563,307.2566,74.1621,0.2233,50.9758,13.4118,10.7294
+Solanum tuberosum → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,119,160.0,612.0218,656.4739,617.0182,-4.9963,358.7438,80.3024,0.2226,50.1874,12.521,7.8256
+Solanum tuberosum → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,119,110.0,441.7661,451.0794,457.6037,-15.8376,261.9772,76.6107,0.2205,48.7711,8.7983,7.9985
+Solanum tuberosum → Phaseolus vulgaris → Manihot esculenta,1,Solanum tuberosum,108,125.0,447.6969,520.1304,515.9357,-68.2389,313.374,72.2892,0.223,50.8075,14.7778,11.8222
+Solanum tuberosum → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,108,160.0,594.9363,658.1054,618.4422,-23.5059,366.7485,78.6235,0.2261,52.561,13.7963,8.6227
+Solanum tuberosum → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,108,272.0,1104.7744,1113.524,1022.1141,82.6603,569.8273,88.9884,0.2204,48.7151,22.1944,8.1597
+Solanum tuberosum → Phaseolus vulgaris → Oryza sativa,1,Solanum tuberosum,117,125.0,458.5981,516.6783,512.3353,-53.7372,306.9201,74.2177,0.2238,51.3382,13.641,10.9128
+Solanum tuberosum → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,117,160.0,604.0878,656.6866,617.2409,-13.1531,361.7312,79.9657,0.2229,50.4458,12.735,7.9594
+Solanum tuberosum → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,117,130.0,522.7898,533.7647,612.207,-89.4172,361.2557,74.2127,0.2199,48.3986,10.5812,8.1394
+Solanum tuberosum → Phaseolus vulgaris → Saccharum officinarum,1,Solanum tuberosum,107,125.0,445.5207,520.2403,516.011,-70.4904,314.4341,72.0302,0.2228,50.7319,14.9159,11.9327
+Solanum tuberosum → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,107,160.0,595.0075,658.4621,618.7335,-23.726,366.7503,78.4237,0.2262,52.6679,13.9252,8.7033
+Solanum tuberosum → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,107,288.0,1172.1952,1178.5583,1226.7128,-54.5176,706.6455,86.0842,0.2206,48.8319,23.5981,8.1938
+Solanum tuberosum → Phaseolus vulgaris → Zea mays,1,Solanum tuberosum,112,125.0,456.0255,518.9417,514.5858,-58.5602,309.2022,73.2789,0.2237,51.2488,14.25,11.4
+Solanum tuberosum → Phaseolus vulgaris → Zea mays,2,Phaseolus vulgaris,112,160.0,593.419,657.2623,617.9578,-24.5388,366.5442,79.0713,0.2247,51.6687,13.3036,8.3147
+Solanum tuberosum → Phaseolus vulgaris → Zea mays,3,Zea mays,112,215.0,872.286,880.8755,857.2999,14.9861,488.8916,84.4124,0.22,48.4265,17.3839,8.0855
+Solanum tuberosum → Saccharum officinarum,1,Solanum tuberosum,117,125.0,458.5981,516.6783,512.3353,-53.7372,306.9201,74.2177,0.2238,51.3382,13.641,10.9128
+Solanum tuberosum → Saccharum officinarum,2,Saccharum officinarum,117,288.0,1117.7662,1182.182,1231.0857,-113.3196,729.0733,82.4575,0.2216,49.5262,23.1538,8.0395
+Solanum tuberosum → Saccharum officinarum → Coffea arabica,1,Solanum tuberosum,100,125.0,422.2969,520.8667,516.7358,-94.4389,322.8069,70.0723,0.2224,50.4855,15.2,12.16
+Solanum tuberosum → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,100,288.0,1063.9801,1189.896,1238.8068,-174.8267,759.0945,79.4753,0.2241,51.2061,27.09,9.4062
+Solanum tuberosum → Saccharum officinarum → Coffea arabica,3,Coffea arabica,100,270.0,1163.6249,1096.0809,1049.0114,114.6135,562.0904,92.7179,0.2218,49.6282,21.75,8.0556
+Solanum tuberosum → Saccharum officinarum → Lycopersicon esculentum,1,Solanum tuberosum,110,125.0,453.0159,519.7367,515.4691,-62.4532,311.2643,72.793,0.2233,51.0064,14.5091,11.6073
+Solanum tuberosum → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,110,288.0,1087.2676,1184.369,1233.3902,-146.1226,745.9554,81.3412,0.2224,50.0453,24.6273,8.5511
+Solanum tuberosum → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,110,110.0,470.2818,448.2207,454.51,15.7718,250.7685,80.5596,0.222,49.7874,8.2818,7.5289
+Solanum tuberosum → Saccharum officinarum → Manihot esculenta,1,Solanum tuberosum,100,125.0,422.2969,520.8667,516.7358,-94.4389,322.8069,70.0723,0.2224,50.4855,15.2,12.16
+Solanum tuberosum → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,100,288.0,1063.9801,1189.896,1238.8068,-174.8267,759.0945,79.4753,0.2241,51.2061,27.09,9.4062
+Solanum tuberosum → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,100,272.0,1172.2523,1104.0945,1012.7677,159.4846,540.747,93.7141,0.2218,49.637,21.91,8.0551
+Solanum tuberosum → Saccharum officinarum → Oryza sativa,1,Solanum tuberosum,109,125.0,450.5972,519.9893,515.7644,-65.1673,312.2967,72.5434,0.2231,50.8965,14.6422,11.7138
+Solanum tuberosum → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,109,288.0,1084.1744,1184.6837,1233.6161,-149.4417,747.5861,81.17,0.2226,50.2027,24.8532,8.6296
+Solanum tuberosum → Saccharum officinarum → Oryza sativa,3,Oryza sativa,109,130.0,558.2444,529.4986,607.2907,-49.0463,344.7572,78.9449,0.222,49.7676,9.8073,7.5441
+Solanum tuberosum → Saccharum officinarum → Phaseolus vulgaris,1,Solanum tuberosum,107,125.0,445.5207,520.2403,516.011,-70.4904,314.4341,72.0302,0.2228,50.7319,14.9159,11.9327
+Solanum tuberosum → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,107,288.0,1078.7576,1185.6643,1234.3534,-155.5959,750.4119,80.818,0.223,50.4993,25.3178,8.7909
+Solanum tuberosum → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,107,160.0,688.4451,651.3561,612.0632,76.3819,331.273,86.7578,0.2219,49.6665,12.2056,7.6285
+Solanum tuberosum → Saccharum officinarum → Zea mays,1,Solanum tuberosum,103,125.0,432.6916,520.7458,516.3594,-83.6678,319.4029,70.944,0.2222,50.3613,15.4854,12.3883
+Solanum tuberosum → Saccharum officinarum → Zea mays,2,Saccharum officinarum,103,288.0,1068.9681,1188.2717,1236.7997,-167.8317,755.4383,80.0731,0.2238,50.9805,26.301,9.1323
+Solanum tuberosum → Saccharum officinarum → Zea mays,3,Zea mays,103,215.0,925.0856,874.0826,850.0002,75.0854,464.694,89.1253,0.2218,49.6181,16.8932,7.8573
+Solanum tuberosum → Zea mays,1,Solanum tuberosum,122,125.0,456.6754,516.1324,511.9339,-55.2585,307.0677,74.529,0.2222,50.2103,13.082,10.4656
+Solanum tuberosum → Zea mays,2,Zea mays,122,215.0,842.6843,881.1317,857.4755,-14.7912,497.2804,82.4859,0.2223,50.0213,16.4836,7.6668
+Solanum tuberosum → Zea mays → Coffea arabica,1,Solanum tuberosum,105,125.0,440.4212,520.4217,516.0938,-75.6725,316.5313,71.4975,0.2225,50.5338,15.2,12.16
+Solanum tuberosum → Zea mays → Coffea arabica,2,Zea mays,105,215.0,794.702,886.084,861.6183,-66.9163,519.9448,79.6503,0.2251,51.8962,19.1524,8.9081
+Solanum tuberosum → Zea mays → Coffea arabica,3,Coffea arabica,105,270.0,1128.4061,1101.8349,1054.4983,73.9078,577.7158,90.0673,0.221,49.1065,21.8571,8.0952
+Solanum tuberosum → Zea mays → Lycopersicon esculentum,1,Solanum tuberosum,115,125.0,459.3126,517.4267,512.9974,-53.6848,307.1146,73.9759,0.224,51.4353,13.8783,11.1026
+Solanum tuberosum → Zea mays → Lycopersicon esculentum,2,Zea mays,115,215.0,811.3407,883.0346,859.1922,-47.8515,511.3766,81.4199,0.2224,50.0573,17.487,8.1335
+Solanum tuberosum → Zea mays → Lycopersicon esculentum,3,Lycopersicon esculentum,115,110.0,453.4378,450.8705,457.2574,-3.8196,258.6877,78.4094,0.2202,48.589,8.9478,8.1344
+Solanum tuberosum → Zea mays → Manihot esculenta,1,Solanum tuberosum,104,125.0,437.0148,520.5575,516.1931,-79.1783,317.8564,71.2234,0.2223,50.4303,15.3462,12.2769
+Solanum tuberosum → Zea mays → Manihot esculenta,2,Zea mays,104,215.0,794.0312,886.5903,862.1218,-68.0907,520.3858,79.4547,0.2252,51.9819,19.3365,8.9937
+Solanum tuberosum → Zea mays → Manihot esculenta,3,Manihot esculenta,104,272.0,1133.2544,1110.4429,1018.4981,114.7563,557.8571,90.9454,0.221,49.069,22.2308,8.1731
+Solanum tuberosum → Zea mays → Oryza sativa,1,Solanum tuberosum,114,125.0,458.6812,517.875,513.4544,-54.7732,307.4522,73.7477,0.2239,51.4056,14.0,11.2
+Solanum tuberosum → Zea mays → Oryza sativa,2,Zea mays,114,215.0,807.5261,883.1272,859.3211,-51.7951,513.1929,81.2569,0.2226,50.2296,17.6404,8.2048
+Solanum tuberosum → Zea mays → Oryza sativa,3,Oryza sativa,114,130.0,537.3895,532.3231,610.5773,-73.1878,354.9419,76.1485,0.2204,48.6743,10.4123,8.0094
+Solanum tuberosum → Zea mays → Phaseolus vulgaris,1,Solanum tuberosum,112,125.0,456.0255,518.9417,514.5858,-58.5602,309.2022,73.2789,0.2237,51.2488,14.25,11.4
+Solanum tuberosum → Zea mays → Phaseolus vulgaris,2,Zea mays,112,215.0,802.3902,883.3037,859.5998,-57.2096,515.9382,80.9222,0.2233,50.675,17.9554,8.3513
+Solanum tuberosum → Zea mays → Phaseolus vulgaris,3,Phaseolus vulgaris,112,160.0,663.3148,654.8341,615.3177,47.9971,342.1839,83.8422,0.2203,48.6472,12.7321,7.9576
+Solanum tuberosum → Zea mays → Saccharum officinarum,1,Solanum tuberosum,103,125.0,432.6916,520.7458,516.3594,-83.6678,319.4029,70.944,0.2222,50.3613,15.4854,12.3883
+Solanum tuberosum → Zea mays → Saccharum officinarum,2,Zea mays,103,215.0,793.6226,887.1051,862.7032,-69.0806,521.0665,79.2552,0.2253,52.0368,19.5243,9.0811
+Solanum tuberosum → Zea mays → Saccharum officinarum,3,Saccharum officinarum,103,288.0,1200.4311,1175.2493,1222.3932,-21.9621,693.0342,88.0339,0.2211,49.1748,23.6699,8.2187
+Zea mays → Coffea arabica,1,Zea mays,113,215.0,792.9564,888.46,863.2546,-70.2983,516.6477,80.264,0.2248,51.8577,21.5752,10.035
+Zea mays → Coffea arabica,2,Coffea arabica,113,270.0,1070.7869,1106.7235,1059.4022,11.3847,600.7078,85.8003,0.2205,48.7728,21.9027,8.1121
+Zea mays → Coffea arabica → Lycopersicon esculentum,1,Zea mays,106,215.0,782.5043,891.9982,867.2824,-84.7781,523.623,78.9607,0.2246,51.7775,23.0,10.6977
+Zea mays → Coffea arabica → Lycopersicon esculentum,2,Coffea arabica,106,270.0,1038.5019,1109.0357,1061.6557,-23.1538,615.7229,84.8626,0.2209,49.0471,23.3491,8.6478
+Zea mays → Coffea arabica → Lycopersicon esculentum,3,Lycopersicon esculentum,106,110.0,481.7194,445.8673,452.1095,29.61,242.2602,83.3308,0.2235,50.8297,8.2264,7.4786
+Zea mays → Coffea arabica → Manihot esculenta,1,Zea mays,95,215.0,740.4292,892.2174,868.1285,-127.6993,538.0936,76.6205,0.2252,52.1518,21.3789,9.9437
+Zea mays → Coffea arabica → Manihot esculenta,2,Coffea arabica,95,270.0,1014.8456,1114.6863,1066.9773,-52.1317,630.2507,83.1098,0.2231,50.4843,26.0526,9.6491
+Zea mays → Coffea arabica → Manihot esculenta,3,Manihot esculenta,95,272.0,1196.4271,1101.2318,1010.3353,186.0918,531.9801,95.7973,0.2213,49.294,22.7684,8.3707
+Zea mays → Coffea arabica → Oryza sativa,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Coffea arabica → Oryza sativa,2,Coffea arabica,104,270.0,1031.4068,1109.5063,1062.0859,-30.679,618.7921,84.5715,0.2215,49.3928,23.7981,8.8141
+Zea mays → Coffea arabica → Oryza sativa,3,Oryza sativa,104,130.0,573.2308,527.0208,604.4876,-31.2568,334.8329,81.3676,0.223,50.4815,9.8942,7.6109
+Zea mays → Coffea arabica → Phaseolus vulgaris,1,Zea mays,102,215.0,761.5439,893.7981,868.8227,-107.2788,531.4032,78.1356,0.224,51.4145,23.8039,11.0716
+Zea mays → Coffea arabica → Phaseolus vulgaris,2,Coffea arabica,102,270.0,1027.3682,1110.3293,1062.8362,-35.468,621.4363,84.269,0.222,49.7422,24.2647,8.9869
+Zea mays → Coffea arabica → Phaseolus vulgaris,3,Phaseolus vulgaris,102,160.0,706.0479,648.1888,609.0493,96.9986,321.2832,88.9665,0.2226,50.2038,12.4216,7.7635
+Zea mays → Coffea arabica → Saccharum officinarum,1,Zea mays,94,215.0,740.3544,891.9349,867.7488,-127.3944,537.463,76.5558,0.2255,52.3665,20.8511,9.6982
+Zea mays → Coffea arabica → Saccharum officinarum,2,Coffea arabica,94,270.0,1012.8501,1115.1373,1067.4296,-54.5795,631.4028,82.9301,0.2231,50.5174,26.3298,9.7518
+Zea mays → Coffea arabica → Saccharum officinarum,3,Saccharum officinarum,94,288.0,1267.9895,1166.1826,1213.2396,54.7499,663.1151,92.8891,0.2212,49.2353,24.3936,8.47
+Zea mays → Coffea arabica → Solanum tuberosum,1,Zea mays,105,215.0,778.4554,892.486,867.7181,-89.2627,525.3437,78.7603,0.2244,51.6619,23.219,10.7996
+Zea mays → Coffea arabica → Solanum tuberosum,2,Coffea arabica,105,270.0,1034.6021,1109.2563,1061.8582,-27.2561,617.3846,84.7184,0.2212,49.2097,23.5714,8.7302
+Zea mays → Coffea arabica → Solanum tuberosum,3,Solanum tuberosum,105,125.0,550.4718,506.5982,502.3117,48.1601,267.4977,85.0675,0.2234,50.7138,9.419,7.5352
+Zea mays → Lycopersicon esculentum,1,Zea mays,123,215.0,808.6595,885.3682,860.812,-52.1525,509.1491,81.8686,0.2223,50.156,19.8211,9.2191
+Zea mays → Lycopersicon esculentum,2,Lycopersicon esculentum,123,110.0,434.1636,450.1817,456.6166,-22.453,263.1865,75.542,0.2223,49.9844,8.3496,7.5905
+Zea mays → Lycopersicon esculentum → Coffea arabica,1,Zea mays,106,215.0,782.5043,891.9982,867.2824,-84.7781,523.623,78.9607,0.2246,51.7775,23.0,10.6977
+Zea mays → Lycopersicon esculentum → Coffea arabica,2,Lycopersicon esculentum,106,110.0,400.3568,452.1555,458.7348,-58.378,278.694,71.9406,0.2238,51.0,9.6887,8.8079
+Zea mays → Lycopersicon esculentum → Coffea arabica,3,Coffea arabica,106,270.0,1119.8645,1102.7476,1055.4073,64.4572,581.1699,89.3923,0.2208,48.9777,21.8868,8.1062
+Zea mays → Lycopersicon esculentum → Manihot esculenta,1,Zea mays,105,215.0,778.4554,892.486,867.7181,-89.2627,525.3437,78.7603,0.2244,51.6619,23.219,10.7996
+Zea mays → Lycopersicon esculentum → Manihot esculenta,2,Lycopersicon esculentum,105,110.0,400.7772,452.2508,458.7577,-57.9805,278.4574,71.8823,0.2242,51.2742,9.781,8.8918
+Zea mays → Lycopersicon esculentum → Manihot esculenta,3,Manihot esculenta,105,272.0,1124.6578,1111.5256,1019.7367,104.9211,561.8855,90.3371,0.2208,48.941,22.2476,8.1793
+Zea mays → Lycopersicon esculentum → Oryza sativa,1,Zea mays,115,215.0,794.385,887.5065,862.472,-68.087,516.1448,80.6073,0.2245,51.6482,21.2,9.8605
+Zea mays → Lycopersicon esculentum → Oryza sativa,2,Lycopersicon esculentum,115,110.0,416.156,451.3314,457.8424,-41.6864,271.8761,73.8406,0.2206,48.8679,8.9304,8.1186
+Zea mays → Lycopersicon esculentum → Oryza sativa,3,Oryza sativa,115,130.0,534.831,532.7087,611.0386,-76.2075,356.8025,75.632,0.2202,48.5407,10.5304,8.1003
+Zea mays → Lycopersicon esculentum → Phaseolus vulgaris,1,Zea mays,113,215.0,792.9564,888.46,863.2546,-70.2983,516.6477,80.264,0.2248,51.8577,21.5752,10.035
+Zea mays → Lycopersicon esculentum → Phaseolus vulgaris,2,Lycopersicon esculentum,113,110.0,410.0058,451.5526,458.0405,-48.0348,274.2373,73.3776,0.2211,49.1518,9.0885,8.2623
+Zea mays → Lycopersicon esculentum → Phaseolus vulgaris,3,Phaseolus vulgaris,113,160.0,660.7812,655.1709,615.8761,44.905,344.1052,83.3164,0.2201,48.5122,12.8142,8.0088
+Zea mays → Lycopersicon esculentum → Saccharum officinarum,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Lycopersicon esculentum → Saccharum officinarum,2,Lycopersicon esculentum,104,110.0,401.8064,452.3911,458.8674,-57.061,278.2373,71.9421,0.2245,51.5065,9.875,8.9773
+Zea mays → Lycopersicon esculentum → Saccharum officinarum,3,Saccharum officinarum,104,288.0,1193.4953,1176.1636,1223.6611,-30.1658,696.8659,87.4716,0.221,49.0631,23.6731,8.2198
+Zea mays → Lycopersicon esculentum → Solanum tuberosum,1,Zea mays,115,215.0,794.385,887.5065,862.472,-68.087,516.1448,80.6073,0.2245,51.6482,21.2,9.8605
+Zea mays → Lycopersicon esculentum → Solanum tuberosum,2,Lycopersicon esculentum,115,110.0,416.156,451.3314,457.8424,-41.6864,271.8761,73.8406,0.2206,48.8679,8.9304,8.1186
+Zea mays → Lycopersicon esculentum → Solanum tuberosum,3,Solanum tuberosum,115,125.0,513.5501,512.4938,508.4181,5.132,287.3856,79.4816,0.22,48.4535,10.1826,8.1461
+Zea mays → Manihot esculenta,1,Zea mays,113,215.0,792.9564,888.46,863.2546,-70.2983,516.6477,80.264,0.2248,51.8577,21.5752,10.035
+Zea mays → Manihot esculenta,2,Manihot esculenta,113,272.0,1077.5843,1114.8566,1024.1349,53.4494,580.8737,86.7805,0.2206,48.7955,22.0442,8.1045
+Zea mays → Manihot esculenta → Coffea arabica,1,Zea mays,95,215.0,740.4292,892.2174,868.1285,-127.6993,538.0936,76.6205,0.2252,52.1518,21.3789,9.9437
+Zea mays → Manihot esculenta → Coffea arabica,2,Manihot esculenta,95,272.0,1021.0371,1122.9495,1031.2042,-10.1672,610.2036,84.2758,0.2231,50.4864,26.2211,9.6401
+Zea mays → Manihot esculenta → Coffea arabica,3,Coffea arabica,95,270.0,1190.2356,1092.9687,1046.079,144.1566,551.3426,94.8681,0.2212,49.2832,22.6,8.3704
+Zea mays → Manihot esculenta → Lycopersicon esculentum,1,Zea mays,105,215.0,778.4554,892.486,867.7181,-89.2627,525.3437,78.7603,0.2244,51.6619,23.219,10.7996
+Zea mays → Manihot esculenta → Lycopersicon esculentum,2,Manihot esculenta,105,272.0,1041.0633,1117.4737,1026.6889,14.3744,598.9727,85.7733,0.2212,49.2136,23.7238,8.722
+Zea mays → Manihot esculenta → Lycopersicon esculentum,3,Lycopersicon esculentum,105,110.0,484.3717,446.3026,452.5682,31.8035,242.7514,83.2395,0.2232,50.6001,8.3048,7.5498
+Zea mays → Manihot esculenta → Oryza sativa,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Manihot esculenta → Oryza sativa,2,Manihot esculenta,104,272.0,1037.8667,1117.7168,1026.8396,11.0271,600.4861,85.6365,0.2215,49.393,23.9519,8.8059
+Zea mays → Manihot esculenta → Oryza sativa,3,Oryza sativa,104,130.0,574.9923,526.8084,604.2438,-29.2515,334.1439,81.5371,0.2231,50.5078,9.875,7.5962
+Zea mays → Manihot esculenta → Phaseolus vulgaris,1,Zea mays,102,215.0,761.5439,893.7981,868.8227,-107.2788,531.4032,78.1356,0.224,51.4145,23.8039,11.0716
+Zea mays → Manihot esculenta → Phaseolus vulgaris,2,Manihot esculenta,102,272.0,1033.6834,1118.5412,1027.3507,6.3327,603.0356,85.3549,0.222,49.7395,24.4216,8.9785
+Zea mays → Manihot esculenta → Phaseolus vulgaris,3,Phaseolus vulgaris,102,160.0,708.1393,647.9609,608.857,99.2823,320.8273,89.2097,0.2226,50.2184,12.402,7.7512
+Zea mays → Manihot esculenta → Saccharum officinarum,1,Zea mays,94,215.0,740.3544,891.9349,867.7488,-127.3944,537.463,76.5558,0.2255,52.3665,20.8511,9.6982
+Zea mays → Manihot esculenta → Saccharum officinarum,2,Manihot esculenta,94,272.0,1019.0965,1123.4048,1031.7887,-12.6922,611.1978,84.1085,0.2231,50.5218,26.5,9.7426
+Zea mays → Manihot esculenta → Saccharum officinarum,3,Saccharum officinarum,94,288.0,1271.2322,1166.0289,1213.1261,58.1061,662.3167,93.0084,0.2212,49.2241,24.4149,8.4774
+Zea mays → Manihot esculenta → Solanum tuberosum,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Manihot esculenta → Solanum tuberosum,2,Manihot esculenta,104,272.0,1037.8667,1117.7168,1026.8396,11.0271,600.4861,85.6365,0.2215,49.393,23.9519,8.8059
+Zea mays → Manihot esculenta → Solanum tuberosum,3,Solanum tuberosum,104,125.0,552.8033,506.8632,502.6451,50.1582,267.6194,84.9778,0.223,50.4743,9.5192,7.6154
+Zea mays → Oryza sativa,1,Zea mays,122,215.0,805.1104,885.4725,860.9454,-55.835,510.8037,81.72,0.2225,50.3236,19.9836,9.2947
+Zea mays → Oryza sativa,2,Oryza sativa,122,130.0,513.507,532.1364,610.3351,-96.8281,362.3346,73.2834,0.2218,49.6499,9.9426,7.6482
+Zea mays → Oryza sativa → Coffea arabica,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Oryza sativa → Coffea arabica,2,Oryza sativa,104,130.0,476.1937,534.6358,613.1695,-136.9759,381.4564,69.5711,0.2239,51.0521,11.6635,8.9719
+Zea mays → Oryza sativa → Coffea arabica,3,Coffea arabica,104,270.0,1128.4439,1101.8913,1054.5315,73.9124,578.0324,90.2095,0.221,49.118,22.0288,8.1588
+Zea mays → Oryza sativa → Lycopersicon esculentum,1,Zea mays,115,215.0,794.385,887.5065,862.472,-68.087,516.1448,80.6073,0.2245,51.6482,21.2,9.8605
+Zea mays → Oryza sativa → Lycopersicon esculentum,2,Oryza sativa,115,130.0,496.0583,533.4163,611.7873,-115.7291,372.2159,71.6572,0.2203,48.6304,10.5478,8.1137
+Zea mays → Oryza sativa → Lycopersicon esculentum,3,Lycopersicon esculentum,115,110.0,454.9288,450.6238,456.9673,-2.0385,257.9155,78.5209,0.2205,48.7619,8.913,8.1028
+Zea mays → Oryza sativa → Manihot esculenta,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Oryza sativa → Manihot esculenta,2,Oryza sativa,104,130.0,476.1937,534.6358,613.1695,-136.9759,381.4564,69.5711,0.2239,51.0521,11.6635,8.9719
+Zea mays → Oryza sativa → Manihot esculenta,3,Manihot esculenta,104,272.0,1136.6654,1109.8894,1017.883,118.7824,556.031,91.3991,0.2211,49.1329,22.1635,8.1483
+Zea mays → Oryza sativa → Phaseolus vulgaris,1,Zea mays,111,215.0,792.233,889.4282,864.2974,-72.0644,517.6752,79.9084,0.2249,51.9787,21.964,10.2158
+Zea mays → Oryza sativa → Phaseolus vulgaris,2,Oryza sativa,111,130.0,482.2058,533.8998,612.3527,-130.147,378.3248,70.6359,0.2211,49.185,10.9279,8.4061
+Zea mays → Oryza sativa → Phaseolus vulgaris,3,Phaseolus vulgaris,111,160.0,661.9117,655.1809,615.5001,46.4116,342.2375,83.6241,0.2203,48.5841,12.8198,8.0124
+Zea mays → Oryza sativa → Saccharum officinarum,1,Zea mays,103,215.0,767.7063,893.4926,868.5297,-100.8234,529.3125,78.3479,0.2241,51.4581,23.6602,11.0047
+Zea mays → Oryza sativa → Saccharum officinarum,2,Oryza sativa,103,130.0,477.3828,534.8342,613.3972,-136.0144,381.41,69.6642,0.2241,51.2348,11.7767,9.059
+Zea mays → Oryza sativa → Saccharum officinarum,3,Saccharum officinarum,103,288.0,1204.8487,1174.7321,1221.724,-16.8753,690.6803,88.4227,0.2212,49.2245,23.6117,8.1985
+Zea mays → Oryza sativa → Solanum tuberosum,1,Zea mays,114,215.0,793.6281,887.9887,862.8333,-69.2052,516.436,80.4372,0.2246,51.7629,21.386,9.947
+Zea mays → Oryza sativa → Solanum tuberosum,2,Oryza sativa,114,130.0,492.1213,533.4789,611.8545,-119.7332,373.835,71.4086,0.2204,48.6826,10.6404,8.1849
+Zea mays → Oryza sativa → Solanum tuberosum,3,Solanum tuberosum,114,125.0,517.8474,511.8576,507.5732,10.2742,284.8795,80.0582,0.2205,48.7597,10.0263,8.0211
+Zea mays → Phaseolus vulgaris,1,Zea mays,120,215.0,799.8169,885.6913,861.2412,-61.4243,513.2467,81.4153,0.2231,50.7448,20.3167,9.4496
+Zea mays → Phaseolus vulgaris,2,Phaseolus vulgaris,120,160.0,631.8872,655.7095,616.4913,15.3959,352.1584,80.5938,0.221,49.1186,12.4583,7.7865
+Zea mays → Phaseolus vulgaris → Coffea arabica,1,Zea mays,102,215.0,761.5439,893.7981,868.8227,-107.2788,531.4032,78.1356,0.224,51.4145,23.8039,11.0716
+Zea mays → Phaseolus vulgaris → Coffea arabica,2,Phaseolus vulgaris,102,160.0,589.8843,659.1457,619.4751,-29.5908,371.4434,77.5372,0.2235,50.7869,14.6569,9.1605
+Zea mays → Phaseolus vulgaris → Coffea arabica,3,Coffea arabica,102,270.0,1143.5319,1099.3723,1052.1144,91.4174,571.1521,91.3504,0.2214,49.3967,22.0294,8.159
+Zea mays → Phaseolus vulgaris → Lycopersicon esculentum,1,Zea mays,113,215.0,792.9564,888.46,863.2546,-70.2983,516.6477,80.264,0.2248,51.8577,21.5752,10.035
+Zea mays → Phaseolus vulgaris → Lycopersicon esculentum,2,Phaseolus vulgaris,113,160.0,608.2104,657.2543,617.8491,-9.6387,362.7723,79.3916,0.22,48.4552,13.2301,8.2688
+Zea mays → Phaseolus vulgaris → Lycopersicon esculentum,3,Lycopersicon esculentum,113,110.0,462.5765,449.4692,455.7139,6.8626,254.4604,79.6563,0.2212,49.2348,8.6726,7.8842
+Zea mays → Phaseolus vulgaris → Manihot esculenta,1,Zea mays,102,215.0,761.5439,893.7981,868.8227,-107.2788,531.4032,78.1356,0.224,51.4145,23.8039,11.0716
+Zea mays → Phaseolus vulgaris → Manihot esculenta,2,Phaseolus vulgaris,102,160.0,589.8843,659.1457,619.4751,-29.5908,371.4434,77.5372,0.2235,50.7869,14.6569,9.1605
+Zea mays → Phaseolus vulgaris → Manihot esculenta,3,Manihot esculenta,102,272.0,1151.9384,1107.3563,1015.4912,136.4473,549.2179,92.5068,0.2215,49.405,22.1667,8.1495
+Zea mays → Phaseolus vulgaris → Oryza sativa,1,Zea mays,111,215.0,792.233,889.4282,864.2974,-72.0644,517.6752,79.9084,0.2249,51.9787,21.964,10.2158
+Zea mays → Phaseolus vulgaris → Oryza sativa,2,Phaseolus vulgaris,111,160.0,599.5828,657.5211,618.1175,-18.5347,365.9793,79.0203,0.2204,48.7067,13.4685,8.4178
+Zea mays → Phaseolus vulgaris → Oryza sativa,3,Oryza sativa,111,130.0,544.5347,531.5595,609.6173,-65.0827,351.1801,77.1209,0.2209,49.0341,10.2793,7.9071
+Zea mays → Phaseolus vulgaris → Saccharum officinarum,1,Zea mays,101,215.0,756.3806,893.906,869.0305,-112.6499,533.403,77.9192,0.224,51.4239,23.7822,11.0615
+Zea mays → Phaseolus vulgaris → Saccharum officinarum,2,Phaseolus vulgaris,101,160.0,590.4836,659.55,619.8131,-29.3295,371.5004,77.4095,0.2236,50.8743,14.802,9.2512
+Zea mays → Phaseolus vulgaris → Saccharum officinarum,3,Saccharum officinarum,101,288.0,1220.6173,1172.1693,1218.9801,1.6372,683.1804,89.5468,0.2215,49.4523,23.6535,8.213
+Zea mays → Phaseolus vulgaris → Solanum tuberosum,1,Zea mays,112,215.0,792.3804,888.9464,863.7444,-71.364,517.0406,80.0878,0.2249,51.9337,21.7679,10.1246
+Zea mays → Phaseolus vulgaris → Solanum tuberosum,2,Phaseolus vulgaris,112,160.0,603.8671,657.3842,617.961,-14.0938,364.4224,79.2076,0.2202,48.5464,13.3482,8.3426
+Zea mays → Phaseolus vulgaris → Solanum tuberosum,3,Solanum tuberosum,112,125.0,525.4829,510.7489,506.3439,19.139,281.36,81.1238,0.2212,49.2127,9.8214,7.8571
+Zea mays → Saccharum officinarum,1,Zea mays,112,215.0,792.3804,888.9464,863.7444,-71.364,517.0406,80.0878,0.2249,51.9337,21.7679,10.1246
+Zea mays → Saccharum officinarum,2,Saccharum officinarum,112,288.0,1141.8277,1180.2533,1229.3645,-87.5368,720.085,83.7436,0.2207,48.8692,23.3839,8.1194
+Zea mays → Saccharum officinarum → Coffea arabica,1,Zea mays,94,215.0,740.3544,891.9349,867.7488,-127.3944,537.463,76.5558,0.2255,52.3665,20.8511,9.6982
+Zea mays → Saccharum officinarum → Coffea arabica,2,Saccharum officinarum,94,288.0,1082.784,1188.7963,1237.9881,-155.2041,753.2956,80.6307,0.2231,50.5143,27.8617,9.6742
+Zea mays → Saccharum officinarum → Coffea arabica,3,Coffea arabica,94,270.0,1198.0555,1092.5236,1045.6662,152.3894,548.8871,95.2745,0.2211,49.1531,22.8617,8.4673
+Zea mays → Saccharum officinarum → Lycopersicon esculentum,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Saccharum officinarum → Lycopersicon esculentum,2,Saccharum officinarum,104,288.0,1105.8134,1183.0119,1232.2915,-126.4782,739.9143,82.4931,0.2214,49.3616,25.1827,8.744
+Zea mays → Saccharum officinarum → Lycopersicon esculentum,3,Lycopersicon esculentum,104,110.0,489.4884,445.5428,451.8282,37.6601,240.5331,83.7812,0.2234,50.7249,8.3654,7.6049
+Zea mays → Saccharum officinarum → Manihot esculenta,1,Zea mays,94,215.0,740.3544,891.9349,867.7488,-127.3944,537.463,76.5558,0.2255,52.3665,20.8511,9.6982
+Zea mays → Saccharum officinarum → Manihot esculenta,2,Saccharum officinarum,94,288.0,1082.784,1188.7963,1237.9881,-155.2041,753.2956,80.6307,0.2231,50.5143,27.8617,9.6742
+Zea mays → Saccharum officinarum → Manihot esculenta,3,Manihot esculenta,94,272.0,1207.5447,1100.6373,1009.9248,197.6199,529.2926,96.2291,0.2211,49.1556,23.0532,8.4754
+Zea mays → Saccharum officinarum → Oryza sativa,1,Zea mays,103,215.0,767.7063,893.4926,868.5297,-100.8234,529.3125,78.3479,0.2241,51.4581,23.6602,11.0047
+Zea mays → Saccharum officinarum → Oryza sativa,2,Saccharum officinarum,103,288.0,1102.7222,1183.3381,1232.5249,-129.8027,741.5791,82.3231,0.2216,49.522,25.4272,8.8289
+Zea mays → Saccharum officinarum → Oryza sativa,3,Oryza sativa,103,130.0,579.5093,526.2281,603.545,-24.0357,332.0563,82.1498,0.2231,50.5757,9.9612,7.6624
+Zea mays → Saccharum officinarum → Phaseolus vulgaris,1,Zea mays,101,215.0,756.3806,893.906,869.0305,-112.6499,533.403,77.9192,0.224,51.4239,23.7822,11.0615
+Zea mays → Saccharum officinarum → Phaseolus vulgaris,2,Saccharum officinarum,101,288.0,1097.404,1184.3802,1233.3096,-135.9057,744.469,81.9731,0.2221,49.8194,25.9307,9.0037
+Zea mays → Saccharum officinarum → Phaseolus vulgaris,3,Phaseolus vulgaris,101,160.0,713.6969,647.3391,608.1667,105.5302,319.2161,89.7201,0.2226,50.2136,12.5248,7.828
+Zea mays → Saccharum officinarum → Solanum tuberosum,1,Zea mays,103,215.0,767.7063,893.4926,868.5297,-100.8234,529.3125,78.3479,0.2241,51.4581,23.6602,11.0047
+Zea mays → Saccharum officinarum → Solanum tuberosum,2,Saccharum officinarum,103,288.0,1102.7222,1183.3381,1232.5249,-129.8027,741.5791,82.3231,0.2216,49.522,25.4272,8.8289
+Zea mays → Saccharum officinarum → Solanum tuberosum,3,Solanum tuberosum,103,125.0,556.3167,506.2695,502.0056,54.3111,266.1094,85.436,0.2231,50.5567,9.5922,7.6738
+Zea mays → Solanum tuberosum,1,Zea mays,122,215.0,805.1104,885.4725,860.9454,-55.835,510.8037,81.72,0.2225,50.3236,19.9836,9.2947
+Zea mays → Solanum tuberosum,2,Solanum tuberosum,122,125.0,494.2493,511.7916,507.726,-13.4766,291.8336,76.9293,0.2218,49.6903,9.582,7.6656
+Zea mays → Solanum tuberosum → Coffea arabica,1,Zea mays,105,215.0,778.4554,892.486,867.7181,-89.2627,525.3437,78.7603,0.2244,51.6619,23.219,10.7996
+Zea mays → Solanum tuberosum → Coffea arabica,2,Solanum tuberosum,105,125.0,456.6678,514.0196,509.9847,-53.3169,308.6288,73.4868,0.2237,50.9367,11.1333,8.9067
+Zea mays → Solanum tuberosum → Coffea arabica,3,Coffea arabica,105,270.0,1128.4061,1101.8349,1054.4983,73.9078,577.7158,90.0673,0.221,49.1065,21.8571,8.0952
+Zea mays → Solanum tuberosum → Lycopersicon esculentum,1,Zea mays,115,215.0,794.385,887.5065,862.472,-68.087,516.1448,80.6073,0.2245,51.6482,21.2,9.8605
+Zea mays → Solanum tuberosum → Lycopersicon esculentum,2,Solanum tuberosum,115,125.0,476.2683,512.9547,508.9443,-32.676,300.3947,75.525,0.2204,48.6989,10.1652,8.1322
+Zea mays → Solanum tuberosum → Lycopersicon esculentum,3,Lycopersicon esculentum,115,110.0,453.4378,450.8705,457.2574,-3.8196,258.6877,78.4094,0.2202,48.589,8.9478,8.1344
+Zea mays → Solanum tuberosum → Manihot esculenta,1,Zea mays,104,215.0,773.6304,893.0108,868.1475,-94.5171,527.2848,78.5561,0.2242,51.5465,23.4423,10.9034
+Zea mays → Solanum tuberosum → Manihot esculenta,2,Solanum tuberosum,104,125.0,457.4156,514.137,510.049,-52.6334,308.4141,73.4695,0.2241,51.1793,11.2404,8.9923
+Zea mays → Solanum tuberosum → Manihot esculenta,3,Manihot esculenta,104,272.0,1133.2544,1110.4429,1018.4981,114.7563,557.8571,90.9454,0.221,49.069,22.2308,8.1731
+Zea mays → Solanum tuberosum → Oryza sativa,1,Zea mays,114,215.0,793.6281,887.9887,862.8333,-69.2052,516.436,80.4372,0.2246,51.7629,21.386,9.947
+Zea mays → Solanum tuberosum → Oryza sativa,2,Solanum tuberosum,114,125.0,472.5792,513.0134,508.9816,-36.4024,301.7835,75.3104,0.2205,48.7683,10.2544,8.2035
+Zea mays → Solanum tuberosum → Oryza sativa,3,Oryza sativa,114,130.0,537.3895,532.3231,610.5773,-73.1878,354.9419,76.1485,0.2204,48.6743,10.4123,8.0094
+Zea mays → Solanum tuberosum → Phaseolus vulgaris,1,Zea mays,112,215.0,792.3804,888.9464,863.7444,-71.364,517.0406,80.0878,0.2249,51.9337,21.7679,10.1246
+Zea mays → Solanum tuberosum → Phaseolus vulgaris,2,Solanum tuberosum,112,125.0,466.0353,513.299,509.2463,-43.211,304.389,74.8695,0.221,49.0838,10.4375,8.35
+Zea mays → Solanum tuberosum → Phaseolus vulgaris,3,Phaseolus vulgaris,112,160.0,663.3148,654.8341,615.3177,47.9971,342.1839,83.8422,0.2203,48.6472,12.7321,7.9576
+Zea mays → Solanum tuberosum → Saccharum officinarum,1,Zea mays,103,215.0,767.7063,893.4926,868.5297,-100.8234,529.3125,78.3479,0.2241,51.4581,23.6602,11.0047
+Zea mays → Solanum tuberosum → Saccharum officinarum,2,Solanum tuberosum,103,125.0,458.6079,514.3583,510.2366,-51.6288,308.3046,73.5208,0.2243,51.3567,11.3495,9.0796
+Zea mays → Solanum tuberosum → Saccharum officinarum,3,Saccharum officinarum,103,288.0,1200.4311,1175.2493,1222.3932,-21.9621,693.0342,88.0339,0.2211,49.1748,23.6699,8.2187

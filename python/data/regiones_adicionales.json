@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "cundinamarca",
+    "nombre": "Cundinamarca (sabana de Bogotá)",
+    "clima": "Altiplano frío y húmedo, flores, papa y hortalizas",
+    "latitud": 4.8,
+    "longitud": -74.2,
+    "altitud_m": 2600.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "valle",
+    "nombre": "Valle del Cauca (valle del río Cauca)",
+    "clima": "Valle cálido y soleado, caña de azúcar y frutales",
+    "latitud": 3.54,
+    "longitud": -76.3,
+    "altitud_m": 1000.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "meta",
+    "nombre": "Meta (piedemonte llanero)",
+    "clima": "Cálido y húmedo, arroz, palma y maíz",
+    "latitud": 4.15,
+    "longitud": -73.63,
+    "altitud_m": 467.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "narino",
+    "nombre": "Nariño (altiplano de Pasto)",
+    "clima": "Frío andino del sur, papa, maíz y lácteos",
+    "latitud": 1.21,
+    "longitud": -77.28,
+    "altitud_m": 2527.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  }
+]

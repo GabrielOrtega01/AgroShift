@@ -34,7 +34,7 @@ ARCHIVO_ENTRADA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "agroshift_environmental_2020.csv"
+    "agroshift_environmental.csv"
 )
 
 ARCHIVO_SALIDA = os.path.join(
@@ -42,7 +42,7 @@ ARCHIVO_SALIDA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "eto_2020.csv"
+    "eto.csv"
 )
 
 ARCHIVO_GRAFICA = os.path.join(
@@ -50,7 +50,7 @@ ARCHIVO_GRAFICA = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "eto_diaria_2020.png"
+    "eto_diaria.png"
 )
 
 ARCHIVO_MENSUAL = os.path.join(
@@ -58,7 +58,7 @@ ARCHIVO_MENSUAL = os.path.join(
     "data",
     "analysis",
     REGION_SLUG,
-    "eto_mensual_2020.csv"
+    "eto_mensual.csv"
 )
 
 

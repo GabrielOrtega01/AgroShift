@@ -35,11 +35,11 @@ ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # Archivo donde se irá guardando el progreso
-ARCHIVO_PROGRESO = ANALYSIS_DIR / "smap_historico_2020_progreso.csv"
+ARCHIVO_PROGRESO = ANALYSIS_DIR / "smap_historico_progreso.csv"
 
 # Archivos finales
-ARCHIVO_HISTORICO = ANALYSIS_DIR / "smap_historico_2020.csv"
-ARCHIVO_DIARIO = ANALYSIS_DIR / "smap_diario_2020.csv"
+ARCHIVO_HISTORICO = ANALYSIS_DIR / "smap_historico.csv"
+ARCHIVO_DIARIO = ANALYSIS_DIR / "smap_diario.csv"
 
 
 # Celda SMAP (fila/columna en la grilla EASE-Grid 2.0), ya resuelta por región

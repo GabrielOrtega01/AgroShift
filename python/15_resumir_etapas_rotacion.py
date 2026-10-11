@@ -19,22 +19,22 @@ ANALYSIS_DIR = BASE_DIR / "data" / "analysis" / REGION_SLUG
 
 ARCHIVO_ETAPAS = (
     ANALYSIS_DIR /
-    "comparacion_etapas_fecha_inicio_2020_v7.csv"
+    "comparacion_etapas_fecha_inicio_v7.csv"
 )
 
 ARCHIVO_ESCENARIOS = (
     ANALYSIS_DIR /
-    "comparacion_rotaciones_fecha_inicio_2020_v7.csv"
+    "comparacion_rotaciones_fecha_inicio_v7.csv"
 )
 
 SALIDA_ETAPAS = (
     ANALYSIS_DIR /
-    "analisis_etapas_rotacion_2020_v8.csv"
+    "analisis_etapas_rotacion_v8.csv"
 )
 
 SALIDA_RESUMEN = (
     ANALYSIS_DIR /
-    "resumen_rotaciones_2020_v8.csv"
+    "resumen_rotaciones_v8.csv"
 )
 
 

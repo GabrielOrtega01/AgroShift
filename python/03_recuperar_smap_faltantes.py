@@ -38,12 +38,12 @@ ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Archivo histórico actual
 ARCHIVO_HISTORICO = (
-    ANALYSIS_DIR / "smap_historico_2020.csv"
+    ANALYSIS_DIR / "smap_historico.csv"
 )
 
 # Archivo diario actual
 ARCHIVO_DIARIO = (
-    ANALYSIS_DIR / "smap_diario_2020.csv"
+    ANALYSIS_DIR / "smap_diario.csv"
 )
 
 

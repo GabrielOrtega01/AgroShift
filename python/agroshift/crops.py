@@ -15,10 +15,23 @@ CULTIVOS: dict[str, tuple[str, str]] = {
     "Zea mays": ("Maíz", "🌽"),
 }
 
+NOMBRES_EN: dict[str, str] = {
+    "Coffea arabica": "Coffee",
+    "Lycopersicon esculentum": "Tomato",
+    "Manihot esculenta": "Cassava",
+    "Oryza sativa": "Rice",
+    "Phaseolus vulgaris": "Beans",
+    "Saccharum officinarum": "Sugarcane",
+    "Solanum tuberosum": "Potato",
+    "Zea mays": "Maize",
+}
+
 SEPARADOR_ROTACION = " → "
 
 
-def nombre_comun(cientifico: str) -> str:
+def nombre_comun(cientifico: str, idioma: str = "es") -> str:
+    if idioma == "en" and cientifico in NOMBRES_EN:
+        return NOMBRES_EN[cientifico]
     return CULTIVOS.get(cientifico, (cientifico, ""))[0]
 
 
@@ -26,18 +39,18 @@ def icono(cientifico: str) -> str:
     return CULTIVOS.get(cientifico, ("", "🌱"))[1] or "🌱"
 
 
-def etiqueta(cientifico: str) -> str:
+def etiqueta(cientifico: str, idioma: str = "es") -> str:
     """'☕ Café' — nombre común con su ícono."""
-    return f"{icono(cientifico)} {nombre_comun(cientifico)}"
+    return f"{icono(cientifico)} {nombre_comun(cientifico, idioma)}"
 
 
 def cultivos_de_rotacion(rotacion: str) -> list[str]:
     return rotacion.split(SEPARADOR_ROTACION)
 
 
-def rotacion_legible(rotacion: str, con_icono: bool = True) -> str:
+def rotacion_legible(rotacion: str, con_icono: bool = True, idioma: str = "es") -> str:
     """'Coffea arabica → Zea mays' -> '☕ Café → 🌽 Maíz'."""
     formato = etiqueta if con_icono else nombre_comun
     return SEPARADOR_ROTACION.join(
-        formato(c) for c in cultivos_de_rotacion(rotacion)
+        formato(c, idioma) for c in cultivos_de_rotacion(rotacion)
     )
