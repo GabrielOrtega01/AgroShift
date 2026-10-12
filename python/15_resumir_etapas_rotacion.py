@@ -133,12 +133,27 @@ def clasificar_balance(valor, etc):
     return "Negativo"
 
 
-df_etapas["condicion_balance"] = df_etapas.apply(
-    lambda fila: clasificar_balance(
-        fila["balance_P_ETc_mm"],
-        fila["ETc_mm"]
-    ),
-    axis=1
+def clasificar_balance_vectorizado(valor, etc):
+    """Mismas reglas que clasificar_balance, sobre series completas."""
+
+    sin_datos = valor.isna() | etc.isna() | (etc == 0)
+
+    with np.errstate(divide="ignore", invalid="ignore"):
+        porcentaje = valor / etc * 100
+
+    return pd.Series(
+        np.select(
+            [sin_datos, porcentaje >= 5, porcentaje >= -5],
+            ["Sin datos", "Positivo", "Cercano a equilibrio"],
+            default="Negativo"
+        ),
+        index=valor.index
+    )
+
+
+df_etapas["condicion_balance"] = clasificar_balance_vectorizado(
+    df_etapas["balance_P_ETc_mm"],
+    df_etapas["ETc_mm"]
 )
 
 
@@ -214,124 +229,88 @@ df_etapas = df_etapas.sort_values(
 
 print("\nGenerando resumen de rotaciones...")
 
-resumen = []
+claves = ["rotacion", "fecha_inicio_escenario"]
 
-for (rotacion, fecha_inicio), grupo in (
-    df_etapas.groupby(
-        [
-            "rotacion",
-            "fecha_inicio_escenario"
-        ]
-    )
-):
+# df_etapas ya está ordenado por (rotacion, fecha_inicio_escenario,
+# numero_etapa), así que cada grupo conserva el orden de sus etapas.
+grupos = df_etapas.groupby(claves, sort=True)
 
-    grupo = grupo.sort_values(
-        "numero_etapa"
-    )
+fecha_inicio_real = grupos["fecha_inicio"].min()
+fecha_fin_real = grupos["fecha_fin"].max()
+duracion = (fecha_fin_real - fecha_inicio_real).dt.days + 1
 
-    fecha_inicio_real = grupo[
-        "fecha_inicio"
-    ].min()
+precipitacion = grupos["precipitacion_mm"].sum()
+eto = grupos["ETo_mm"].sum()
+etc = grupos["ETc_mm"].sum()
+balance = grupos["balance_P_ETc_mm"].sum()
+demanda = grupos["demanda_no_cubierta_mm"].sum()
 
-    fecha_fin_real = grupo[
-        "fecha_fin"
-    ].max()
-
-    duracion = (
-        fecha_fin_real -
-        fecha_inicio_real
-    ).days + 1
-
-    precipitacion = grupo[
-        "precipitacion_mm"
-    ].sum()
-
-    eto = grupo[
-        "ETo_mm"
-    ].sum()
-
-    etc = grupo[
-        "ETc_mm"
-    ].sum()
-
-    balance = grupo[
-        "balance_P_ETc_mm"
-    ].sum()
-
-    demanda = grupo[
-        "demanda_no_cubierta_mm"
-    ].sum()
-
-    cobertura = (
-        precipitacion / etc * 100
-        if etc > 0
-        else np.nan
-    )
-
-    humedad = np.average(
-        grupo["sm_rootzone_media"],
-        weights=grupo["dias"]
-    )
-
-    percentil = np.average(
-        grupo["percentil_humedad_medio"],
-        weights=grupo["dias"]
-    )
-
-    dias_p10 = grupo[
-        "dias_humedad_menor_P10"
-    ].sum()
-
-    porcentaje_p10 = (
-        dias_p10 /
-        duracion *
-        100
-    )
-
-    # Cultivo de cada etapa
-    cultivos = " → ".join(
-        grupo["cultivo"].astype(str)
-    )
-
-    resumen.append({
-
-        "fecha_inicio_escenario": fecha_inicio,
-        "fecha_fin_escenario": fecha_fin_real,
-
-        "rotacion": cultivos,
-
-        "numero_etapas": len(grupo),
-        "duracion_total_dias": duracion,
-
-        "precipitacion_total_mm": precipitacion,
-        "ETo_total_mm": eto,
-        "ETc_total_mm": etc,
-
-        "balance_P_ETc_total_mm": balance,
-        "demanda_no_cubierta_total_mm": demanda,
-
-        "cobertura_precipitacion_pct": cobertura,
-
-        "sm_rootzone_media": humedad,
-        "percentil_humedad_medio": percentil,
-
-        "dias_humedad_menor_P10": dias_p10,
-        "porcentaje_dias_menor_P10": porcentaje_p10,
-
-        "condicion_balance": clasificar_balance(
-            balance,
-            etc
-        ),
-
-        "condicion_humedad": clasificar_humedad(
-            percentil
-        )
-    })
-
-
-df_resumen = pd.DataFrame(
-    resumen
+cobertura = pd.Series(
+    np.where(etc > 0, precipitacion / etc * 100, np.nan),
+    index=etc.index
 )
+
+llaves = [df_etapas[k] for k in claves]
+pesos = df_etapas["dias"]
+suma_pesos = pesos.groupby(llaves).sum()
+
+
+def promedio_ponderado(columna):
+    """Igual que np.average(grupo[col], weights=grupo['dias']): un NaN
+    en el grupo vuelve NaN el promedio."""
+
+    valores = df_etapas[columna]
+    numerador = (valores * pesos).groupby(llaves).sum()
+    con_nan = valores.isna().groupby(llaves).any()
+
+    return (numerador / suma_pesos).where(~con_nan)
+
+
+humedad = promedio_ponderado("sm_rootzone_media")
+percentil = promedio_ponderado("percentil_humedad_medio")
+
+dias_p10 = grupos["dias_humedad_menor_P10"].sum()
+porcentaje_p10 = dias_p10 / duracion * 100
+
+cultivos = grupos["cultivo"].agg(
+    lambda serie: " → ".join(serie.astype(str))
+)
+
+df_resumen = pd.DataFrame({
+
+    "fecha_inicio_escenario": etc.index.get_level_values(
+        "fecha_inicio_escenario"
+    ),
+    "fecha_fin_escenario": fecha_fin_real.to_numpy(),
+
+    "rotacion": cultivos.to_numpy(),
+
+    "numero_etapas": grupos.size().to_numpy(),
+    "duracion_total_dias": duracion.to_numpy(),
+
+    "precipitacion_total_mm": precipitacion.to_numpy(),
+    "ETo_total_mm": eto.to_numpy(),
+    "ETc_total_mm": etc.to_numpy(),
+
+    "balance_P_ETc_total_mm": balance.to_numpy(),
+    "demanda_no_cubierta_total_mm": demanda.to_numpy(),
+
+    "cobertura_precipitacion_pct": cobertura.to_numpy(),
+
+    "sm_rootzone_media": humedad.to_numpy(),
+    "percentil_humedad_medio": percentil.to_numpy(),
+
+    "dias_humedad_menor_P10": dias_p10.to_numpy(),
+    "porcentaje_dias_menor_P10": porcentaje_p10.to_numpy(),
+
+    "condicion_balance": clasificar_balance_vectorizado(
+        balance, etc
+    ).to_numpy(),
+
+    "condicion_humedad": percentil.apply(
+        clasificar_humedad
+    ).to_numpy()
+})
 
 
 # ============================================================

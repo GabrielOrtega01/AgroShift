@@ -8,7 +8,7 @@ Hay dos tipos de región, según de dónde sale la humedad del suelo:
 | Tipo | `fuente_humedad` | Humedad del suelo | Costo de agregarla |
 |---|---|---|---|
 | **SMAP** | `smap` | Medida por el satélite NASA SMAP L4 | Cuenta NASA Earthdata y varias horas de descarga |
-| **Modelo** | `modelo` | Estimada con un balance hídrico a partir de NASA POWER (`agroshift/hydrology.py`) | Solo internet; ~1 hora de cómputo |
+| **Modelo** | `modelo` | Estimada con un balance hídrico a partir de NASA POWER (`agroshift/hydrology.py`) | Solo internet; ~3 min de análisis (+~30 min la primera vez por la lluvia IMERG) |
 
 Las 4 regiones originales (Santander, Quindío, Córdoba y Boyacá) usan SMAP. Las
 que se agregan con la herramienta de abajo usan modelo, y la app lo rotula

@@ -38,6 +38,8 @@ COLUMNAS = [
 
 escenarios = pd.read_csv(ENTRADA, usecols=COLUMNAS)
 escenarios = escenarios[COLUMNAS]
+# Orden determinista: el motor puede entregar filas en otro orden sin que cambie su contenido
+escenarios = escenarios.sort_values(["fecha_inicio_escenario", "rotacion"]).reset_index(drop=True)
 for columna in COLUMNAS[4:7]:
     escenarios[columna] = escenarios[columna].round(3)
 escenarios.to_csv(SALIDA, index=False, compression="gzip")

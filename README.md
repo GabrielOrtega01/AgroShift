@@ -126,7 +126,7 @@ La lógica científica de cada script (cálculos FAO-56, balance hídrico, clasi
 ### Notas de rendimiento
 
 - **SMAP:** publica una imagen cada 3 horas. Bajar las 8 diarias por 6 años no es viable (~7 s por archivo), así que `smap_sampling.py` conserva **1 lectura por día** (la más cercana a las 13:30 UTC) y descarga en lotes paralelos.
-- **Motor de rotación:** el paso 13 (`generar_escenarios_rotacion`) tarda ~50 min por región; el resto del análisis, minutos.
+- **Motor de rotación:** `agroshift/etapas.py` precalcula con NumPy todas las ventanas de cada cultivo (equivalente numéricamente a la versión original con pandas, verificado con pruebas), y el resumen por rotación está vectorizado. El análisis completo de una región (pasos 06→19) tarda ~3 min; antes, ~40–70 min. La descarga de IMERG (~30 min, una sola vez para todas las regiones) y la de SMAP siguen siendo lo más lento.
 
 ## Cómo correr la app localmente
 

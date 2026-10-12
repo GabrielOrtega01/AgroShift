@@ -35,7 +35,7 @@ A free web app (Spanish and English) where a farmer:
 We compared three rainfall sources (NASA POWER, NASA GPM IMERG and CHIRPS). POWER missed year-to-year variation (2021 looked anomalously dry in Santander) so we use IMERG, whose magnitude we adjust to CHIRPS. Absolute millimetres are still approximate and not validated against stations; rotations are compared with each other on the same data. The app shows this comparison to the user. Modelled soil moisture correlates with SMAP at r = 0.69–0.96 (monthly climatology).
 
 ### Impact and next steps
-Farmers get a recommendation they can act on without a data-science background. Adding a region needs only coordinates and about an hour of compute. Next: more regions and crops, validation against IDEAM stations, local soil tests, and prices.
+Farmers get a recommendation they can act on without a data-science background. Adding a region needs only coordinates and a few minutes of compute. Next: more regions and crops, validation against IDEAM stations, local soil tests, and prices.
 
 ### Tech
 Python, Streamlit, Plotly, pandas; automated tests and CI; open source.
@@ -71,7 +71,7 @@ Una app web gratuita (español e inglés) donde el agricultor:
 Comparamos tres fuentes de lluvia (NASA POWER, NASA GPM IMERG y CHIRPS). POWER no reproducía la variación entre años (2021 salía anómalamente seco en Santander), así que usamos IMERG con su magnitud ajustada a CHIRPS. Los milímetros absolutos siguen siendo aproximados y no se validaron contra estaciones; las rotaciones se comparan entre sí con los mismos datos. La app muestra esta comparación al usuario. La humedad modelada correlaciona con SMAP r = 0,69–0,96 (climatología mensual).
 
 ### Impacto y próximos pasos
-El agricultor recibe una recomendación accionable sin necesidad de ser científico de datos. Agregar una región solo requiere coordenadas y cerca de una hora de cómputo. Siguiente: más regiones y cultivos, validación con estaciones del IDEAM, análisis de suelo locales y precios.
+El agricultor recibe una recomendación accionable sin necesidad de ser científico de datos. Agregar una región solo requiere coordenadas y unos minutos de cómputo. Siguiente: más regiones y cultivos, validación con estaciones del IDEAM, análisis de suelo locales y precios.
 
 ### Tecnología
 Python, Streamlit, Plotly, pandas; pruebas automáticas y CI; código abierto.

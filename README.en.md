@@ -97,7 +97,7 @@ python agregar_region.py --slug meta --nombre "Meta (Llanos foothills)" \
   --clima "Warm and humid: rice, oil palm, maize" --latitud 4.15 --longitud -73.63 --altitud 467 --ejecutar
 ```
 
-SMAP regions require a NASA Earthdata account (`earthaccess.login(persist=True)`); regions with modelled moisture only need internet access. The rotation engine (step 13) takes about 50 minutes per region.
+SMAP regions require a NASA Earthdata account (`earthaccess.login(persist=True)`); regions with modelled moisture only need internet access. A full analysis of one region (steps 06→19) takes about 3 minutes; the IMERG download (~30 min, once for all regions) and SMAP are the slow parts.
 
 ## Deploy
 
