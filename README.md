@@ -166,3 +166,22 @@ La app se despliega gratis en [Streamlit Community Cloud](https://streamlit.io/c
 2. Archivo principal: `app.py`.
 3. Streamlit Cloud instala automáticamente `requirements.txt` de la raíz.
 4. En **Settings → General → Python version** elige **3.12** (la versión por defecto más nueva no tiene aún paquetes precompilados de pandas y la instalación se queda compilando).
+
+## Licencia y atribución de datos
+
+El **código** de AgroShift se publica bajo la [licencia MIT](LICENSE).
+
+Los **datos** conservan los términos de sus proveedores. Los archivos derivados que se incluyen en `python/data/` (series diarias, resúmenes y escenarios) se generaron a partir de estas fuentes y deben citarlas al reutilizarse:
+
+| Fuente | Términos | Cita / reconocimiento |
+|---|---|---|
+| NASA POWER | Datos abiertos de NASA | *These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.* |
+| NASA GPM IMERG (Final Run, diario, v07) | Datos abiertos de NASA (GES DISC) | Huffman, G.J. et al. *GPM IMERG Final Precipitation L3 1 day 0.1° x 0.1° V07*. GES DISC. doi:10.5067/GPM/IMERGDF/DAY/07 |
+| NASA SMAP L4 (SPL4SMGP, v8) | Datos abiertos de NASA (NSIDC DAAC) | Reichle, R. et al. *SMAP L4 Global 3-hourly 9 km EASE-Grid Surface and Root Zone Soil Moisture Geophysical Data, Version 8*. NSIDC DAAC |
+| CHIRPS | Dominio público (UCSB Climate Hazards Center) | Funk, C. et al. (2015). The climate hazards infrared precipitation with stations — a new environmental record for monitoring extremes. *Scientific Data* 2, 150066. doi:10.1038/sdata.2015.66 |
+| ISRIC SoilGrids | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Poggio, L. et al. (2021). SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. *SOIL* 7, 217–240. doi:10.5194/soil-7-217-2021 |
+| FAO ECOCROP | [Términos de uso de la FAO](https://www.fao.org/contact-us/terms/en/) | FAO. *EcoCrop database*. Se usan sólo los rangos agronómicos de cada cultivo. |
+
+Métodos de referencia: Allen, R.G. et al. (1998), *Crop evapotranspiration — Guidelines for computing crop water requirements*, FAO Irrigation and Drainage Paper 56; Saxton, K.E. y Rawls, W.J. (2006), *Soil water characteristic estimates by texture and organic matter for hydrologic solutions*, Soil Science Society of America Journal 70, 1569–1578; gradiente térmico estándar de 6,5 °C/km (atmósfera estándar).
+
+AgroShift procesa estos datos (ajuste de temperatura por altitud, escalado mensual de la lluvia IMERG a CHIRPS, balance hídrico y simulación de rotaciones); los resultados son del proyecto y **no están avalados por NASA, FAO, CHC-UCSB ni ISRIC**.

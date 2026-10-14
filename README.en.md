@@ -102,3 +102,22 @@ SMAP regions require a NASA Earthdata account (`earthaccess.login(persist=True)`
 ## Deploy
 
 Free on [Streamlit Community Cloud](https://streamlit.io/cloud): connect the repo, main file `app.py`, and set **Settings → General → Python version** to **3.12**.
+
+## License and data attribution
+
+AgroShift's **code** is released under the [MIT license](LICENSE).
+
+The **data** keep their providers' terms. The derived files included in `python/data/` (daily series, summaries and scenarios) were generated from these sources and must cite them when reused:
+
+| Source | Terms | Citation / acknowledgement |
+|---|---|---|
+| NASA POWER | NASA open data | *These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.* |
+| NASA GPM IMERG (Final Run, daily, v07) | NASA open data (GES DISC) | Huffman, G.J. et al. *GPM IMERG Final Precipitation L3 1 day 0.1° x 0.1° V07*. GES DISC. doi:10.5067/GPM/IMERGDF/DAY/07 |
+| NASA SMAP L4 (SPL4SMGP, v8) | NASA open data (NSIDC DAAC) | Reichle, R. et al. *SMAP L4 Global 3-hourly 9 km EASE-Grid Surface and Root Zone Soil Moisture Geophysical Data, Version 8*. NSIDC DAAC |
+| CHIRPS | Public domain (UCSB Climate Hazards Center) | Funk, C. et al. (2015). The climate hazards infrared precipitation with stations — a new environmental record for monitoring extremes. *Scientific Data* 2, 150066. doi:10.1038/sdata.2015.66 |
+| ISRIC SoilGrids | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Poggio, L. et al. (2021). SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty. *SOIL* 7, 217–240. doi:10.5194/soil-7-217-2021 |
+| FAO ECOCROP | [FAO terms of use](https://www.fao.org/contact-us/terms/en/) | FAO. *EcoCrop database*. Only each crop's agronomic ranges are used. |
+
+Reference methods: Allen, R.G. et al. (1998), *Crop evapotranspiration — Guidelines for computing crop water requirements*, FAO Irrigation and Drainage Paper 56; Saxton, K.E. and Rawls, W.J. (2006), *Soil water characteristic estimates by texture and organic matter for hydrologic solutions*, Soil Science Society of America Journal 70, 1569–1578; standard lapse rate of 6.5 °C/km (standard atmosphere).
+
+AgroShift processes this data (elevation temperature adjustment, monthly scaling of IMERG rainfall to CHIRPS, water balance and rotation simulation); the results are the project's own and are **not endorsed by NASA, FAO, CHC-UCSB or ISRIC**.

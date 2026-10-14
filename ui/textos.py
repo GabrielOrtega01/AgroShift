@@ -597,9 +597,13 @@ TEXTOS: dict[str, tuple[str, str]] = {
     ),
     "met.pie": (
         "Proyecto desarrollado para el NASA Space Apps Challenge 2026 — «Field Shift: Adapting Farms with "
-        "NASA Data». Código abierto: [{repo}]({repo})",
+        "NASA Data». Código abierto (licencia MIT): [{repo}]({repo}). Datos de NASA (POWER, GPM IMERG, "
+        "SMAP), CHIRPS, ISRIC SoilGrids (CC BY 4.0) y FAO ECOCROP; las citas y los términos de cada "
+        "fuente están en el README.",
         "Project built for the NASA Space Apps Challenge 2026 — “Field Shift: Adapting Farms with NASA "
-        "Data”. Open source: [{repo}]({repo})",
+        "Data”. Open source (MIT license): [{repo}]({repo}). Data from NASA (POWER, GPM IMERG, SMAP), "
+        "CHIRPS, ISRIC SoilGrids (CC BY 4.0) and FAO ECOCROP; citations and terms for each source are "
+        "in the README.",
     ),
     # ------------------------------------------------------------ regiones
     "region.santander.nombre": ("Santander (valle del Magdalena medio)", "Santander (middle Magdalena valley)"),
