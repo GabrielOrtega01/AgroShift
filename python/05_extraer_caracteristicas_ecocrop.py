@@ -45,6 +45,10 @@ CULTIVOS_PRUEBA = [
     1420,   # Manihot esculenta
     749,    # Coffea arabica
     1884,   # Saccharum officinarum
+    7848,   # Musa acuminata (plátano / banano)
+    1150,   # Glycine max (soya)
+    1160,   # Gossypium hirsutum (algodón)
+    1721,   # Pisum sativum (arveja)
 ]
 
 

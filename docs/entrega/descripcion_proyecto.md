@@ -17,7 +17,7 @@ Rainfall patterns are shifting and farmers who plant by habit are exposed: the w
 ### What we built
 A free web app (Spanish and English) where a farmer:
 
-1. **Chooses their region** (8 regions of Colombia, from cold Andean highlands to the dry Caribbean).
+1. **Chooses their region** (12 regions of Colombia, from cold Andean highlands to the dry Caribbean).
 2. **Sees their climate** — month-by-month temperature, rainfall and soil moisture, and which crops fit, in plain language.
 3. **Sees the water picture** — whether rainfall will cover each crop or irrigation is needed.
 4. **Tells us what matters** (water, balance, soil moisture, timing), how strict to be and which crops to include, and gets a **podium of rotations** with how reliably each one has worked historically and **which month to start**.
@@ -25,7 +25,7 @@ A free web app (Spanish and English) where a farmer:
 ### How it works
 - **NASA POWER** — daily temperature, humidity, wind and radiation, 2020–2025.
 - **NASA GPM IMERG** — daily rainfall; its magnitude is adjusted to CHIRPS monthly totals because unadjusted IMERG overestimates rainfall in several mountain areas.
-- **NASA SMAP L4** — soil moisture (surface and root zone) for four regions; in the other four it is estimated with a water-balance model, clearly labelled.
+- **NASA SMAP L4** — soil moisture (surface and root zone) for four regions; in the other eight it is estimated with a water-balance model, clearly labelled.
 - **FAO-56 Penman–Monteith** evapotranspiration and crop-stage coefficients to compute the water each crop needs.
 - **FAO ECOCROP** crop requirements; a crop's suitability is capped by what temperature allows (temperature is adjusted from NASA POWER's ~50 km cell to the region's elevation), so crops the climate cannot support are excluded.
 - **ISRIC SoilGrids** soil pH and texture, with warnings when the pH does not suit a crop.
@@ -53,7 +53,7 @@ Los patrones de lluvia están cambiando y quien siembra por costumbre queda expu
 ### Qué construimos
 Una app web gratuita (español e inglés) donde el agricultor:
 
-1. **Elige su región** (8 regiones de Colombia, del altiplano frío al Caribe seco).
+1. **Elige su región** (12 regiones de Colombia, del altiplano frío al Caribe seco).
 2. **Ve su clima** — temperatura, lluvia y humedad del suelo mes a mes, y qué cultivos se adaptan, en lenguaje llano.
 3. **Ve el panorama del agua** — si la lluvia alcanza para cada cultivo o necesitará riego.
 4. **Dice qué le importa** (agua, balance, humedad del suelo, ajuste temporal), qué tan exigente ser y qué cultivos incluir, y recibe un **podio de rotaciones** con qué tan fiables han sido históricamente y **en qué mes iniciar**.
@@ -61,7 +61,7 @@ Una app web gratuita (español e inglés) donde el agricultor:
 ### Cómo funciona
 - **NASA POWER** — temperatura, humedad, viento y radiación diarios 2020–2025.
 - **NASA GPM IMERG** — lluvia diaria; su magnitud se ajusta a los totales mensuales de CHIRPS porque IMERG sin ajustar sobrestima la lluvia en varias zonas de montaña.
-- **NASA SMAP L4** — humedad del suelo (superficie y zona de raíces) en cuatro regiones; en las otras cuatro se estima con un modelo de balance de agua, y se rotula como tal.
+- **NASA SMAP L4** — humedad del suelo (superficie y zona de raíces) en cuatro regiones; en las otras ocho se estima con un modelo de balance de agua, y se rotula como tal.
 - **Evapotranspiración FAO-56 Penman–Monteith** y coeficientes por etapa para calcular el agua que necesita cada cultivo.
 - **FAO ECOCROP**: requisitos de cada cultivo; la compatibilidad queda limitada por lo que permite la temperatura (ajustada a la altitud de la región desde la celda de ~50 km de NASA POWER), así se excluyen los cultivos que el clima no admite.
 - **ISRIC SoilGrids**: pH y textura del suelo, con alertas cuando el pH no conviene a un cultivo.

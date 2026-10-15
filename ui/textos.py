@@ -642,6 +642,30 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "Frío andino del sur, papa, maíz y lácteos",
         "Cold southern Andes: potato, maize and dairy",
     ),
+    "region.antioquia.nombre": ("Antioquia (altiplano de Rionegro)", "Antioquia (Rionegro highlands)"),
+    "region.antioquia.corto": ("Antioquia", "Antioquia"),
+    "region.antioquia.clima": (
+        "Altiplano templado y fresco, papa, hortalizas y flores",
+        "Cool temperate highland: potato, vegetables and flowers",
+    ),
+    "region.huila.nombre": ("Huila (zona cafetera de Pitalito)", "Huila (Pitalito coffee zone)"),
+    "region.huila.corto": ("Huila", "Huila"),
+    "region.huila.clima": (
+        "Templado de montaña del sur, café, frijol y frutales",
+        "Temperate southern mountains: coffee, beans and fruit",
+    ),
+    "region.tolima.nombre": ("Tolima (valle del Magdalena)", "Tolima (Magdalena valley)"),
+    "region.tolima.corto": ("Tolima", "Tolima"),
+    "region.tolima.clima": (
+        "Valle cálido y seco, arroz, maíz y algodón",
+        "Warm, dry valley: rice, maize and cotton",
+    ),
+    "region.casanare.nombre": ("Casanare (llanos de Yopal)", "Casanare (Yopal plains)"),
+    "region.casanare.corto": ("Casanare", "Casanare"),
+    "region.casanare.clima": (
+        "Llanos cálidos y de lluvias marcadas, arroz, palma y maíz",
+        "Warm plains with a marked rainy season: rice, oil palm and maize",
+    ),
 }
 
 MESES_CORTOS: dict[str, list[str]] = {

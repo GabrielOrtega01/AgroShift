@@ -27,7 +27,7 @@ The farmer chooses what to prioritise (water, balance, moisture, timing), how st
 | Region | Soil moisture |
 |---|---|
 | Santander, Quindío, Córdoba, Boyacá | Satellite-measured (NASA SMAP L4) |
-| Cundinamarca, Valle del Cauca, Meta, Nariño | **Estimated** with a water balance from NASA POWER (labelled as such in the app) |
+| Cundinamarca, Valle del Cauca, Meta, Nariño, Antioquia, Huila, Tolima, Casanare | **Estimated** with a water balance from NASA POWER (labelled as such in the app) |
 
 Adding a region is a data task, not a code task: see [`docs/como_agregar_una_region.md`](docs/como_agregar_una_region.md) (Spanish).
 
@@ -46,13 +46,13 @@ Adding a region is a data task, not a code task: see [`docs/como_agregar_una_reg
 
 Rainfall is **NASA GPM IMERG**, with its magnitude adjusted to CHIRPS monthly totals. The three sources were compared (`python/validar_precipitacion.py`, results in `python/data/validation/`):
 
-- **NASA POWER was dropped for rainfall:** monthly correlation with CHIRPS r = 0.44–0.81 (mean 0.66), 2021 is ~70 % drier in Santander and Boyacá comes out 2× wetter.
-- **Unadjusted IMERG** follows month-to-month and year-to-year variation better (r = 0.62–0.92, mean 0.77) but **overestimates totals** in several mountain areas (Santander +81 %, Valle +74 %, Nariño +109 %, Cundinamarca +124 %). So its daily distribution is kept and each month is scaled to CHIRPS, which matches known climatologies better.
+- **NASA POWER was dropped for rainfall:** monthly correlation with CHIRPS r = 0.27–0.81 (mean 0.64), 2021 is ~70 % drier in Santander and Boyacá comes out 2× wetter.
+- **Unadjusted IMERG** follows month-to-month and year-to-year variation better (r = 0.62–0.92, mean 0.77) but **overestimates totals** in several mountain areas (Santander +81 %, Valle +74 %, Huila +86 %, Nariño +109 %, Cundinamarca +124 %); in Meta, on the other hand, it comes out 30 % lower. So its daily distribution is kept and each month is scaled to CHIRPS, which matches known climatologies better.
 - **Absolute millimetres remain approximate** (not validated against IDEAM stations) and 92 of 2,192 days have no IMERG file: NASA POWER fills them. The app shows the comparison in the *How it works* tab.
-- Modelled soil moisture (used in 4 regions) was checked against SMAP in the 4 regions that have it (`python/validar_humedad_modelo.py`): the monthly climatology correlates at r = 0.69–0.96 and the daily rank order (Spearman) at 0.65–0.82. It is an estimate, not a measurement.
+- Modelled soil moisture (used in 8 regions) was checked against SMAP in the 4 regions that have it (`python/validar_humedad_modelo.py`): the monthly climatology correlates at r = 0.69–0.96 and the daily rank order (Spearman) at 0.65–0.82. It is an estimate, not a measurement.
 - Soil is a global estimate (SoilGrids): confirm pH and fertility with a lab test.
 - Each region is a **reference point**, not an exact farm. Prices, costs and pests are not considered.
-- **Temperature adjusted to elevation:** NASA POWER returns the temperature of a ~50 km cell at its mean elevation (e.g. 2,112 m for a Cauca-valley point that sits at 1,000 m); it is adjusted to the point with the standard 6.5 °C/km lapse rate (`agroshift/downscaling.py`). After the adjustment, the mean temperatures of all 8 regions match known values (±1 °C).
+- **Temperature adjusted to elevation:** NASA POWER returns the temperature of a ~50 km cell at its mean elevation (e.g. 2,112 m for a Cauca-valley point that sits at 1,000 m); it is adjusted to the point with the standard 6.5 °C/km lapse rate (`agroshift/downscaling.py`). After the adjustment, the mean temperatures of all 12 regions match known values (±1.5 °C).
 - ECOCROP has no useful elevation limits (coffee up to 2,800 m) nor killing temperatures for most crops, and the 50 km cell does not capture local frosts: above 2,000 m the app warns to check frost risk.
 
 ## Project layout

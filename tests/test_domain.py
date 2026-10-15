@@ -23,6 +23,16 @@ def test_nombres_comunes_en_dos_idiomas():
     assert crops.nombre_comun("Especie desconocida") == "Especie desconocida"
 
 
+def test_cada_cultivo_tiene_nombre_en_ingles_y_figura_en_ecocrop():
+    import pandas as pd
+    from pathlib import Path
+
+    assert set(crops.CULTIVOS) == set(crops.NOMBRES_EN)
+    ruta = Path(__file__).resolve().parents[1] / "python" / "data" / "crops" / "agroshift_cultivos_caracteristicas.csv"
+    extraidos = set(pd.read_csv(ruta, encoding="utf-8-sig")["nombre"])
+    assert set(crops.CULTIVOS) == extraidos
+
+
 def test_rotacion_legible():
     assert crops.rotacion_legible("Zea mays → Oryza sativa", con_icono=False) == "Maíz → Arroz"
     assert crops.rotacion_legible("Zea mays → Oryza sativa", False, "en") == "Maize → Rice"

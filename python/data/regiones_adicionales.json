@@ -42,5 +42,49 @@
     "fila_smap": null,
     "columna_smap": null,
     "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "antioquia",
+    "nombre": "Antioquia (altiplano de Rionegro)",
+    "clima": "Altiplano templado y fresco, papa, hortalizas y flores",
+    "latitud": 6.15,
+    "longitud": -75.37,
+    "altitud_m": 2125.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "huila",
+    "nombre": "Huila (zona cafetera de Pitalito)",
+    "clima": "Templado de montaña del sur, café, frijol y frutales",
+    "latitud": 1.85,
+    "longitud": -76.05,
+    "altitud_m": 1318.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "tolima",
+    "nombre": "Tolima (valle del Magdalena)",
+    "clima": "Valle cálido y seco, arroz, maíz y algodón",
+    "latitud": 4.15,
+    "longitud": -74.88,
+    "altitud_m": 430.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
+  },
+  {
+    "slug": "casanare",
+    "nombre": "Casanare (llanos de Yopal)",
+    "clima": "Llanos cálidos y de lluvias marcadas, arroz, palma y maíz",
+    "latitud": 5.34,
+    "longitud": -72.39,
+    "altitud_m": 350.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo"
   }
 ]

@@ -13,6 +13,10 @@ CULTIVOS: dict[str, tuple[str, str]] = {
     "Saccharum officinarum": ("Caña de azúcar", "🎋"),
     "Solanum tuberosum": ("Papa", "🥔"),
     "Zea mays": ("Maíz", "🌽"),
+    "Musa acuminata": ("Plátano", "🍌"),
+    "Glycine max": ("Soya", "🌱"),
+    "Gossypium hirsutum": ("Algodón", "☁️"),
+    "Pisum sativum": ("Arveja", "🫛"),
 }
 
 NOMBRES_EN: dict[str, str] = {
@@ -24,6 +28,10 @@ NOMBRES_EN: dict[str, str] = {
     "Saccharum officinarum": "Sugarcane",
     "Solanum tuberosum": "Potato",
     "Zea mays": "Maize",
+    "Musa acuminata": "Plantain",
+    "Glycine max": "Soybean",
+    "Gossypium hirsutum": "Cotton",
+    "Pisum sativum": "Peas",
 }
 
 SEPARADOR_ROTACION = " → "

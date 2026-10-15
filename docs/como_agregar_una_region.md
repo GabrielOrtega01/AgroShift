@@ -68,3 +68,21 @@ faltan, la app usa el texto en español.
 python -m pytest            # estructura y rangos de los CSV de cada región
 python validar_precipitacion.py   # contrasta la lluvia de POWER con CHIRPS
 ```
+
+## Cómo agregar un cultivo nuevo
+
+Un cultivo se define por sus requerimientos de ECOCROP y su coeficiente Kc:
+
+1. Busca su `ecocrop_id` en `python/data/crops/agroshift_cultivos_ecocrop.csv` y
+   agrégalo a `CULTIVOS_PRUEBA` en `python/05_extraer_caracteristicas_ecocrop.py`.
+   Ejecuta ese script para regenerar `agroshift_cultivos_caracteristicas.csv`.
+2. Agrega sus `kc_inicial`, `kc_medio` y `kc_final` (Tabla 12 de FAO-56) a
+   `KC_CULTIVOS` en `python/09_calcular_evapotranspiracion_cultivo.py`.
+3. Agrega su nombre común e ícono en `python/agroshift/crops.py` (`CULTIVOS` y
+   `NOMBRES_EN`). `tests/test_domain.py` falla si falta alguno.
+4. Vuelve a correr el análisis de cada región:
+   `python run_pipeline.py --region <slug> --analysis-only`.
+
+Cada cultivo nuevo multiplica las rotaciones posibles: con 12 cultivos el motor
+evalúa 1.452 rotaciones por región (contando el orden); con 16 serían 3.600 y
+los archivos de resultados crecerían unas 9 veces respecto de 8 cultivos.

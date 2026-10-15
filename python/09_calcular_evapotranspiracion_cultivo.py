@@ -129,6 +129,32 @@ KC_CULTIVOS = {
         "kc_inicial": 0.87,
         "kc_medio": 0.98,
         "kc_final": 0.97
+    },
+
+    # Valores de la Tabla 12 de FAO-56 (Allen et al., 1998)
+
+    "Musa acuminata": {
+        "kc_inicial": 0.50,
+        "kc_medio": 1.10,
+        "kc_final": 1.00
+    },
+
+    "Glycine max": {
+        "kc_inicial": 0.40,
+        "kc_medio": 1.15,
+        "kc_final": 0.50
+    },
+
+    "Gossypium hirsutum": {
+        "kc_inicial": 0.35,
+        "kc_medio": 1.15,
+        "kc_final": 0.70
+    },
+
+    "Pisum sativum": {
+        "kc_inicial": 0.50,
+        "kc_medio": 1.15,
+        "kc_final": 0.30
     }
 }
 

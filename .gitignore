@@ -68,3 +68,6 @@ python/data/analysis/*/*.png
 
 # Lluvia IMERG: progreso de la descarga
 python/data/imerg/_progreso.csv
+
+# Registros y scripts auxiliares de ejecuciones largas
+logs/
