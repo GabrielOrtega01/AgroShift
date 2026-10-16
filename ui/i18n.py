@@ -65,6 +65,12 @@ def region_corto(region: Region) -> str:
     return t(clave) if existe(clave) else region.nombre_corto
 
 
+def region_zona(region: Region) -> str:
+    """Nombre de la zona dentro de su departamento ('Chicamocha')."""
+    clave = f"region.{region.slug}.zona"
+    return t(clave) if existe(clave) else region.zona
+
+
 def region_clima(region: Region) -> str:
     clave = f"region.{region.slug}.clima"
     return t(clave) if existe(clave) else region.clima

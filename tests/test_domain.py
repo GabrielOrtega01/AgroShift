@@ -46,6 +46,14 @@ def test_regiones_base_son_smap():
         assert r.fuente_humedad == "smap" and r.fila_smap is not None
 
 
+def test_zonas_de_un_departamento_comparten_grupo():
+    zonas = [r for r in REGIONS.values() if r.grupo == "Santander"]
+    assert len(zonas) >= 2
+    assert {r.zona for r in zonas} >= {"Bucaramanga", "Chicamocha"}
+    assert get_region("santander").nombre_corto == "Santander · Bucaramanga"
+    assert get_region("quindio").grupo == "Quindío" and get_region("quindio").zona == "Quindío"
+
+
 def test_region_desconocida_lista_opciones():
     with pytest.raises(ValueError, match="santander"):
         get_region("marte")

@@ -30,8 +30,8 @@ FECHA_FIN = os.environ.get("AGROSHIFT_FECHA_FIN", "2025-12-31")
 
 SALIDA = Path(__file__).resolve().parent / "data" / "imerg"
 PROGRESO = SALIDA / "_progreso.csv"
-PROCESOS = 8
-LOTE = 20  # días por tarea
+PROCESOS = int(os.environ.get("AGROSHIFT_IMERG_PROCESOS", "8"))
+LOTE = int(os.environ.get("AGROSHIFT_IMERG_LOTE", "20"))  # días por tarea; lotes chicos limitan el daño de un archivo colgado
 PATRON_FECHA = re.compile(r"\.(\d{8})-S")
 
 
@@ -68,12 +68,21 @@ def _leer_lote(
     propia sesión de Earthdata. `items` = [(fecha ISO, URL del archivo)]."""
     earthaccess.login(strategy="netrc")
     resultado = {}
-    for fecha, url in items:
+    # Abrir todo el lote en una sola llamada comparte la sesión (≈5 s por archivo -> <1 s)
+    urls = [url for _, url in items]
+    try:
+        archivos = con_reintentos(lambda: earthaccess.open(urls), intentos=4, espera_base=8)
+    except Exception:
+        archivos = None
+    for k, (fecha, url) in enumerate(items):
         def abrir():
             return earthaccess.open([url])[0]
 
         try:
-            archivo = con_reintentos(abrir, intentos=5, espera_base=8)
+            if archivos is not None and len(archivos) == len(items):
+                archivo = archivos[k]
+            else:
+                archivo = con_reintentos(abrir, intentos=5, espera_base=8)
             with h5py.File(archivo, "r") as h:
                 lluvia = h["precipitation"]
                 valores = {}

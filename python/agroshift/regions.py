@@ -38,11 +38,22 @@ class Region:
     fila_smap: int | None = None
     columna_smap: int | None = None
     fuente_humedad: str = "smap"
+    departamento: str = ""
 
     @property
     def nombre_corto(self) -> str:
-        """'Santander' para 'Santander (valle del Magdalena medio)'."""
+        """'Santander · Chicamocha' para 'Santander · Chicamocha (cañón…)'."""
         return self.nombre.split(" (")[0]
+
+    @property
+    def grupo(self) -> str:
+        """Departamento al que pertenece (agrupa zonas en el selector)."""
+        return self.departamento or self.nombre_corto
+
+    @property
+    def zona(self) -> str:
+        """'Chicamocha' para 'Santander · Chicamocha'; el nombre corto si no hay zonas."""
+        return self.nombre_corto.split(" · ")[-1]
 
     @property
     def humedad_modelada(self) -> bool:
@@ -52,13 +63,14 @@ class Region:
 _REGIONES_SMAP = [
     Region(
         slug="santander",
-        nombre="Santander (valle del Magdalena medio)",
+        nombre="Santander · Bucaramanga (mesa de Bucaramanga)",
         clima="Valle intermedio, cálido-húmedo",
         latitud=7.119,
         longitud=-73.122,
         altitud_m=959.0,
         fila_smap=711,
         columna_smap=1144,
+        departamento="Santander",
     ),
     Region(
         slug="quindio",

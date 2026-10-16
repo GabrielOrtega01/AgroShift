@@ -36,7 +36,7 @@ from agroshift.regions import REGIONS, regiones_con_resultados  # noqa: E402
 from ui import theme  # noqa: E402
 from ui.components import hero, html  # noqa: E402
 from ui.data import cargar_region  # noqa: E402
-from ui.i18n import IDIOMAS, region_clima, region_corto, region_nombre, t  # noqa: E402
+from ui.i18n import IDIOMAS, region_clima, region_corto, region_nombre, region_zona, t  # noqa: E402
 from ui.views import agua, clima, cultivos, inicio, metodologia, rotacion  # noqa: E402
 
 st.set_page_config(
@@ -52,16 +52,27 @@ def selectores() -> str:
     """Primer paso del flujo: región e idioma. Van en la página principal
     (no en la barra lateral) para que sean visibles también en el celular."""
     disponibles = regiones_con_resultados()
+    grupos = list(dict.fromkeys(REGIONS[s].grupo for s in disponibles))
     with st.container(border=True):
         izq, der = st.columns([5, 1])
-        slug = izq.radio(
+        grupo = izq.radio(
             t("sel.region"),
-            disponibles,
-            format_func=lambda s: region_corto(REGIONS[s]),
+            grupos,
             horizontal=True,
-            key="region",
+            key="grupo",
             help=t("sel.region_ayuda"),
         )
+        zonas = [s for s in disponibles if REGIONS[s].grupo == grupo]
+        if len(zonas) > 1:
+            slug = izq.radio(
+                t("sel.zona", depto=grupo),
+                zonas,
+                format_func=lambda s: region_zona(REGIONS[s]),
+                horizontal=True,
+                key=f"zona_{grupo}",
+            )
+        else:
+            slug = zonas[0]
         der.radio(
             t("sel.idioma"),
             IDIOMAS,
@@ -99,16 +110,16 @@ def barra_lateral(slug: str) -> None:
 
 
 def main() -> None:
-    disponibles = regiones_con_resultados()
-    previa = st.session_state.get("region")
-    previa = previa if previa in disponibles else disponibles[0]
-    hero(
-        "AgroShift",
-        t("hero.subtitulo"),
-        [t("hero.chip_nasa"), t("hero.chip_fao"), t("hero.chip_historial"), f"📍 {region_corto(REGIONS[previa])}"],
-    )
+    # El encabezado va arriba pero depende de la región elegida más abajo: se reserva su lugar.
+    cabecera = st.container()
     slug = selectores()
     region = REGIONS[slug]
+    with cabecera:
+        hero(
+            "AgroShift",
+            t("hero.subtitulo"),
+            [t("hero.chip_nasa"), t("hero.chip_fao"), t("hero.chip_historial"), f"📍 {region_corto(region)}"],
+        )
     barra_lateral(slug)
 
     try:

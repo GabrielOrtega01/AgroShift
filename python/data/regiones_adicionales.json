@@ -8,7 +8,8 @@
     "altitud_m": 2600.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "valle",
@@ -19,7 +20,8 @@
     "altitud_m": 1000.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "meta",
@@ -30,7 +32,8 @@
     "altitud_m": 467.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "narino",
@@ -41,7 +44,8 @@
     "altitud_m": 2527.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "antioquia",
@@ -52,7 +56,8 @@
     "altitud_m": 2125.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "huila",
@@ -63,7 +68,8 @@
     "altitud_m": 1318.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "tolima",
@@ -74,7 +80,8 @@
     "altitud_m": 430.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
   },
   {
     "slug": "casanare",
@@ -85,6 +92,43 @@
     "altitud_m": 350.0,
     "fila_smap": null,
     "columna_smap": null,
-    "fuente_humedad": "modelo"
+    "fuente_humedad": "modelo",
+    "departamento": ""
+  },
+  {
+    "slug": "santander_magdalena",
+    "nombre": "Santander · Magdalena Medio (Barrancabermeja)",
+    "clima": "Cálido y húmedo de llanura, palma, arroz y ganadería",
+    "latitud": 7.07,
+    "longitud": -73.85,
+    "altitud_m": 75.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo",
+    "departamento": "Santander"
+  },
+  {
+    "slug": "santander_chicamocha",
+    "nombre": "Santander · Chicamocha (cañón de San Gil)",
+    "clima": "Templado y seco de cañón, caña, tabaco y cebolla",
+    "latitud": 6.56,
+    "longitud": -73.13,
+    "altitud_m": 1100.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo",
+    "departamento": "Santander"
+  },
+  {
+    "slug": "santander_garcia_rovira",
+    "nombre": "Santander · García Rovira (altiplano de Málaga)",
+    "clima": "Frío de montaña, papa, cebolla y arveja",
+    "latitud": 6.7,
+    "longitud": -72.73,
+    "altitud_m": 2200.0,
+    "fila_smap": null,
+    "columna_smap": null,
+    "fuente_humedad": "modelo",
+    "departamento": "Santander"
   }
 ]

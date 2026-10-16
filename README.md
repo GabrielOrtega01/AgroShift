@@ -26,8 +26,8 @@ El agricultor indica qué prioriza (agua, balance, humedad, ajuste temporal), qu
 
 | Región | Humedad del suelo |
 |---|---|
-| Santander, Quindío, Córdoba, Boyacá | Medida por satélite (NASA SMAP L4) |
-| Cundinamarca, Valle del Cauca, Meta, Nariño, Antioquia, Huila, Tolima, Casanare | **Estimada** con un balance hídrico a partir de NASA POWER (rotulada así en la app) |
+| Santander (Bucaramanga), Quindío, Córdoba, Boyacá | Medida por satélite (NASA SMAP L4) |
+| Cundinamarca, Valle del Cauca, Meta, Nariño, Antioquia, Huila, Tolima, Casanare y las zonas de Santander (Magdalena Medio, Chicamocha, García Rovira) | **Estimada** con un balance hídrico a partir de NASA POWER (rotulada así en la app) |
 
 Agregar una región es cuestión de datos, no de código: ver [`docs/como_agregar_una_region.md`](docs/como_agregar_una_region.md).
 
@@ -46,13 +46,13 @@ Agregar una región es cuestión de datos, no de código: ver [`docs/como_agrega
 
 La lluvia es la de **NASA GPM IMERG**, con la magnitud ajustada a los totales mensuales de CHIRPS. Se compararon las tres fuentes (`python/validar_precipitacion.py`, resultados en `python/data/validation/`):
 
-- **NASA POWER se descartó para la lluvia:** correlación mensual con CHIRPS r = 0,27–0,81 (media 0,64), 2021 sale ~70 % más seco en Santander y Boyacá queda 2× más húmeda.
-- **IMERG sin ajustar** sigue mejor la variación entre meses y años (r = 0,62–0,92, media 0,77), pero **sobrestima los totales** en varias zonas de montaña (Santander +81 %, Valle +74 %, Huila +86 %, Nariño +109 %, Cundinamarca +124 %); en Meta, en cambio, queda un 30 % por debajo. Por eso se conserva su distribución diaria y se escala cada mes a CHIRPS, que coincide mejor con las climatologías conocidas.
+- **NASA POWER se descartó para la lluvia:** correlación mensual con CHIRPS r = 0,27–0,81 (media 0,59), 2021 sale ~70 % más seco en Santander y Boyacá queda 2× más húmeda.
+- **IMERG sin ajustar** sigue mejor la variación entre meses y años (r = 0,62–0,92, media 0,79), pero **sobrestima los totales** en varias zonas de montaña (Santander +81 %, Valle +74 %, Huila +86 %, Nariño +109 %, Cundinamarca +124 %); en Meta, en cambio, queda un 30 % por debajo. Por eso se conserva su distribución diaria y se escala cada mes a CHIRPS, que coincide mejor con las climatologías conocidas.
 - Los **milímetros absolutos siguen siendo aproximados** (no se validó contra estaciones del IDEAM) y 92 de 2.192 días no tienen archivo IMERG: ahí se usa NASA POWER. La app muestra la comparación en la pestaña *Cómo funciona*.
-- La humedad modelada (usada en 8 regiones) se contrastó con SMAP en las 4 regiones que lo tienen (`python/validar_humedad_modelo.py`): la climatología mensual correlaciona r = 0,69–0,96 y el orden diario (Spearman) 0,65–0,82. Es una estimación, no una medición.
+- La humedad modelada (usada en 11 regiones) se contrastó con SMAP en las 4 regiones que lo tienen (`python/validar_humedad_modelo.py`): la climatología mensual correlaciona r = 0,69–0,96 y el orden diario (Spearman) 0,65–0,82. Es una estimación, no una medición.
 - El suelo es una estimación global (SoilGrids): confirma pH y fertilidad con un análisis de laboratorio.
 - Cada región es un **punto de referencia**, no la finca exacta. No se consideran precios, costos ni plagas.
-- **Temperatura ajustada a la altitud:** NASA POWER entrega la temperatura de una celda de ~50 km a su elevación media (p. ej. 2.112 m para un punto del valle del Cauca que está a 1.000 m); se ajusta al punto con el gradiente estándar de 6,5 °C/km (`agroshift/downscaling.py`). Con el ajuste, las temperaturas medias de las 12 regiones coinciden con las conocidas (±1,5 °C).
+- **Temperatura ajustada a la altitud:** NASA POWER entrega la temperatura de una celda de ~50 km a su elevación media (p. ej. 2.112 m para un punto del valle del Cauca que está a 1.000 m); se ajusta al punto con el gradiente estándar de 6,5 °C/km (`agroshift/downscaling.py`). Con el ajuste, las temperaturas medias de las 15 regiones coinciden con las conocidas (±1,5 °C).
 - ECOCROP no tiene límites de altitud útiles (café hasta 2.800 m) ni temperatura letal para casi todos los cultivos, y la celda de 50 km no captura heladas locales: en zonas sobre 2.000 m la app avisa de verificar el riesgo de helada.
 
 ## Estructura del proyecto

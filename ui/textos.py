@@ -21,6 +21,7 @@ TEXTOS: dict[str, tuple[str, str]] = {
     "hero.chip_fao": ("🌾 FAO ECOCROP", "🌾 FAO ECOCROP"),
     "hero.chip_historial": ("📅 Historial 2020–2025", "📅 Record 2020–2025"),
     "sel.region": ("📍 ¿Dónde está tu finca?", "📍 Where is your farm?"),
+    "sel.zona": ("🧭 Zona de {depto}", "🧭 Zone of {depto}"),
     "sel.region_ayuda": (
         "Cada región tiene su propio clima e historial de datos.",
         "Each region has its own climate and data record.",
@@ -606,9 +607,43 @@ TEXTOS: dict[str, tuple[str, str]] = {
         "in the README.",
     ),
     # ------------------------------------------------------------ regiones
-    "region.santander.nombre": ("Santander (valle del Magdalena medio)", "Santander (middle Magdalena valley)"),
-    "region.santander.corto": ("Santander", "Santander"),
+    "region.santander.nombre": (
+        "Santander · Bucaramanga (mesa de Bucaramanga)",
+        "Santander · Bucaramanga (Bucaramanga plateau)",
+    ),
+    "region.santander.corto": ("Santander · Bucaramanga", "Santander · Bucaramanga"),
+    "region.santander.zona": ("Bucaramanga", "Bucaramanga"),
     "region.santander.clima": ("Valle intermedio, cálido-húmedo", "Warm, humid mid-elevation valley"),
+    "region.santander_magdalena.nombre": (
+        "Santander · Magdalena Medio (Barrancabermeja)",
+        "Santander · Middle Magdalena (Barrancabermeja)",
+    ),
+    "region.santander_magdalena.corto": ("Santander · Magdalena Medio", "Santander · Middle Magdalena"),
+    "region.santander_magdalena.zona": ("Magdalena Medio", "Middle Magdalena"),
+    "region.santander_magdalena.clima": (
+        "Cálido y húmedo de llanura, palma, arroz y ganadería",
+        "Warm, humid lowland: oil palm, rice and cattle",
+    ),
+    "region.santander_chicamocha.nombre": (
+        "Santander · Chicamocha (cañón de San Gil)",
+        "Santander · Chicamocha (San Gil canyon)",
+    ),
+    "region.santander_chicamocha.corto": ("Santander · Chicamocha", "Santander · Chicamocha"),
+    "region.santander_chicamocha.zona": ("Chicamocha", "Chicamocha"),
+    "region.santander_chicamocha.clima": (
+        "Templado y seco de cañón, caña, tabaco y cebolla",
+        "Dry, temperate canyon: sugarcane, tobacco and onion",
+    ),
+    "region.santander_garcia_rovira.nombre": (
+        "Santander · García Rovira (altiplano de Málaga)",
+        "Santander · García Rovira (Málaga highlands)",
+    ),
+    "region.santander_garcia_rovira.corto": ("Santander · García Rovira", "Santander · García Rovira"),
+    "region.santander_garcia_rovira.zona": ("García Rovira", "García Rovira"),
+    "region.santander_garcia_rovira.clima": (
+        "Frío de montaña, papa, cebolla y arveja",
+        "Cold mountain climate: potato, onion and peas",
+    ),
     "region.quindio.nombre": ("Quindío (eje cafetero)", "Quindío (coffee-growing axis)"),
     "region.quindio.corto": ("Quindío", "Quindío"),
     "region.quindio.clima": ("Templado de montaña, zona cafetera", "Temperate mountain climate, coffee zone"),

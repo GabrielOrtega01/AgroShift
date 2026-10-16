@@ -28,6 +28,11 @@ python agregar_region.py \
 ```
 
 - `--slug`: identificador en minúsculas, sin tildes ni espacios.
+- `--departamento` (opcional): agrupa varias zonas de un mismo departamento en el
+  selector de la app (departamento → zona). Nombra cada zona como
+  `"Santander · Chicamocha (cañón de San Gil)"`: lo que va antes de « (» es el
+  nombre corto y lo que va tras « · » es la zona. Agrega además las claves
+  `region.<slug>.zona` en `ui/textos.py` si quieres traducir el nombre de la zona.
 - `--altitud`: metros sobre el nivel del mar (se usa para la presión atmosférica
   y la radiación en el cálculo de ETo).
 - `--ejecutar`: además de registrar la región corre `run_pipeline.py` para ella.

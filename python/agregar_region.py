@@ -28,6 +28,7 @@ def main() -> None:
     parser.add_argument("--slug", required=True, help="identificador en minúsculas y sin tildes (p. ej. 'meta')")
     parser.add_argument("--nombre", required=True, help="nombre visible, p. ej. 'Meta (piedemonte llanero)'")
     parser.add_argument("--clima", required=True, help="descripción corta del clima y los cultivos típicos")
+    parser.add_argument("--departamento", default="", help="agrupa varias zonas de un mismo departamento en el selector")
     parser.add_argument("--latitud", type=float, required=True)
     parser.add_argument("--longitud", type=float, required=True)
     parser.add_argument("--altitud", type=float, required=True, help="metros sobre el nivel del mar")
@@ -47,6 +48,7 @@ def main() -> None:
         longitud=args.longitud,
         altitud_m=args.altitud,
         fuente_humedad="modelo",
+        departamento=args.departamento,
     )
     registrar_region(region)
     print(f"✓ Región '{region.slug}' registrada (humedad del suelo modelada).")
